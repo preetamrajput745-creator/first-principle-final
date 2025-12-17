@@ -1,0 +1,16 @@
+{
+  "event_id": "123d856f-f7ad-4010-a68a-5f255620a49f",
+  "timestamp_utc": "2025-12-10T23:56:31.333151",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Audit Test Bot",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Alert Action",
+  "notes": "ID: 299674c4-d73c-4e05-9e3c-a0441cfe9016",
+  "signed_hash": "b49387903e44fefa64b9fe683563d51ab235d7eff3d78ddaaa27ea951193b08a",
+  "evidence_link": "audit/safety/safety/123d856f-f7ad-4010-a68a-5f255620a49f.json"
+}

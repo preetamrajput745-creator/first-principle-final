@@ -1,0 +1,17 @@
+{
+  "uid": "admin-changelog",
+  "title": "Admin UI Change-Log Panel",
+  "panels": [
+    {
+      "type": "table",
+      "title": "Recent Changes",
+      "targets": [
+        {
+          "expr": "admin_changes_recent",
+          "format": "table"
+        }
+      ],
+      "transformations": []
+    }
+  ]
+}

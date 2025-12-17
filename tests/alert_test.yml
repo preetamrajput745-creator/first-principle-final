@@ -1,0 +1,27 @@
+evaluation_interval: 1m
+rule_files:
+- ../prometheus/alert_rules.yml
+tests:
+- alert_rule_test:
+  - alertname: HeartbeatMissingCritical
+    eval_time: 5m
+    exp_alerts:
+    - exp_annotations:
+        summary: 'CRITICAL: Heartbeat missing for ingest'
+      exp_labels:
+        component: ingest
+        severity: critical
+  - alertname: SignalRateSpike
+    eval_time: 5m
+    exp_alerts:
+    - exp_annotations:
+        summary: Signal Rate Spike > 3x Baseline (BTCUSDT)
+      exp_labels:
+        severity: warning
+        symbol: BTCUSDT
+  input_series:
+  - series: heartbeat_timestamp{component="ingest"}
+    values: 0 0 0 0 0 0 0 0 0 0
+  - series: signals_total{symbol="BTCUSDT"}
+    values: 0 10 20 60 60
+  interval: 1m

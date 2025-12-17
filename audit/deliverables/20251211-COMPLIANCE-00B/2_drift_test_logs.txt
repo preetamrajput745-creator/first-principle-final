@@ -1,0 +1,42 @@
+--- EXECUTION LOG: tests/verify_time_normalizer.py ---
+--- TIMESTAMP: 2025-12-11 09:52:38.627436 ---
+STDOUT:
+
+[TEST 4] API Contract Verification...
+   Response: 2025-12-11 09:52:37.308924+00:00 (Source: system)
+   Calculated Drift (Simulated): 200.00ms
+
+[TEST 4] Drift Injection Test...
+TEST: Clock Normalization Control (Mistake #2/3)
+============================================================
+1. Checking API Signature (get_time_and_source)...
+   SUCCESS: API returns tuple -> Time: 2025-12-11 09:52:38.258225+00:00, Source: system
+
+1.5. Injecting valid signal with drift metrics...
+   Injected Signal aed436fb with drift 12.5ms
+
+2. Checking 'clock_drift_ms' metric in Signals...
+   Validated Signal aed436fb: Drift = 12.5ms
+   [FAIL] Signal feffc9e1 (Sym: BTCUSDT, TS: 2025-12-11 00:14:14.860145) has None drift!
+   [FAIL] Signal 000a590e (Sym: BTCUSDT, TS: 2025-12-11 00:14:14.860145) has None drift!
+   [FAIL] Signal 0bf4d586 (Sym: BTCUSDT, TS: 2025-12-11 00:14:14.860145) has None drift!
+   [FAIL] Signal dff85bae (Sym: BTCUSDT, TS: 2025-12-11 00:14:14.860145) has None drift!
+   FAILURE: Missing drift metrics on some signals (1/5)
+
+
+STDERR:
+.D:\PREETAM RAJPUT\first pincipal finnnal\workers\common\database.py:18: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+F
+======================================================================
+FAIL: test_drift_injection (__main__.TestTimeNormalizerContract.test_drift_injection)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PREETAM RAJPUT\first pincipal finnnal\tests\verify_time_normalizer.py", line 67, in test_drift_injection
+    self.fail("Drift Injection Test (verify_mistake_2_clock) Failed")
+AssertionError: Drift Injection Test (verify_mistake_2_clock) Failed
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.276s
+
+FAILED (failures=1)

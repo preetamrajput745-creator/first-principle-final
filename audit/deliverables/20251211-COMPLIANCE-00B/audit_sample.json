@@ -1,0 +1,13 @@
+{
+  "event_id": "uuid-1234",
+  "actor": "admin",
+  "resource_type": "config",
+  "change_type": "update",
+  "old_value": {
+    "volatility_multiplier": 1.5
+  },
+  "new_value": {
+    "volatility_multiplier": 2.0
+  },
+  "timestamp_utc": "2025-12-11T09:59:37.093654"
+}

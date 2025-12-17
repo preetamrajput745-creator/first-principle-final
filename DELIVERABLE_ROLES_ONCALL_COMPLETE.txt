@@ -1,0 +1,27 @@
+
+ROLES & RESPONSIBILITIES: ON-CALL OPS
+STATUS: COMPLETE & VERIFIED
+
+CONTENTS:
+------------------------------------------------------------
+1. VERIFICATION SCRIPT (verify_oncall_ops.py):
+   - Conducted Alert Pipeline Validation (Latency > 100ms)
+   - Tested Circuit Breaker Response (Slippage > 50%)
+   - Verified Incident Reporting & Resume Logic.
+
+2. EVIDENCE COLLECTED (oncall_evidence/):
+   - Alert Payloads: alert_payload_latency.json
+   - Routing Proof: alert_routing_proof.json
+   - CB State Triggered: circuit_breaker_state_triggered.json
+   - CB State Resumed: circuit_breaker_state_resumed.json
+   - Incident Report: incident_*.json
+   - Ops Log: ops_log.txt
+
+3. OUTCOME:
+   - Alert Routing: PASS (Pager, Slack, Email)
+   - Circuit Breaker: PASS (Auto-Pause & Safe Resume)
+   - Overall Status: PASS
+
+Zero-Tolerance Spec Met:
+- Critical alerts correctly identified and routed.
+- Circuit breaker events handled via strict pause/resume/audit workflow.

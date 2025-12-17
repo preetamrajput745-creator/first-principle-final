@@ -1,0 +1,15 @@
+retention_policy:
+  standard_logs:
+    storage_class: "STANDARD"
+    retention_days: 365
+    transition_glacier_days: 90
+    
+  legal_hold:
+    enabled: true
+    override_retention: "INDEFINITE"
+    
+  automation:
+    schedule: "0 0 * * *" # Daily
+    script: "scripts/enforce_retention.py"
+    
+  export_path: "s3://antigravity-audit/exports/"

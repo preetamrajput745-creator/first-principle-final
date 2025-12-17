@@ -1,0 +1,16 @@
+{
+  "event_id": "2a43835a-fbd2-4b37-8d1a-4de288834f58",
+  "timestamp_utc": "2025-12-11T00:12:24.357768",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Governance Tester",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Signal rate exceeded (205/10/hr)",
+  "notes": "ID: 9f598dd5-8193-4c21-b0f4-82e3655e1bb2",
+  "signed_hash": "4e29feb311c679b660efbc1c6a19b3dbf05749ef754e1e7f4c5025db60903929",
+  "evidence_link": "audit/safety/safety/2a43835a-fbd2-4b37-8d1a-4de288834f58.json"
+}

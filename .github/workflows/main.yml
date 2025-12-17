@@ -1,0 +1,98 @@
+name: Antigravity CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "staging" ]
+  pull_request:
+    branches: [ "main", "staging" ]
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install Dependencies
+      run: |
+        pip install -r requirements.txt
+    - name: Run Unit Tests
+      run: python ci_pipeline/unit_test_job.py
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: unit-test-results
+        path: |
+          unit_test_results.json
+          coverage.xml
+          htmlcov/
+
+  integration-tests:
+    needs: unit-tests
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/staging' || github.ref == 'refs/heads/main')
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: password
+      redis:
+        image: redis:alpine
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+    - name: Run Integration Tests
+      run: python ci_pipeline/integration_test_job.py
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: integration-results
+        path: |
+          integration_test_logs.txt
+          integration_trace.json
+
+  build-artifact:
+    needs: integration-tests
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build Docker Image
+      run: docker build -t antigravity-app:${{ github.sha }} .
+    # - name: Push to Registry (Mocked)
+    
+  deploy-staging:
+    needs: build-artifact
+    runs-on: ubuntu-latest
+    steps:
+    - name: Deploy
+      run: echo "Deploying to Staging..."
+
+  smoke-tests:
+    needs: deploy-staging
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+    - name: Run Smoke Tests
+      run: python ci_pipeline/smoke_test_job.py
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: smoke-test-results
+        path: smoke_results.json
+
+  promote-to-prod:
+    needs: smoke-tests
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+    - name: Promote
+      run: echo "Promoting to Production"

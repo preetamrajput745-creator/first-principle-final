@@ -1,0 +1,42 @@
+[
+  {
+    "id": "LOG-c79e3a1a",
+    "signal_id": "SIG-99686e6f-b91a-4c7a-bf1e-fe25271736ef",
+    "execution_mode": "SHADOW",
+    "execution_status": "SHADOW_LOGGED",
+    "sim_fill_id": "FILL-6a74c231",
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "LOG-17766321",
+    "signal_id": "SIG-6fa6567a-2a63-47e3-8526-c2713ff982ac",
+    "execution_mode": "SHADOW",
+    "execution_status": "SHADOW_LOGGED",
+    "sim_fill_id": "FILL-8e34561c",
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "LOG-db316ae1",
+    "signal_id": "SIG-de8c2dc6-6e25-4898-a0c9-a79dc84cd9c4",
+    "execution_mode": "SHADOW",
+    "execution_status": "SHADOW_LOGGED",
+    "sim_fill_id": "FILL-23baca3a",
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "LOG-b04a3255",
+    "signal_id": "SIG-5dab5888-5f93-4347-88da-d1e1d500427e",
+    "execution_mode": "SHADOW",
+    "execution_status": "SHADOW_LOGGED",
+    "sim_fill_id": "FILL-7cd5dc84",
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "LOG-80d320ed",
+    "signal_id": "SIG-f98af56e-5b59-4ac8-acc4-d6cd726a3a20",
+    "execution_mode": "SHADOW",
+    "execution_status": "SHADOW_LOGGED",
+    "sim_fill_id": "FILL-d9fa9330",
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  }
+]

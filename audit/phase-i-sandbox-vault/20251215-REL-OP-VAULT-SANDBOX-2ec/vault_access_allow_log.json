@@ -1,0 +1,11 @@
+[
+  {
+    "timestamp_utc": "2025-12-15T05:24:58.120217",
+    "service_name": "execution-engine",
+    "vault_path": "secrets/broker/sandbox/alpaca/api_key",
+    "execution_mode": "SANDBOX",
+    "access_result": "ALLOW",
+    "reason": "Policy: sandbox-read-only matched",
+    "source_ip": "10.10.0.5"
+  }
+]

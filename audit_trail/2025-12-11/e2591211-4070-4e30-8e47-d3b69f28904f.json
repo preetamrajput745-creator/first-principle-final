@@ -1,0 +1,15 @@
+{
+  "event_id": "e2591211-4070-4e30-8e47-d3b69f28904f",
+  "timestamp_utc": "2023-10-22T10:00:00+00:00",
+  "actor": "system",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "9f598dd5-8193-4c21-b0f4-82e3655e1bb2",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"param\": 1}",
+  "new_value": "{\"param\": 3}",
+  "change_context": "api",
+  "reason": "Critical Hotfix",
+  "signed_hash": "53406e1e81d86ace7ae0dc43cec153114525991b09ed8413ce0cbd9873118180"
+}

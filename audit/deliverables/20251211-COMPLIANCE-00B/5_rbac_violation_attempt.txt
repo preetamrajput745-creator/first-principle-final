@@ -1,0 +1,21 @@
+--- EXECUTION LOG: verify_mistake_6_pen_test.py ---
+--- TIMESTAMP: 2025-12-11 09:52:45.644879 ---
+STDOUT:
+
+[AUDIT] Verifying VaultAccessLog for denial...
+SUCCESS: Denial logged. ID: acbf0926-7c95-45ed-8902-9df7e25d467a | TS: 2025-12-11 00:14:15.583180
+
+[PEN-TEST] Attempting to access BROKER_API_KEY as 'DetectionService'...
+SUCCESS: Access Denied as expected. ([VAULT] Access Denied: DetectionService cannot access BROKER_API_KEY)
+
+[PEN-TEST] Attempting to access BROKER_API_KEY as 'ExecutionService'...
+SUCCESS: ExecutionService retrieved secret.
+
+STDERR:
+D:\PREETAM RAJPUT\first pincipal finnnal\workers\common\database.py:18: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+  Base = declarative_base()
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.241s
+
+OK

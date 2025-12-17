@@ -1,0 +1,16 @@
+{
+  "event_id": "d73b7684-76e8-4540-8350-3712c2c8d44e",
+  "timestamp_utc": "2025-12-11T12:35:51.757096",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Alert Action",
+  "notes": "Global Kill Switch Activated. Count: 0",
+  "signed_hash": "a2e88abbe0beb2fe7155661045e67058b0db695ae6c401df7c6f42cc8098fe0a",
+  "evidence_link": "audit/safety/safety/d73b7684-76e8-4540-8350-3712c2c8d44e.json"
+}

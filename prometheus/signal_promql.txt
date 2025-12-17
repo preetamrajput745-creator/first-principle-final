@@ -1,0 +1,17 @@
+# Metric A: Signals per Hour
+sum(increase(signals_total{symbol="$symbol"}[1h])) by (symbol)
+
+# Metric B: Avg Score (1h)
+avg_over_time(signal_score_sum{symbol="$symbol"}[1h]) / avg_over_time(signal_score_count{symbol="$symbol"}[1h])
+
+# Metric C: Score Distribution (Heatmap)
+sum(rate(signal_score_bucket[5m])) by (le, symbol)
+
+# Alert: Signal Flood
+sum(increase(signals_total[1h])) by (symbol) > 30
+
+# Alert: Score Collapse
+(sum(rate(signal_score_sum[1h])) / sum(rate(signal_score_count[1h]))) < 0.35
+
+# Alert: Outlier Explosion
+(sum(rate(signal_score_bucket{le="0.2"}[1h])) / sum(rate(signal_score_count[1h]))) > 0.10

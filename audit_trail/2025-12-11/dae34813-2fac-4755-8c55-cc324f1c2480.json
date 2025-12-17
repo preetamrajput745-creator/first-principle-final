@@ -1,0 +1,15 @@
+{
+  "event_id": "dae34813-2fac-4755-8c55-cc324f1c2480",
+  "timestamp_utc": "2025-12-11T00:13:08.206366",
+  "actor": "788703f2-56da-4103-8bd2-79bb7b31d5a3",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "f14d6b9d-f3b2-464d-853d-cf3cf09180c2",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"param\": 1}",
+  "new_value": "{\"param\": 2}",
+  "change_context": "api",
+  "reason": "Testing Audit Log",
+  "signed_hash": "a7905df6c74cf515070e7cb192111bb761e137e6da5018af57dd6868b637e371"
+}

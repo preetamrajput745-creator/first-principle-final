@@ -1,0 +1,184 @@
+{
+    "annotations": {
+        "list": [
+            {
+                "builtIn": 1,
+                "datasource": "-- Grafana --",
+                "enable": true,
+                "hide": true,
+                "iconColor": "rgba(0, 211, 255, 1)",
+                "name": "Annotations & Alerts",
+                "type": "dashboard"
+            }
+        ]
+    },
+    "editable": true,
+    "gwt": {
+        "page_layout": "rows",
+        "type": "dashboard"
+    },
+    "id": null,
+    "links": [],
+    "panels": [
+        {
+            "datasource": "Prometheus",
+            "fieldConfig": {
+                "defaults": {
+                    "color": {
+                        "mode": "thresholds"
+                    },
+                    "mappings": [],
+                    "thresholds": {
+                        "mode": "absolute",
+                        "steps": [
+                            {
+                                "color": "green",
+                                "value": null
+                            },
+                            {
+                                "color": "red",
+                                "value": 80
+                            }
+                        ]
+                    }
+                },
+                "overrides": []
+            },
+            "gridPos": {
+                "h": 4,
+                "w": 6,
+                "x": 0,
+                "y": 0
+            },
+            "id": 2,
+            "options": {
+                "reduceOptions": {
+                    "values": true,
+                    "calcs": [
+                        "mean"
+                    ],
+                    "fields": ""
+                },
+                "orientation": "auto",
+                "showThresholdLabels": false,
+                "showThresholdMarkers": true,
+                "text": {}
+            },
+            "pluginVersion": "7.5.4",
+            "targets": [
+                {
+                    "expr": "sum(rate(audit_events_total[1h]))",
+                    "interval": "",
+                    "legendFormat": "",
+                    "refId": "A"
+                }
+            ],
+            "title": "Changes / Hr",
+            "type": "gauge"
+        },
+        {
+            "datasource": "Prometheus",
+            "gridPos": {
+                "h": 4,
+                "w": 6,
+                "x": 6,
+                "y": 0
+            },
+            "id": 4,
+            "targets": [
+                {
+                    "expr": "sum(audit_alerts_total)",
+                    "refId": "A"
+                }
+            ],
+            "title": "Total Audit Alerts",
+            "type": "stat"
+        },
+        {
+            "datasource": "PostgreSQL",
+            "gridPos": {
+                "h": 10,
+                "w": 24,
+                "x": 0,
+                "y": 4
+            },
+            "id": 6,
+            "targets": [
+                {
+                    "format": "table",
+                    "group": [],
+                    "metricColumn": "none",
+                    "rawQuery": true,
+                    "rawSql": "SELECT timestamp, change_type, resource_type, actor_name, change_reason, evidence_link, signed_hash FROM config_audit_logs ORDER BY timestamp DESC LIMIT 100",
+                    "refId": "A",
+                    "select": [
+                        [
+                            {
+                                "params": [
+                                    "value"
+                                ],
+                                "type": "column"
+                            }
+                        ]
+                    ],
+                    "table": "config_audit_logs",
+                    "timeColumn": "timestamp",
+                    "timeColumnType": "timestamp",
+                    "where": []
+                }
+            ],
+            "title": "Live Audit Stream",
+            "type": "table"
+        },
+        {
+            "title": "Suspicious Events",
+            "type": "table",
+            "datasource": "Prometheus",
+            "gridPos": {
+                "h": 8,
+                "w": 24,
+                "x": 0,
+                "y": 14
+            },
+            "targets": [
+                {
+                    "expr": "audit_alerts_total > 0",
+                    "refId": "A"
+                }
+            ]
+        }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 27,
+    "style": "dark",
+    "tags": [
+        "audit",
+        "compliance",
+        "security"
+    ],
+    "templating": {
+        "list": []
+    },
+    "time": {
+        "from": "now-24h",
+        "to": "now"
+    },
+    "timepicker": {
+        "refresh_intervals": [
+            "5s",
+            "10s",
+            "30s",
+            "1m",
+            "5m",
+            "15m",
+            "30m",
+            "1h",
+            "2h",
+            "1d"
+        ]
+    },
+    "timezone": "",
+    "title": "SECURITY AUDIT PANEL",
+    "uid": "audit_panel_main",
+    "version": 1
+}

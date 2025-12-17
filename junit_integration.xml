@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="0.539" timestamp="2025-12-11T15:56:03.247630+05:30" hostname="DESKTOP-AO79MD1"><testcase classname="tests.integration.test_integration_stub.TestIntegrationFlow" name="test_data_latency_check" time="0.019" /><testcase classname="tests.integration.test_integration_stub.TestIntegrationFlow" name="test_risk_enforcement_flow" time="0.107"><failure message="AssertionError: False is not true : Circuit breaker should have tripped due to signal volume">self = &lt;test_integration_stub.TestIntegrationFlow testMethod=test_risk_enforcement_flow&gt;
+
+    def test_risk_enforcement_flow(self):
+        """
+        Test that a signal passing through the Risk Engine (Circuit Breaker)
+        blocks execution if limits are hit.
+        """
+        # 1. Simulate High Frequency Signals (Ingest)
+        # Create &gt; 10 signals in the last hour
+        with next(get_db()) as db:
+            for i in range(12):
+                sig = Signal(
+                    symbol="BTC-USD",
+                    score=0.8,
+                    timestamp=datetime.utcnow(),
+                    payload={"signal_type": "buy", "source": "integration_test"}
+                )
+                db.add(sig)
+            db.commit()
+    
+        # 2. Risk Check (Circuit Breaker)
+        # Should return False (safe=False)
+        is_safe = self.cb.check_signal_rate(auto_pause=False)
+    
+        if not is_safe:
+            print("Integration Test: Risk Breaker correctly tripped on volume.")
+    
+&gt;       self.assertTrue(is_safe, "Circuit breaker should have tripped due to signal volume")
+E       AssertionError: False is not true : Circuit breaker should have tripped due to signal volume
+
+tests\integration\test_integration_stub.py:51: AssertionError</failure></testcase></testsuite></testsuites>

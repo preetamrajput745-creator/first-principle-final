@@ -1,0 +1,16 @@
+{
+  "event_id": "b6fdb76c-4c7a-4c8e-8d4e-8d20f6be766c",
+  "timestamp_utc": "2025-12-11T00:06:41.309413",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "RateTest",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Breach",
+  "notes": "ID: 21a25dc5-e70f-421f-9e9c-5ac9ececfd47",
+  "signed_hash": "2e4df37a4fc5b6bbede5c20738ea11144dd60e5c5d926683e59a20867d142613",
+  "evidence_link": "audit/safety/safety/b6fdb76c-4c7a-4c8e-8d4e-8d20f6be766c.json"
+}

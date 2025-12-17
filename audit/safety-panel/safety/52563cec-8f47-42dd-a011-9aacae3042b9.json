@@ -1,0 +1,16 @@
+{
+  "event_id": "52563cec-8f47-42dd-a011-9aacae3042b9",
+  "timestamp_utc": "2025-12-11T00:12:17.186157",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "False Breakout Default",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Max daily loss exceeded (PnL: $-600.00 < Limit: -$500.0)",
+  "notes": "ID: 70ace2bf-97d2-4015-ab4c-47e2340802b8",
+  "signed_hash": "0d00feb9972abdb37847a179f842ed89c2241bf9a8c028cdb1d790cb03e7b381",
+  "evidence_link": "audit/safety/safety/52563cec-8f47-42dd-a011-9aacae3042b9.json"
+}

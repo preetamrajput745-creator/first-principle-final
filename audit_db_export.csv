@@ -1,0 +1,2 @@
+event_id,timestamp_utc,change_type,resource,ip,signature_status
+68f4c5d5-31e4-4c41-a264-b9d763206b14,2025-12-11 00:10:56.090157,update,config,192.168.1.10,PASS

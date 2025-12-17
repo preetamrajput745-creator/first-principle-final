@@ -1,0 +1,2 @@
+Gate Remaining: 0
+Trade Result: EXECUTED_PAPER

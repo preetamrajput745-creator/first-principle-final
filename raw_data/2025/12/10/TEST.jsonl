@@ -1,0 +1,4 @@
+{"checksum": "d8b25e98e1b32ac4e3701b12d7990e4e91fefa5ad5ccaee16e21fb75eaa830bf", "data": {"symbol": "TEST", "bid": 100.0, "ask": 100.5, "timestamp": "2025-12-10T05:30:24.436373", "_stored_at": "2025-12-10T05:30:24.436373"}}
+{"checksum": "68bdff06125e0536cec6aec7983674904c56717324281d37dc93da23e9e723da", "data": {"symbol": "TEST", "bid": 200.0, "ask": 200.5, "timestamp": "2025-12-10T05:30:24.437880", "_stored_at": "2025-12-10T05:30:24.437880"}}
+{"checksum": "d192a73c1ac65edc0375257385b62483a1c6c95ef5a62b90ccdf6c457c22aa5a", "data": {"symbol": "TEST", "bid": 100.0, "ask": 100.5, "timestamp": "2025-12-10T05:37:03.025117", "_stored_at": "2025-12-10T05:37:03.025117"}}
+{"checksum": "4e13b327c9b4876867078eaf2ec7fc60efc5dbdf9b98d0ffb9cd607fa2472dad", "data": {"symbol": "TEST", "bid": 200.0, "ask": 200.5, "timestamp": "2025-12-10T05:37:03.025117", "_stored_at": "2025-12-10T05:37:03.025117"}}

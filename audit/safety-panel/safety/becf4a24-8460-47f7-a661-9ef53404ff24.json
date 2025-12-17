@@ -1,0 +1,16 @@
+{
+  "event_id": "becf4a24-8460-47f7-a661-9ef53404ff24",
+  "timestamp_utc": "2025-12-11T00:09:10.377546",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Manual Admin Action",
+  "notes": "Global Kill Switch Activated. Count: 6",
+  "signed_hash": "97a996417fda17006b74633c5857852c4f7841e008ada52b7f248d2f80beacc3",
+  "evidence_link": "audit/safety/safety/becf4a24-8460-47f7-a661-9ef53404ff24.json"
+}

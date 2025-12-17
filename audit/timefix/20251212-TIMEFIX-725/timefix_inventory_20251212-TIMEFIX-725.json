@@ -1,0 +1,5 @@
+{
+  "timezone_current": "India Standard Time",
+  "ntp_status": "Leap Indicator: 0(no warning)\nStratum: 4 (secondary reference - syncd by (S)NTP)\nPrecision: -23 (119.209ns per tick)\nRoot Delay: 0.0784501s\nRoot Dispersion: 8.6064593s\nReferenceId: 0x28515E41 (source IP:  40.81.94.65)\nLast Successful Sync Time: 12-12-2025 10:43:56\nSource: time.windows.com,0x9 \nPoll Interval: 10 (1024s)",
+  "script_present": true
+}

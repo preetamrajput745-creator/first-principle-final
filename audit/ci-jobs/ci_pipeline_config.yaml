@@ -1,0 +1,37 @@
+pipeline_config:
+  version: 1.0
+  triggers:
+    - push
+    - pull_request
+  
+  stages:
+    - name: unit_tests
+      script: "python -m unittest discover tests"
+      required: true
+      coverage_threshold: 85.0
+      
+    - name: integration_tests
+      script: "python verify_master_all.py"
+      required: true
+      timeout: 300s
+      
+    - name: build_artifact
+      script: "docker build -t antigravity:latest ."
+      required: true
+      
+    - name: deploy_staging
+      script: "kubectl apply -f k8s/staging/"
+      required: true
+      
+    - name: smoke_tests
+      script: "python check_status.py"
+      required: true
+      retry: 2
+      
+  notifications:
+    on_failure: ["slack", "email"]
+    on_success: ["slack"]
+    
+  rbac:
+    ci_runner_role: "ci-service-account"
+    secrets_backend: "vault"

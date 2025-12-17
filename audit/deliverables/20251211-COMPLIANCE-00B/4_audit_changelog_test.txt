@@ -1,0 +1,16 @@
+--- EXECUTION LOG: tests/test_api_config_audit.py ---
+--- TIMESTAMP: 2025-12-11 09:52:44.958409 ---
+STDOUT:
+
+[Test] Config Change via API
+AUDIT LOG: Config updated for UI Audit Test Bot | Reason: Admin UI: Adjusting weights for volatility | S3: s3://antigravity-audit/2025-12-11/audit-panel/f69b054c-d59f-477e-8c04-99041b0aa0ac.json
+[EventBus] Redis unavailable. Falling back to SQLite (Local Mode).
+   PASS: API returned 200 OK with updated config.
+   PASS: Audit log verified. User: 983dad80-c281-4eef-8310-37968c633d67 | Reason: Admin UI: Adjusting weights for volatility
+
+STDERR:
+.
+----------------------------------------------------------------------
+Ran 1 test in 4.771s
+
+OK

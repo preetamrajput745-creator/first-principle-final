@@ -1,0 +1,54 @@
+[
+    {
+        "role_name": "ingestion-role",
+        "bound_service_account_names": [
+            "ingestion-sa"
+        ],
+        "bound_service_account_namespaces": [
+            "antigravity"
+        ],
+        "policies": [
+            "ingestion-reader"
+        ],
+        "ttl": "1h"
+    },
+    {
+        "role_name": "detection-role",
+        "bound_service_account_names": [
+            "detection-sa"
+        ],
+        "bound_service_account_namespaces": [
+            "antigravity"
+        ],
+        "policies": [
+            "detection-reader"
+        ],
+        "ttl": "1h"
+    },
+    {
+        "role_name": "execution-role",
+        "bound_service_account_names": [
+            "execution-sa"
+        ],
+        "bound_service_account_namespaces": [
+            "antigravity"
+        ],
+        "policies": [
+            "execution-writer"
+        ],
+        "ttl": "1h"
+    },
+    {
+        "role_name": "monitoring-role",
+        "bound_service_account_names": [
+            "monitoring-sa"
+        ],
+        "bound_service_account_namespaces": [
+            "antigravity"
+        ],
+        "policies": [
+            "monitoring-reader"
+        ],
+        "ttl": "1h"
+    }
+]

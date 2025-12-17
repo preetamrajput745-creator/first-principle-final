@@ -1,0 +1,25 @@
+digraph CI_Pipeline {
+    rankdir=LR;
+    node [shape=box, style=filled, fontname="Helvetica"];
+
+    start [label="Code Push", shape=circle, fillcolor="white"];
+    unit [label="Unit Tests\n(>85% Cover)", fillcolor="lightblue"];
+    integration [label="Integration Tests\n(End-to-End)", fillcolor="lightblue"];
+    build [label="Build Artifact\n(Docker)", fillcolor="orange"];
+    deploy [label="Deploy Staging", fillcolor="orange"];
+    smoke [label="Smoke Tests\n(Health Check)", fillcolor="lightgreen"];
+    prod [label="Promote to Prod", shape=doublecircle, fillcolor="lightgreen"];
+
+    start -> unit;
+    unit -> integration [label="Pass"];
+    integration -> build [label="Pass"];
+    build -> deploy;
+    deploy -> smoke;
+    smoke -> prod [label="Pass"];
+    
+    unit -> fail [label="Fail", color="red"];
+    integration -> fail [label="Fail", color="red"];
+    smoke -> fail [label="Fail", color="red"];
+    
+    fail [label="Block Merge / Rollback", shape=octagon, fillcolor="red", fontcolor="white"];
+}

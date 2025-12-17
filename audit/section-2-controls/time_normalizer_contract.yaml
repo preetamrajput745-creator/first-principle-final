@@ -1,0 +1,65 @@
+openapi: 3.0.0
+info:
+  title: Time Normalization Service
+  version: 1.0.0
+paths:
+  /time_normalizer:
+    post:
+      summary: Normalize source timestamp to canonical UTC
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - source_timestamp
+                - source_id
+              properties:
+                source_timestamp:
+                  type: string
+                  description: Source event time (ISO8601 or epoch)
+                  example: "2025-12-11T10:00:00.000Z"
+                source_timezone:
+                  type: string
+                  description: IANA Timezone ID (e.g., "America/New_York")
+                  default: "UTC"
+                source_clock:
+                  type: integer
+                  description: Monotonic clock or high-res epoch (ms)
+                  example: 1707070707000
+                source_id:
+                  type: string
+                  description: Unique ID of source component
+      responses:
+        '200':
+          description: Successful normalization
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  canonical_utc_timestamp:
+                    type: string
+                    format: date-time
+                  source_clock_raw:
+                    type: integer
+                  computed_drift_ms:
+                    type: number
+                    format: float
+                  normalization_method:
+                    type: string
+                    enum: [wall_clock, monotonic]
+                  confidence_score:
+                    type: number
+                    minimum: 0
+                    maximum: 1
+                  request_id:
+                    type: string
+                    format: uuid
+        '400':
+          description: Invalid input (timezone, timestamp)
+        '403':
+          description: Unauthorized source/pod
+        '422':
+          description: Malformed data

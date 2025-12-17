@@ -1,0 +1,15 @@
+{
+  "event_id": "15f98dbf-dd27-492c-aca9-1619510009af",
+  "timestamp_utc": "2025-12-10T23:34:53.489351",
+  "actor": "user_18",
+  "actor_ip": "10.0.0.1",
+  "resource_type": "config",
+  "resource_id": "795017cb-bd9e-41be-b7c2-65513d9fd74e",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk\": \"medium\", \"v\": 17}",
+  "new_value": "{\"risk\": \"medium\", \"v\": 18}",
+  "change_context": "api",
+  "reason": "Routine Update 18",
+  "signed_hash": "0bf63e33733b2ba4b0d84a45dbba3c3278b72b90e921f1dce2debe09f8aa319a"
+}

@@ -1,0 +1,21 @@
+{
+  "event_id": "3632625e-9664-4cb5-8acc-1f208a948f17",
+  "timestamp_utc": "2025-12-12T05:41:30.018307",
+  "actor": "operator_bob",
+  "actor_id": null,
+  "actor_role": "operator",
+  "actor_ip": "192.168.1.5",
+  "actor_device": "unknown_device",
+  "ui_page": "/admin/config",
+  "resource_type": "config",
+  "resource_id": "028b4361-23e9-487e-9ffb-259196a50861",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk\": \"low\"}",
+  "new_value": "{\"risk\": \"medium\"}",
+  "change_context": "api",
+  "justification": "Routine adjustment",
+  "notes": "Standard procedure",
+  "status": "committed",
+  "signed_hash": "6d68ddf34a2f1fe55d7fb26eabf8be39e6a67e7e05158e81169e09ef8760d956"
+}

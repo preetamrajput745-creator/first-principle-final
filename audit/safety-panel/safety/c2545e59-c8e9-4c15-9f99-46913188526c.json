@@ -1,0 +1,16 @@
+{
+  "event_id": "c2545e59-c8e9-4c15-9f99-46913188526c",
+  "timestamp_utc": "2025-12-10T23:52:38.498981",
+  "component": "test_component",
+  "event_type": "test_event",
+  "target": "unit_test_obj",
+  "trigger_rule": "rule_1",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "tester",
+  "actor_ip": "127.0.0.1",
+  "reason": "Integration Test",
+  "notes": "verification_note",
+  "signed_hash": "fb4021c61fac37498c9df924fb4eaf8d7f97e01935853d997fe6adc317455518",
+  "evidence_link": "audit/safety/safety/c2545e59-c8e9-4c15-9f99-46913188526c.json"
+}

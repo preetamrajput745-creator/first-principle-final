@@ -1,0 +1,7 @@
+[
+    {
+        "op": "copy",
+        "from": "d:\\PREETAM RAJPUT\\first pincipal finnnal\\timefix_windows.py",
+        "to": "s3_audit_local/timefix/timefix_script.py"
+    }
+]

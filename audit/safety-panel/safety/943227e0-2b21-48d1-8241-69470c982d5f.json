@@ -1,0 +1,16 @@
+{
+  "event_id": "943227e0-2b21-48d1-8241-69470c982d5f",
+  "timestamp_utc": "2025-12-11T00:09:11.238293",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Slippage Test",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Circuit Breaker: 10 Consecutive High Slippage Trades (>50%)",
+  "notes": "ID: 235fe61e-9840-4ca8-8572-4243ac4d8457",
+  "signed_hash": "51470598fc694c576f482a318cd5459b7fa6383cb503098b97c200dad7d693bb",
+  "evidence_link": "audit/safety/safety/943227e0-2b21-48d1-8241-69470c982d5f.json"
+}

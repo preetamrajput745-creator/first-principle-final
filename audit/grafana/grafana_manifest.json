@@ -1,0 +1,35 @@
+{
+  "run_id": "bfbd6165-761d-492b-84c8-ff6a45fea381",
+  "date": "2025-12-11",
+  "dashboards": [
+    {
+      "uid": "sys_health_001",
+      "file": "dashboard-sys_health_001.json",
+      "verified": true
+    },
+    {
+      "uid": "pnl_slip_001",
+      "file": "dashboard-pnl_slip_001.json",
+      "verified": true
+    },
+    {
+      "uid": "signal_flow_001",
+      "file": "dashboard-signal_flow_001.json",
+      "verified": true
+    },
+    {
+      "uid": "audit_panel_001",
+      "file": "dashboard-audit_panel_001.json",
+      "verified": true
+    },
+    {
+      "uid": "safety_panel_001",
+      "file": "dashboard-safety_panel_001.json",
+      "verified": true
+    }
+  ],
+  "rules": [
+    "prometheus_rules.yml"
+  ],
+  "sha256": "66b331e8d770f3106a266e9febbb7a9074e01d29787c0a62b684d0f3bad3eb1e"
+}

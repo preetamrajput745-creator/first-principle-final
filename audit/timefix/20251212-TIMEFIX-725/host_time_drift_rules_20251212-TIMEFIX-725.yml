@@ -1,0 +1,17 @@
+groups:
+  - name: HostTimeDrift
+    rules:
+      - alert: HostClockDrift
+        expr: abs(time() - node_time_seconds) > 10
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Host clock drift > 10s (Task 20251212-TIMEFIX-725)"
+      - alert: HostClockDriftLarge
+        expr: abs(time() - node_time_seconds) > 300
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Host clock drift > 5m (Task 20251212-TIMEFIX-725)"

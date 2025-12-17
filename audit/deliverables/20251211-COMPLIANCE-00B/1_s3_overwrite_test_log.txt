@@ -1,0 +1,19 @@
+--- EXECUTION LOG: verify_s3_overwrite.py ---
+--- TIMESTAMP: 2025-12-11 09:52:37.170746 ---
+STDOUT:
+TEST: S3 Overwrite Protection (Manual Verification Automation)
+============================================================
+1. Attempting First Upload (New File)...
+   SUCCESS: First upload proceeded.
+
+2. Attempting Overwrite (Same Path)...
+CRITICAL: Overwrite attempt blocked on ticks/2025/12/25/TEST_SYM_100000.json
+   SUCCESS: Overwrite BLOCKED. Caught expected error: CRITICAL: Overwrite attempt blocked on ticks/2025/12/25/TEST_SYM_100000.json
+
+3. Verifying Audit Log...
+   [Log Content]: 2025-12-25 10:00:00 CRITICAL: Overwrite attempt blocked on ticks/2025/12/25/TEST_SYM_100000.json
+   SUCCESS: Security event logged.
+
+VERIFICATION COMPLETE: S3 Overwrite Protection Verified.
+
+STDERR:

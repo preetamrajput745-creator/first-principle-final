@@ -1,0 +1,51 @@
+
+# ==========================================
+# SECRET ROTATION WORKFLOW (MANDATORY)
+# ==========================================
+
+OBJECTIVE:
+Zero-Downtime rotation of 'broker_keys' used by the Execution Service.
+Ensures new keys are propagated and old keys remain valid during transition if backend supports it (or dual-key config).
+
+WORKFLOW STEPS:
+------------------------------------------
+
+1. PREPARATION (Admin/CI)
+   - Generate new API Key Pair at Exchange (e.g., Binance).
+   - Verify new key validity separately.
+
+2. INJECTION (Admin/Authorized User)
+   - Login to Vault as 'execution-writer' (or Admin).
+   - Write new key to 'antigravity/data/execution/broker_keys/binance'.
+   - KV v2 automatically versions the secret (e.g., v1 -> v2).
+   - STRUCTURE:
+     {
+       "api_key": "NEW_KEY_VALUE",
+       "api_secret": "NEW_SECRET_VALUE",
+       "valid_from": "<TIMESTAMP>",
+       "previous_version": { 
+           "api_key": "OLD_KEY", 
+           "valid_until": "<TIMESTAMP + 1h>" 
+       }
+     }
+
+3. PROPAGATION (Execution Service)
+   - Service configured with 'vault-agent-injector'.
+   - Agent detects change in Vault path (watcher or polling).
+   - Agent updates local secret file at `/vault/secrets/broker_keys`.
+   - App (Execution Svc) detects file change (fsnotify) OR restarts to reload.
+
+4. VERIFICATION (Automated)
+   - Run 'Health Check' using new key.
+   - If Success: Mark rotation complete.
+   - If Fail: Alert and rollback to 'previous_version'.
+
+5. CLEANUP
+   - Revoke OLD key at Exchange after 'valid_until' expires.
+   - (Optional) Delete old version data from Vault if strictly required (KV v2 keeps history).
+
+NO DOWNTIME GUARANTEE:
+- The structure containing 'previous_version' allows the app to fallback instantly if new key fails, or handle in-flight requests with old key if Exchange supports it.
+
+TEST LOGS (Simulation):
+- See infra/vault/evidence/vault_audit.log for rotation event.

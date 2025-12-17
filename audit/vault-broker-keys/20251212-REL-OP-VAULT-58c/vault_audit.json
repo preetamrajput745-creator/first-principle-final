@@ -1,0 +1,74 @@
+[
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "detection-pod",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Identity not verified for live access",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "monitoring-pod",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Identity not verified for live access",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "dev-pod",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Identity not verified for live access",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "ci-runner",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Identity not verified for live access",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "oncall-pod",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Identity not verified for live access",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "execution-engine",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Conditions Failed: InvalidTOTP, InvalidPreLiveGate",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "execution-engine",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Conditions Failed: InvalidPreLiveGate",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "execution-engine",
+    "path": "secrets/broker/live/api-key",
+    "result": "DENY",
+    "reason": "Conditions Failed: InvalidTOTP",
+    "actor_ip": "10.0.x.x"
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:56:16.518268",
+    "actor": "execution-engine",
+    "path": "secrets/broker/live/api-key",
+    "result": "ALLOW",
+    "reason": "TOTP+PreLiveGate Verified",
+    "actor_ip": "10.0.x.x"
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "event_id": "ac9e883a-ae50-42ef-898f-b84dc756f16e",
+  "timestamp_utc": "2025-12-11T00:12:36.906132",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "PnL Tester",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Breach",
+  "notes": "ID: 04fb1ae9-f2ac-47c7-9754-c0cf7a2dd4b7",
+  "signed_hash": "7f6999bcf2f53397817b9002e74cc51244c6eb235454d7281cde8f2999a4ba4e",
+  "evidence_link": "audit/safety/safety/ac9e883a-ae50-42ef-898f-b84dc756f16e.json"
+}

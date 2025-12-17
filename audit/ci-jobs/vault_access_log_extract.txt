@@ -1,0 +1,5 @@
+Timestamp,Actor,Action,Path,Access
+2025-12-11T12:00:01Z,top-ci-runner,read,secret/data/ci/db-creds,ALLOW
+2025-12-11T12:00:02Z,top-ci-runner,read,secret/data/ci/kafka-keys,ALLOW
+2025-12-11T12:00:05Z,developer-bob,read,secret/data/prod/keys,DENY
+2025-12-11T12:02:10Z,top-ci-runner,read,secret/data/staging/api-key,ALLOW

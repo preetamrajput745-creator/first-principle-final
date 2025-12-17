@@ -1,0 +1,5 @@
+{
+  "/healthz": 200,
+  "/api/v1/status": 503,
+  "/metrics": 200
+}

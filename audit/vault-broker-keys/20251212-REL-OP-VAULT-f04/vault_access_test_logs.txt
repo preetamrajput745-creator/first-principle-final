@@ -1,0 +1,9 @@
+Test: detection-pod attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: monitoring-pod attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: dev-pod attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: ci-runner attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: oncall-pod attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: execution-engine attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: execution-engine attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: execution-engine attempt -> Got 403 (AccessDenied). Expected 403. Result: PASS
+Test: execution-engine attempt -> Got 200 (SecretValueUnwrapped). Expected 200. Result: PASS

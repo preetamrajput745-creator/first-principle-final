@@ -1,0 +1,25 @@
+{
+  "trace_id": "34470",
+  "spans": [
+    {
+      "service": "ingest",
+      "latency_ms": 33.86360026029503,
+      "timestamp": "2025-12-12T05:43:21.775507"
+    },
+    {
+      "service": "bar_builder",
+      "latency_ms": 36.060172125695345,
+      "timestamp": "2025-12-12T05:43:21.775507"
+    },
+    {
+      "service": "feature_store",
+      "latency_ms": 21.995826745631447,
+      "timestamp": "2025-12-12T05:43:21.775507"
+    },
+    {
+      "service": "signal_engine",
+      "latency_ms": 25.586129787135,
+      "timestamp": "2025-12-12T05:43:21.775507"
+    }
+  ]
+}

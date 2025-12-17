@@ -1,0 +1,11 @@
+{
+  "event_id": "4dee05b8-6afb-423d-b937-c611a166848c",
+  "timestamp_utc": "2025-12-12T05:26:13.388231",
+  "actor": "alice_owner",
+  "actor_role": "owner",
+  "action": "signoff_promotion",
+  "target_id": "PROMO-99",
+  "checklist_hash": "hash123",
+  "mfa_verified": true,
+  "signed_hash": "05edb5a976b8af09b093eb823ef67b27b3bfd9273b8c64d7fd8bd4a8b951368a"
+}

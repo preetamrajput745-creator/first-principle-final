@@ -1,0 +1,17 @@
+{
+  "event_id": "09132df3-e1f3-485b-98b0-b17887395130",
+  "timestamp_utc": "2025-12-12T05:42:37.582934",
+  "actor": "operator_dave",
+  "actor_role": "operator",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "3a48f917-9e07-4af5-911f-66d10d06252a",
+  "change_type": "update",
+  "old_value": "{\"api_key\": \"SHA256:e1db4ea1de51d89ed52b1aa45f4dace5152effc9d7813e762ff7a0b90069bb98\", \"public_id\": \"ok\"}",
+  "new_value": "{\"risk\": \"high\"}",
+  "change_context": "ui",
+  "justification": "High risk increase",
+  "status": "pending",
+  "notes": null,
+  "signed_hash": "e21d852131a5d7f793bfe76cd92c55d655b3eca6539aab1edd33978ec1282413"
+}

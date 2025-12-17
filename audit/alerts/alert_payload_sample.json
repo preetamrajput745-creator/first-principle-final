@@ -1,0 +1,12 @@
+{
+  "status": "firing",
+  "labels": {
+    "alertname": "SlippageDeltaCritical",
+    "severity": "critical",
+    "device": "staging-execution"
+  },
+  "annotations": {
+    "summary": "CRITICAL: High Slippage Delta (>50%)"
+  },
+  "startsAt": "2025-12-11T09:52:52.079200"
+}

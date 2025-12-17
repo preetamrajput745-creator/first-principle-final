@@ -1,0 +1,684 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>System Status Snapshot - 2025-12-11 12:35:53.338334</title>
+        <style>
+            body { font-family: sans-serif; background: #f0f0f0; padding: 20px; }
+            .card { background: white; padding: 15px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            h2 { border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+            table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 0.9em; }
+            th { background-color: #f8f9fa; }
+            .status-OPEN { color: red; font-weight: bold; }
+            .status-CLOSED { color: green; font-weight: bold; }
+        </style>
+    </head>
+    <body>
+        <h1>Antigravity System Snapshot</h1>
+        <p>Generated: 2025-12-11T12:35:53.338334 UTC</p>
+        
+        <div class="card">
+            <h2>Circuit Breaker Status (Safety Panel)</h2>
+            <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>breaker_id</th>
+      <th>scope</th>
+      <th>target</th>
+      <th>state</th>
+      <th>last_changed_at</th>
+      <th>last_changed_by</th>
+      <th>reason</th>
+      <th>recovery_config</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>aa75f3555a444879bc55fd8f24166dce</td>
+      <td>test-breaker-1</td>
+      <td>component</td>
+      <td>execution</td>
+      <td>DISABLED</td>
+      <td>2025-12-11 12:35:46.707275</td>
+      <td>safety-admin:unknown</td>
+      <td>Maintenance</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>0626625b92a0488dac82e97311417f9d</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:35:51.874004</td>
+      <td>system</td>
+      <td>Critical Slippage Alert Action</td>
+      <td>{}</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <div class="card">
+            <h2>Recent Signals (Signal Flow)</h2>
+            <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>automation_id</th>
+      <th>symbol</th>
+      <th>timestamp</th>
+      <th>score</th>
+      <th>payload</th>
+      <th>raw_event_location</th>
+      <th>status</th>
+      <th>estimated_slippage</th>
+      <th>execution_price</th>
+      <th>l1_snapshot</th>
+      <th>l2_snapshot_path</th>
+      <th>latency_ms</th>
+      <th>clock_drift_ms</th>
+      <th>realized_slippage</th>
+      <th>created_at</th>
+      <th>regime_volatility</th>
+      <th>regime_session</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>60c879c91d364843ae107f97713123d5</td>
+      <td>97395b87ce9f4159aaaac20abe9ee74b</td>
+      <td>TIME_NORM_TEST</td>
+      <td>2025-12-11 12:35:19.157750</td>
+      <td>0.99</td>
+      <td>{"action": "BUY"}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>12.5</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:19</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>fc41cc3ab9834d5caaed8e6c81b13f8b</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:35:13.966052</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>bbe6570c109542c5aa85615c645f7402</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:34:59.362996</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>515ee8f87d4842119a04139e2ea0896d</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:34:32.505599</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>9e28467b8cab4c2dacdf39a802b25e72</td>
+      <td>97395b87ce9f4159aaaac20abe9ee74b</td>
+      <td>TIME_NORM_TEST</td>
+      <td>2025-12-11 12:34:20.560825</td>
+      <td>0.99</td>
+      <td>{"action": "BUY"}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>12.5</td>
+      <td>None</td>
+      <td>2025-12-11 12:34:20</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>e6e9fa17b84249a1a096d3d4dc160e38</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:32:34.641120</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>9b2be4ca36dc4bdd8c7e1a475488b93f</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:32:21.487866</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>a8bd5bb04b534409a292b4d818588c4a</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:29:45.129060</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>3fa999c3786f40c38a2dabbded3cda22</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:29:14.913630</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+    <tr>
+      <td>312430129d264976b54b06c12b3520bc</td>
+      <td>None</td>
+      <td>SIGNAL_TEST</td>
+      <td>2025-12-11 12:28:47.755557</td>
+      <td>0.15</td>
+      <td>{}</td>
+      <td>None</td>
+      <td>new</td>
+      <td>0.0</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>2025-12-11 12:35:52</td>
+      <td>normal</td>
+      <td>mid</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <div class="card">
+            <h2>Circuit Breaker Audit Log (Immutable Events)</h2>
+            <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>event_id</th>
+      <th>breaker_id</th>
+      <th>scope</th>
+      <th>target</th>
+      <th>old_state</th>
+      <th>new_state</th>
+      <th>timestamp_utc</th>
+      <th>changed_by</th>
+      <th>changed_by_id</th>
+      <th>actor_ip</th>
+      <th>reason</th>
+      <th>change_context</th>
+      <th>related_metrics</th>
+      <th>evidence_link</th>
+      <th>signed_hash</th>
+      <th>notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>429f8aa0cb5b4e3bb2776b6786507d46</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:35:51.874004</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Critical Slippage Alert Action</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/429f8aa0-cb5b-4e3b-b277-6b6786507d46.json</td>
+      <td>e8a8b31caf5c3a2aaa418f80110ff1e7b7004357efd7895f870e29e4b0735d37</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+    <tr>
+      <td>c40cbdf289404cb49483ab4c1647cc6b</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:35:48.973869</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Signal rate exceeded (52/0/hr)</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/c40cbdf2-8940-4cb4-9483-ab4c1647cc6b.json</td>
+      <td>90528ba592ccbc1adccb8c2b18bd1b966a304078a5e9fcd3ab7a3dcb03efd001</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+    <tr>
+      <td>b71ad8d2cc734b85826d31b0bf3a859a</td>
+      <td>test-breaker-1</td>
+      <td>component</td>
+      <td>execution</td>
+      <td>HALF_OPEN</td>
+      <td>DISABLED</td>
+      <td>2025-12-11 12:35:46.707275</td>
+      <td>safety-admin:unknown</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Maintenance</td>
+      <td>api</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/b71ad8d2-cc73-4b85-826d-31b0bf3a859a.json</td>
+      <td>fbfd14f70d251b9a840f10af4fe81e27f8aa165895f8d2980c7ad0fd38788d5f</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>7cc01842a0364cd2b4bf15a59afc9b17</td>
+      <td>test-breaker-1</td>
+      <td>component</td>
+      <td>execution</td>
+      <td>OPEN</td>
+      <td>HALF_OPEN</td>
+      <td>2025-12-11 12:35:40.386762</td>
+      <td>safety-admin:unknown</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Testing Recovery</td>
+      <td>api</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/7cc01842-a036-4cd2-b4bf-15a59afc9b17.json</td>
+      <td>f7702a12953c1ca2994a2a300ecd11e14f7f50adec2bb6fa1392246a5dba73b0</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>e8218e4822f24d56bca282b5e3b52e92</td>
+      <td>test-breaker-1</td>
+      <td>component</td>
+      <td>execution</td>
+      <td>CLOSED</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:35:32.092190</td>
+      <td>operator-act:test-user</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Synthetic Test Trip</td>
+      <td>api</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/e8218e48-22f2-4d56-bca2-82b5e3b52e92.json</td>
+      <td>991b17c3ad4ecc5bd8490a20f1825daec243e90ac021ce412618a58a0d1d459d</td>
+      <td>Automated verification</td>
+    </tr>
+    <tr>
+      <td>51bc6288f09740fb93bb7b43a8e6b441</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:35:23.240189</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Manual Admin Action</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/51bc6288-f097-40fb-93bb-7b43a8e6b441.json</td>
+      <td>16fff139a7a15b3c0c459b7f98b585f3209225e5bf51119590be1a95be9058aa</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+    <tr>
+      <td>1eba3329d24146668d4ab0915558c13b</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:34:23.344270</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Critical Slippage Alert Action</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/1eba3329-d241-4666-8d4a-b0915558c13b.json</td>
+      <td>93657c1e6ac4e738278ef9a598c57000f203a743955e1f42d6bf53a866510880</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+    <tr>
+      <td>2e98a4a8a89a47619613632d0dc2a7eb</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>CLOSED</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:34:22.576422</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Manual Admin Action</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/2e98a4a8-a89a-4761-9613-632d0dc2a7eb.json</td>
+      <td>4fd0a9160e91bc9d31d0bcb4a01d6b5e1ddddc365b41b53d75ac84ef6e85d6cb</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+    <tr>
+      <td>b044d19984fb4bb2a0064d83068a9359</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>CLOSED</td>
+      <td>2025-12-11 12:24:06.994937</td>
+      <td>safety-admin:unknown</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>reset</td>
+      <td>api</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/b044d199-84fb-4bb2-a006-4d83068a9359.json</td>
+      <td>6084294c1beeb5f0bf44806e61c2f53615211e3f10cb234656c6825fd16bd249</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>691d8c13eb3d4807aefb0db970d89a94</td>
+      <td>global</td>
+      <td>global</td>
+      <td>system</td>
+      <td>OPEN</td>
+      <td>OPEN</td>
+      <td>2025-12-11 12:24:02.809691</td>
+      <td>system</td>
+      <td>None</td>
+      <td>unknown</td>
+      <td>Signal rate exceeded (0/-1/hr)</td>
+      <td>rule</td>
+      <td>null</td>
+      <td>s3://antigravity-audit/local/circuit-breaker/circuit-breaker/691d8c13-eb3d-4807-aefb-0db970d89a94.json</td>
+      <td>c4ec7bf2be9a4c3dd4b296930bd0846b028cb41913bb644a03b43ecc09e47207</td>
+      <td>Auto-tripped by Risk Engine (Mistake #10)</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        
+        <div class="card">
+            <h2>Config Changelog (Governance)</h2>
+            <table border="1" class="dataframe table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>id</th>
+      <th>automation_id</th>
+      <th>user_id</th>
+      <th>old_config</th>
+      <th>new_config</th>
+      <th>change_reason</th>
+      <th>second_approver</th>
+      <th>ip_address</th>
+      <th>timestamp</th>
+      <th>actor_device</th>
+      <th>resource_type</th>
+      <th>change_context</th>
+      <th>evidence_link</th>
+      <th>signed_hash</th>
+      <th>change_type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>f69b054cd59f477e8c0499041b0aa0ac</td>
+      <td>75acec644c8e4b5d90171d49469af18a</td>
+      <td>983dad80c2814eef831037968c633d67</td>
+      <td>{"risk_level": "low", "weights": {"vol": 20}}</td>
+      <td>{"risk_level": "high", "weights": {"vol": 50}}</td>
+      <td>Admin UI: Adjusting weights for volatility</td>
+      <td>supervisor_01</td>
+      <td>None</td>
+      <td>2025-12-11 09:52:40.162154</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/f69b054c-d59f-477e-8c04-99041b0aa0ac.json</td>
+      <td>2c3128e51cef845809591e80cd13a6e253f5817f001fba3121df248cdf3b2668</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>e441f82047714e83a010c937d71c0af6</td>
+      <td>4c9733c8cdb84e43920284f572402f70</td>
+      <td>None</td>
+      <td>{"thresh": 0.5}</td>
+      <td>{"thresh": 0.8}</td>
+      <td>Optimizing for volatility</td>
+      <td>None</td>
+      <td>None</td>
+      <td>2025-12-11 00:14:17</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>None</td>
+      <td>None</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>0e0c8ae6de5a480cb4f984885a5f5cab</td>
+      <td>None</td>
+      <td>None</td>
+      <td>{"thresh": 0.5}</td>
+      <td>{"thresh": 0.8}</td>
+      <td>Emergency volatility fix</td>
+      <td>manager_bob</td>
+      <td>None</td>
+      <td>2025-12-11 00:14:16</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>None</td>
+      <td>None</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>dae348132fac47558c55cc324f1c2480</td>
+      <td>f14d6b9df3b2464d853dcf3cf09180c2</td>
+      <td>788703f256da41038bd279bb7b31d5a3</td>
+      <td>{"param": 1}</td>
+      <td>{"param": 2}</td>
+      <td>Testing Audit Log</td>
+      <td>Approver_Bob</td>
+      <td>None</td>
+      <td>2025-12-11 00:13:08.206366</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/dae34813-2fac-4755-8c55-cc324f1c2480.json</td>
+      <td>a7905df6c74cf515070e7cb192111bb761e137e6da5018af57dd6868b637e371</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>6e1da1e0b8a349f49e38f23e452c93a4</td>
+      <td>acae19794e5348acbff60b937dbebddf</td>
+      <td>982e4ef46ae44b1d80e69f95f4e82f60</td>
+      <td>{"risk": "low"}</td>
+      <td>{"risk": "high", "stop_loss": 0.05}</td>
+      <td>QA Manual Update</td>
+      <td>QA_LEAD</td>
+      <td>192.168.1.100</td>
+      <td>2025-12-11 00:12:30.921158</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/6e1da1e0-b8a3-49f4-9e38-f23e452c93a4.json</td>
+      <td>7f5115856f3802411304d2144d42923fd17ceeacb9336834ab69f3110a18c593</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>930adc572b4b4e5d812cf4a89a9ff92d</td>
+      <td>be1a4b3c56b844a585efdc8ecd6a4894</td>
+      <td>cacc19b83c9f49d1acb1b845e0c48c82</td>
+      <td>{"risk_level": "low"}</td>
+      <td>{"risk_level": "high", "leverage": 2}</td>
+      <td>Increasing risk for high volatility session</td>
+      <td>AUDIT_TESTER</td>
+      <td>None</td>
+      <td>2025-12-11 00:12:15.316573</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/930adc57-2b4b-4e5d-812c-f4a89a9ff92d.json</td>
+      <td>5cbae40ceaa1d7f27432e04eedd31e2567df1646dccaa43d5b2b6bc5996a2a0f</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>17d04aa3f0d0492598c98e42bd80a176</td>
+      <td>234ddde0dccd4135a6e9751e55cb81b6</td>
+      <td>d0ac07e0ef9d4c25af8aa87bc32655d4</td>
+      <td>{"leverage": 10, "risk_mode": "aggressive"}</td>
+      <td>{"hacked": true}</td>
+      <td>Emergency override</td>
+      <td>HACKER_BUDDY</td>
+      <td>10.0.0.666</td>
+      <td>2025-12-11 00:11:00.607992</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/17d04aa3-f0d0-4925-98c9-8e42bd80a176.json</td>
+      <td>93e254c7b9a81c0248dac3869b2938bfed14ac57787ee40bfa224758f59edf92</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>68f4c5d531e44c41a264b9d763206b14</td>
+      <td>234ddde0dccd4135a6e9751e55cb81b6</td>
+      <td>778abda84b6d4f8480af708a4019c47a</td>
+      <td>{"leverage": 1}</td>
+      <td>{"leverage": 10, "risk_mode": "aggressive"}</td>
+      <td>Increasing leverage for news event</td>
+      <td>AUDIT_VERIFIER</td>
+      <td>192.168.1.10</td>
+      <td>2025-12-11 00:10:56.090157</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/68f4c5d5-31e4-4c41-a264-b9d763206b14.json</td>
+      <td>779846878992a77c1b6b4f158c5aa61b55f033a05ff71c65f036ed286547756e</td>
+      <td>update</td>
+    </tr>
+    <tr>
+      <td>e259121140704e308e47d3b69f28904f</td>
+      <td>9f598dd581934c21b0f482e3655e1bb2</td>
+      <td>None</td>
+      <td>{"param": 1}</td>
+      <td>{"param": 3}</td>
+      <td>Critical Hotfix</td>
+      <td>VP_Trading</td>
+      <td>None</td>
+      <td>2023-10-22 10:00:00.000000</td>
+      <td>None</td>
+      <td>automation</td>
+      <td>api</td>
+      <td>s3://antigravity-audit/2025-12-11/audit-panel/e2591211-4070-4e30-8e47-d3b69f28904f.json</td>
+      <td>53406e1e81d86ace7ae0dc43cec153114525991b09ed8413ce0cbd9873118180</td>
+      <td>update</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+
+    </body>
+    </html>
+    

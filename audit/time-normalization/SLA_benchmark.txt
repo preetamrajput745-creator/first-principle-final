@@ -1,0 +1,6 @@
+SLA Benchmark Report
+Total Requests: 505
+P95 Latency: 0.000ms (Target: <20ms)
+Avg Latency: 0.113ms
+Max Latency: 57.109ms
+Status: PASS

@@ -1,0 +1,19 @@
+groups:
+  - name: HostClockDrift
+    rules:
+      - alert: HostClockDrift
+        expr: abs(node_timex_offset_seconds) > 0.01
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Host clock drift > 10ms"
+          
+      - alert: HostClockDriftLarge
+        expr: abs(node_timex_offset_seconds) > 300
+        for: 5m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Host clock drift > 5m (Immediate Fix Required)"
+    

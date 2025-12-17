@@ -1,0 +1,7 @@
+apiVersion: 1
+providers:
+- folder: Antigravity
+  name: Antigravity
+  options:
+    path: D:\PREETAM RAJPUT\first pincipal finnnal\grafana
+  type: file

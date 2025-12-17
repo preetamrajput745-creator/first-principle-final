@@ -1,0 +1,16 @@
+{
+  "event_id": "619bce07-4768-4771-9805-7aa73233c88d",
+  "timestamp_utc": "2025-12-11T00:12:09.787874",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Audit Test Bot",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Manual Admin Action",
+  "notes": "ID: 234ddde0-dccd-4135-a6e9-751e55cb81b6",
+  "signed_hash": "b882b5b45259a85eca0d058279afb51cf4a333df5974e75b00ceeefd52c15317",
+  "evidence_link": "audit/safety/safety/619bce07-4768-4771-9805-7aa73233c88d.json"
+}

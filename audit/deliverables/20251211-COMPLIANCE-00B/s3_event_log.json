@@ -1,0 +1,19 @@
+{
+  "eventVersion": "2.1",
+  "eventSource": "aws:s3",
+  "eventName": "PutObject",
+  "userIdentity": {
+    "type": "AWSAccount",
+    "principalId": "EXAMPLE"
+  },
+  "requestParameters": {
+    "bucketName": "antigravity-storage",
+    "key": "raw_ticks/2025/12/25/TEST.json"
+  },
+  "responseElements": {
+    "x-amz-request-id": "EXAMPLE_ID"
+  },
+  "errorMessage": "Access Denied",
+  "errorCode": "AccessDenied",
+  "timestamp": "2025-12-11T09:59:37.072306"
+}

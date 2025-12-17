@@ -1,0 +1,128 @@
+--- EXECUTION LOG: tests/verify_safety_panel.py ---
+--- TIMESTAMP: 2025-12-11 09:52:51.738102 ---
+STDOUT:
+CIRCUIT BREAKER: Automation SafetyTestBot PAUSED due to risk breach.
+PAGERDUTY_ALERT: Automation SafetyTestBot PAUSED due to risk breach.
+SAFETY LOG [DB]: auto_pause on automation (ID: c5abbe7d-d2da-4097-bdd5-6ad9852600a7)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\c5abbe7d-d2da-4097-bdd5-6ad9852600a7.json
+   PASS: Circuit Breaker successfully logged auto_pause event.
+
+[TEST] Generating Safety Audit Pack...
+   PASS: DB Dump created at D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\safety-panel\safety_db_dump.csv
+   PASS: Summary created.
+
+[TEST] Safety Logging Flow (DB + S3 + Hash)...
+SAFETY LOG [DB]: test_event on test_component (ID: 2adb9154-d5cd-41b2-9ab5-c11c9f570c30)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\2adb9154-d5cd-41b2-9ab5-c11c9f570c30.json
+   PASS: DB Record Verified (ID: 2adb9154-d5cd-41b2-9ab5-c11c9f570c30)
+   PASS: S3/Local File Verified (Path: D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\safety-panel\safety\2adb9154-d5cd-41b2-9ab5-c11c9f570c30.json)
+
+[TEST] Stress Test (50 events)...
+SAFETY LOG [DB]: spam on stress_test (ID: 1dfcefdd-5955-4bcd-a803-6cb708a4bcac)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\1dfcefdd-5955-4bcd-a803-6cb708a4bcac.json
+SAFETY LOG [DB]: spam on stress_test (ID: d912a9ae-cc02-4795-90a1-58b922ae0eb0)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\d912a9ae-cc02-4795-90a1-58b922ae0eb0.json
+SAFETY LOG [DB]: spam on stress_test (ID: 4a979b5e-cafa-4526-af29-c405cbfcf0b6)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\4a979b5e-cafa-4526-af29-c405cbfcf0b6.json
+SAFETY LOG [DB]: spam on stress_test (ID: 81d6af9c-b86b-494c-b70b-a94f91511d91)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\81d6af9c-b86b-494c-b70b-a94f91511d91.json
+SAFETY LOG [DB]: spam on stress_test (ID: b2438324-e52c-4588-a107-cac7bfc0ee27)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\b2438324-e52c-4588-a107-cac7bfc0ee27.json
+SAFETY LOG [DB]: spam on stress_test (ID: 82b95e32-c4eb-4438-aaa6-9d4877deac5e)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\82b95e32-c4eb-4438-aaa6-9d4877deac5e.json
+SAFETY LOG [DB]: spam on stress_test (ID: 1d6e2715-d850-4c63-a838-e84873603545)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\1d6e2715-d850-4c63-a838-e84873603545.json
+SAFETY LOG [DB]: spam on stress_test (ID: 4d0225b9-0098-406b-a78f-efc26f0f55c3)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\4d0225b9-0098-406b-a78f-efc26f0f55c3.json
+SAFETY LOG [DB]: spam on stress_test (ID: acb68352-8756-4735-aae4-d6c7d5db13b9)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\acb68352-8756-4735-aae4-d6c7d5db13b9.json
+SAFETY LOG [DB]: spam on stress_test (ID: 63556ea6-28a9-41d3-97e0-84e4b94dd99d)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\63556ea6-28a9-41d3-97e0-84e4b94dd99d.json
+SAFETY LOG [DB]: spam on stress_test (ID: 6e54293f-c44d-4e52-983d-5f95e21fd997)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\6e54293f-c44d-4e52-983d-5f95e21fd997.json
+SAFETY LOG [DB]: spam on stress_test (ID: e344c20a-0885-4955-80dd-ab8fdf9917f3)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e344c20a-0885-4955-80dd-ab8fdf9917f3.json
+SAFETY LOG [DB]: spam on stress_test (ID: a0b5ab94-3c07-4136-93fb-e9b299a8af21)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\a0b5ab94-3c07-4136-93fb-e9b299a8af21.json
+SAFETY LOG [DB]: spam on stress_test (ID: 55ce3fa6-dd0c-442f-b40c-b5b4d2c518af)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\55ce3fa6-dd0c-442f-b40c-b5b4d2c518af.json
+SAFETY LOG [DB]: spam on stress_test (ID: cb5ab891-92ad-48ba-a54f-331718f9c702)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\cb5ab891-92ad-48ba-a54f-331718f9c702.json
+SAFETY LOG [DB]: spam on stress_test (ID: 3a9338d7-1a7c-465f-b124-145b7fa03bbc)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\3a9338d7-1a7c-465f-b124-145b7fa03bbc.json
+SAFETY LOG [DB]: spam on stress_test (ID: d9eee804-cfda-4430-bc96-cdd393bede74)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\d9eee804-cfda-4430-bc96-cdd393bede74.json
+SAFETY LOG [DB]: spam on stress_test (ID: 048f7a7c-c2b5-4914-adaa-c930b5f80911)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\048f7a7c-c2b5-4914-adaa-c930b5f80911.json
+SAFETY LOG [DB]: spam on stress_test (ID: e0744e73-c996-4566-a498-2a92c907b198)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e0744e73-c996-4566-a498-2a92c907b198.json
+SAFETY LOG [DB]: spam on stress_test (ID: 5c85111d-5063-46d0-abee-4b6116150a0b)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\5c85111d-5063-46d0-abee-4b6116150a0b.json
+SAFETY LOG [DB]: spam on stress_test (ID: 089c109d-6534-4391-afe5-6f48adc1e7cf)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\089c109d-6534-4391-afe5-6f48adc1e7cf.json
+SAFETY LOG [DB]: spam on stress_test (ID: 5ff4d778-1b1d-4ad3-b890-d61117f94d5f)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\5ff4d778-1b1d-4ad3-b890-d61117f94d5f.json
+SAFETY LOG [DB]: spam on stress_test (ID: ae82d53a-b6f0-4eb1-bde1-dad6a592975b)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\ae82d53a-b6f0-4eb1-bde1-dad6a592975b.json
+SAFETY LOG [DB]: spam on stress_test (ID: 0bb7ed13-1598-413e-aed0-ce339f4450e7)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\0bb7ed13-1598-413e-aed0-ce339f4450e7.json
+SAFETY LOG [DB]: spam on stress_test (ID: 1303126e-3f56-45ed-8210-54df34d8b5b9)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\1303126e-3f56-45ed-8210-54df34d8b5b9.json
+SAFETY LOG [DB]: spam on stress_test (ID: fa5702f4-8837-4c7f-bfc3-b28983d7cb14)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\fa5702f4-8837-4c7f-bfc3-b28983d7cb14.json
+SAFETY LOG [DB]: spam on stress_test (ID: 649654bc-adc9-43f6-8278-89542cc25d04)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\649654bc-adc9-43f6-8278-89542cc25d04.json
+SAFETY LOG [DB]: spam on stress_test (ID: 192a7451-1913-4d0f-9254-eccd0bdaf8a0)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\192a7451-1913-4d0f-9254-eccd0bdaf8a0.json
+SAFETY LOG [DB]: spam on stress_test (ID: 7694a6ca-f987-4f20-8256-1ee06528f22e)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\7694a6ca-f987-4f20-8256-1ee06528f22e.json
+SAFETY LOG [DB]: spam on stress_test (ID: df036e1b-99e2-452b-a23c-8b000c05b829)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\df036e1b-99e2-452b-a23c-8b000c05b829.json
+SAFETY LOG [DB]: spam on stress_test (ID: e3c55e74-73fb-4a5e-86fb-2e93b2a5b516)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e3c55e74-73fb-4a5e-86fb-2e93b2a5b516.json
+SAFETY LOG [DB]: spam on stress_test (ID: 1cd736f5-2420-4ff3-924d-b8ad59583e8b)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\1cd736f5-2420-4ff3-924d-b8ad59583e8b.json
+SAFETY LOG [DB]: spam on stress_test (ID: f72b1a94-23c3-4b72-8314-c78da0166733)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\f72b1a94-23c3-4b72-8314-c78da0166733.json
+SAFETY LOG [DB]: spam on stress_test (ID: 1504ad7e-86e3-487c-80f6-7e5b41cadc75)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\1504ad7e-86e3-487c-80f6-7e5b41cadc75.json
+SAFETY LOG [DB]: spam on stress_test (ID: 9f9dfd48-aa7c-4c91-94c0-34213ea349eb)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\9f9dfd48-aa7c-4c91-94c0-34213ea349eb.json
+SAFETY LOG [DB]: spam on stress_test (ID: 5357b055-c10a-4548-b3a4-7be44fd9982f)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\5357b055-c10a-4548-b3a4-7be44fd9982f.json
+SAFETY LOG [DB]: spam on stress_test (ID: 5c184573-cba3-4669-b899-7972ad9efafa)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\5c184573-cba3-4669-b899-7972ad9efafa.json
+SAFETY LOG [DB]: spam on stress_test (ID: 4e2ede45-aaa6-4509-b6f7-08bf12d4de6c)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\4e2ede45-aaa6-4509-b6f7-08bf12d4de6c.json
+SAFETY LOG [DB]: spam on stress_test (ID: ed2f7187-2c91-45bb-a5b2-1a10a1fd7bc5)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\ed2f7187-2c91-45bb-a5b2-1a10a1fd7bc5.json
+SAFETY LOG [DB]: spam on stress_test (ID: 27110e4d-8b1f-41b8-9e77-6388564a476f)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\27110e4d-8b1f-41b8-9e77-6388564a476f.json
+SAFETY LOG [DB]: spam on stress_test (ID: c629b44f-10c7-4c6a-b666-4f7d137c7f3c)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\c629b44f-10c7-4c6a-b666-4f7d137c7f3c.json
+SAFETY LOG [DB]: spam on stress_test (ID: 4c4558c0-20c6-4c15-aff3-4aaffb8b812c)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\4c4558c0-20c6-4c15-aff3-4aaffb8b812c.json
+SAFETY LOG [DB]: spam on stress_test (ID: dbd94fca-1ca4-4315-89f4-cf845f982f9f)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\dbd94fca-1ca4-4315-89f4-cf845f982f9f.json
+SAFETY LOG [DB]: spam on stress_test (ID: e571cff8-7903-404e-a011-52c0591dab73)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e571cff8-7903-404e-a011-52c0591dab73.json
+SAFETY LOG [DB]: spam on stress_test (ID: e05b4579-4048-4ffe-8753-3c5862da6f75)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e05b4579-4048-4ffe-8753-3c5862da6f75.json
+SAFETY LOG [DB]: spam on stress_test (ID: f473ee0a-d60c-4515-965a-afe226090970)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\f473ee0a-d60c-4515-965a-afe226090970.json
+SAFETY LOG [DB]: spam on stress_test (ID: 55b82e87-5705-4647-b179-a147f9d499dc)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\55b82e87-5705-4647-b179-a147f9d499dc.json
+SAFETY LOG [DB]: spam on stress_test (ID: e82c4063-2c03-4580-abc3-988fc9352d42)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\e82c4063-2c03-4580-abc3-988fc9352d42.json
+SAFETY LOG [DB]: spam on stress_test (ID: c4d84d8b-645b-488d-872c-b6dfeeac708c)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\c4d84d8b-645b-488d-872c-b6dfeeac708c.json
+SAFETY LOG [DB]: spam on stress_test (ID: 4413e817-6803-4685-a7c5-bef6371e848d)
+SAFETY LOG [S3-Mock]: Written to D:\PREETAM RAJPUT\first pincipal finnnal\audit\safety-panel\safety\4413e817-6803-4685-a7c5-bef6371e848d.json
+   PASS: Logged 50 events in 5.21s (9.6 events/s)
+
+STDERR:
+....
+----------------------------------------------------------------------
+Ran 4 tests in 5.642s
+
+OK

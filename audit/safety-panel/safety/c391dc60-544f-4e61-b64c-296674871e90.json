@@ -1,0 +1,16 @@
+{
+  "event_id": "c391dc60-544f-4e61-b64c-296674871e90",
+  "timestamp_utc": "2025-12-11T00:10:47.087919",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Gating API Bot",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Alert Action",
+  "notes": "ID: 2912c78c-d135-4c0c-b422-3eb5f0f619e6",
+  "signed_hash": "3b0e9a51ef71b0b114c3ffb6bcd2118cef4becdeada08dd8ae9b7d55527ac057",
+  "evidence_link": "audit/safety/safety/c391dc60-544f-4e61-b64c-296674871e90.json"
+}

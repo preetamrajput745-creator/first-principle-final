@@ -1,0 +1,21 @@
+{
+  "event_id": "84558db9-a1b1-490d-b45c-bbe9989ab2f1",
+  "timestamp_utc": "2025-12-11T11:36:48.376688",
+  "actor": "bot_43",
+  "actor_id": null,
+  "actor_role": "operator",
+  "actor_ip": null,
+  "actor_device": "unknown_device",
+  "ui_page": null,
+  "resource_type": "config",
+  "resource_id": "36d379fa-c258-4ed6-a616-9f16fca29976",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"v\": 42}",
+  "new_value": "{\"v\": 43}",
+  "change_context": "api",
+  "justification": "Load 43",
+  "notes": null,
+  "status": "committed",
+  "signed_hash": "69454d30c02d2bd828e3e9e0066bd6c29e3403202282b3b83bca46a802570554"
+}

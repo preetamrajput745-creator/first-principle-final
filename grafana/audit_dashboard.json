@@ -1,0 +1,46 @@
+[
+    {
+        "id": null,
+        "title": "Audit & Security Panel",
+        "timezone": "browser",
+        "panels": [
+            {
+                "title": "Live Audit Stream (Last 24h)",
+                "type": "logs",
+                "targets": [
+                    {
+                        "expr": "{job=\"audit-logs\"}"
+                    }
+                ]
+            },
+            {
+                "title": "Change Volume per Hour",
+                "type": "barchart",
+                "targets": [
+                    {
+                        "expr": "sum(increase(audit_changes_total[1h]))"
+                    }
+                ]
+            },
+            {
+                "title": "Suspicious Events / Security Alerts",
+                "type": "table",
+                "targets": [
+                    {
+                        "expr": "ALERTS{severity=~\"critical|high\", alertstate=\"firing\"}"
+                    }
+                ]
+            },
+            {
+                "title": "Most Active Actors",
+                "type": "piechart",
+                "targets": [
+                    {
+                        "expr": "topk(5, sum(rate(audit_changes_total[24h])) by (actor))"
+                    }
+                ]
+            }
+        ],
+        "refresh": "10s"
+    }
+]

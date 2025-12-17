@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Invalid TOTP",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Reason required",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": " unauthorized role",
+    "gate_remaining": 1
+  }
+]

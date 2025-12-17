@@ -1,0 +1,25 @@
+{
+  "total_slippage_cost": -357.60400000000004,
+  "entries": [
+    {
+      "fill_id": "FILL-6a74c231",
+      "slippage_cost": -36.0
+    },
+    {
+      "fill_id": "FILL-8e34561c",
+      "slippage_cost": -58.827999999999996
+    },
+    {
+      "fill_id": "FILL-23baca3a",
+      "slippage_cost": -46.242000000000004
+    },
+    {
+      "fill_id": "FILL-7cd5dc84",
+      "slippage_cost": -78.304
+    },
+    {
+      "fill_id": "FILL-d9fa9330",
+      "slippage_cost": -138.23000000000002
+    }
+  ]
+}

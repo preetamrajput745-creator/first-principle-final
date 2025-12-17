@@ -1,0 +1,28 @@
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: owner-sa
+  namespace: antigravity
+---
+# Authentication Binding
+# Maps K8s ServiceAccount 'owner-sa' to Vault Role 'owner-role'
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: owner-vault-binding
+subjects:
+- kind: ServiceAccount
+  name: owner-sa
+  namespace: antigravity
+roleRef:
+  kind: ClusterRole
+  name: system:auth-delegator
+  apiGroup: rbac.authorization.k8s.io
+---
+# Logic Binding in Vault (Representation)
+# vault write auth/kubernetes/role/owner-role \
+#    bound_service_account_names=owner-sa \
+#    bound_service_account_namespaces=antigravity \
+#    policies=owner-policy,default \
+#    ttl=1h

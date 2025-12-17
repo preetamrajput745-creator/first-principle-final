@@ -1,0 +1,68 @@
+[
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "HeartbeatMissingCritical",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for HeartbeatMissingCritical"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  },
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "SignalRateSpike",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for SignalRateSpike"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  },
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "SlippageDeltaCritical",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for SlippageDeltaCritical"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  },
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "MissingL2Snapshot",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for MissingL2Snapshot"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  },
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "UnauthorizedConfigChangeSecurity",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for UnauthorizedConfigChangeSecurity"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  },
+  {
+    "status": "firing",
+    "labels": {
+      "alertname": "CircuitBreakerOpen",
+      "severity": "critical"
+    },
+    "annotations": {
+      "summary": "Synthetic Trigger for CircuitBreakerOpen"
+    },
+    "startsAt": "2025-12-11T12:23:09Z"
+  }
+]

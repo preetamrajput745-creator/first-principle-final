@@ -1,0 +1,12 @@
+[
+    {
+        "role": "ci-service-account",
+        "policies": [
+            "ci-read-secrets",
+            "registry-write",
+            "k8s-deploy-staging"
+        ],
+        "token_ttl": "1h",
+        "renewable": false
+    }
+]

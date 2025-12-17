@@ -1,0 +1,14 @@
+# Metric A: Simulated PnL (Cumulative)
+increase(simulated_pnl_total{instrument="$instrument"}[1h])
+
+# Metric B: Realized PnL (Cumulative)
+increase(realized_pnl_total{account="$account",instrument="$instrument"}[1h])
+
+# Metric C: Slippage per Trade (Rolling Avg)
+avg_over_time(trade_slippage{instrument="$instrument"}[1h])
+
+# Metric D: Slippage Delta (P95)
+histogram_quantile(0.95, sum(rate(trade_slippage_bucket[5m])) by (le, instrument))
+
+# Alert Query: Sim/Real Divergence
+abs(simulated_pnl_total - realized_pnl_total) / clamp_min(abs(simulated_pnl_total), 1)

@@ -1,0 +1,15 @@
+{
+  "event_id": "c37f2567-0994-4135-8c70-ab2f1f3ceda6",
+  "timestamp_utc": "2025-12-10T23:43:18.765363",
+  "actor": "cc28354c-e310-474e-a22e-35c1e2b9adb2",
+  "actor_ip": "192.168.1.10",
+  "resource_type": "config",
+  "resource_id": "cae7cd04-2631-4794-95ea-7f062b47e983",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"leverage\": 1}",
+  "new_value": "{\"leverage\": 10, \"risk_mode\": \"aggressive\"}",
+  "change_context": "api",
+  "reason": "Increasing leverage for news event",
+  "signed_hash": "5ddeabf0a8cd9bf83ac01ff4f856f37ddbceb9ebf9ad49ceaf6777655eeedaf1"
+}

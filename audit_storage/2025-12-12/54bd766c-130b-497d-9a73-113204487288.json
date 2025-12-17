@@ -1,0 +1,11 @@
+{
+  "event_id": "54bd766c-130b-497d-9a73-113204487288",
+  "timestamp_utc": "2025-12-12T05:26:13.383112",
+  "actor": "alice_owner",
+  "actor_role": "owner",
+  "action": "approve_policy",
+  "target_id": "POL-101",
+  "justification": "LGTM - Strategic Alignment",
+  "mfa_verified": true,
+  "signed_hash": "d395709ce5ed5c70bdb2545e0e286bb137825c4088aad009d85045afaa507c0b"
+}

@@ -1,0 +1,79 @@
+
+groups:
+  - name: SystemHealth
+    rules:
+      - alert: HeartbeatMissing
+        expr: (time() - system_last_heartbeat_timestamp_seconds) > 30
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "System Heartbeat Missing"
+          description: "Service has not emitted heartbeat for more than 30 seconds."
+
+      - alert: CircuitBreakerOpen
+        expr: circuit_breaker_status == 1
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Circuit Breaker TRIPPED"
+          description: "Trading halted due to circuit breaker trip."
+
+  - name: TradingSafety
+    rules:
+      - alert: HighSlippageDelta
+        expr: slippage_delta_percent > 50
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High Slippage Detected"
+          description: "Slippage delta > 50% detected."
+
+      - alert: SignalSpike
+        expr: rate(signals_processed_total[1h]) > (avg_over_time(signals_processed_total[24h]) * 3)
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Signal Volatility Spike"
+          description: "Signal rate is 3x higher than 24h baseline."
+
+      - alert: ExcessiveAutoOpens
+        expr: increase(circuit_breaker_auto_open_total[10m]) > 5
+        for: 0m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Unstable Circuit Breaker"
+          description: "Circuit breaker has auto-opened more than 5 times in 10 minutes."
+
+  - name: DataIntegrity
+    rules:
+      - alert: L2SnapshotMissingHigh
+        expr: l2_snapshot_missing_ratio > 0.01
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: "L2 Data Gap"
+          description: "L2 Snapshot missing ratio exceeds 1%."
+
+      - alert: UnauthorizedConfigChange
+        expr: audit_unauthorized_access_total > 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Unauthorized Configuration Access"
+          description: "A configuration change was attempted by an unauthorized actor."
+
+      - alert: SignedHashFailure
+        expr: audit_integrity_failure_total > 0
+        for: 0m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Audit Integrity Compromised"
+          description: "Verification of audit log signature FAILED."

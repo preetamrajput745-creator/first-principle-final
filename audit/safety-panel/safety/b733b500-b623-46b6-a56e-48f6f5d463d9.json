@@ -1,0 +1,16 @@
+{
+  "event_id": "b733b500-b623-46b6-a56e-48f6f5d463d9",
+  "timestamp_utc": "2025-12-11T00:09:25.093519",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Max daily loss exceeded (PnL: $-600.00 < Limit: -$500.0)",
+  "notes": "Global Kill Switch Activated. Count: 2",
+  "signed_hash": "edf230e96b59e1671835c5cba73558859b3fe62ad5de3cdaf628e16d60758fbe",
+  "evidence_link": "audit/safety/safety/b733b500-b623-46b6-a56e-48f6f5d463d9.json"
+}

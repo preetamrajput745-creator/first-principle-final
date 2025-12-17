@@ -1,0 +1,16 @@
+{
+  "event_id": "b23a9cac-9ff5-4a8f-ab05-0676c90ec0c9",
+  "timestamp_utc": "2025-12-11T00:12:36.754127",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "QA Gate Tester",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Critical Slippage Breach",
+  "notes": "ID: 417bb106-dff4-44da-9d12-d53b097faa88",
+  "signed_hash": "40f1434b0f185e8facf21db129fffd44b55ed1b5b28308d3b6eb34abfe36e06d",
+  "evidence_link": "audit/safety/safety/b23a9cac-9ff5-4a8f-ab05-0676c90ec0c9.json"
+}

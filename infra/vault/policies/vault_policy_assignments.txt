@@ -1,0 +1,33 @@
+
+# ==========================================
+# VAULT POLICY ASSIGNMENTS
+# ==========================================
+
+MAPPING:
+------------------------------------------
+ROLE: ingestion-role
+  -> Service Account: ingestion-sa
+  -> Namespace: antigravity
+  -> Policies: [ "ingestion-reader", "default" ]
+
+ROLE: detection-role
+  -> Service Account: detection-sa
+  -> Namespace: antigravity
+  -> Policies: [ "detection-reader", "default" ]
+
+ROLE: execution-role
+  -> Service Account: execution-sa
+  -> Namespace: antigravity
+  -> Policies: [ "execution-writer", "default" ]
+
+ROLE: monitoring-role
+  -> Service Account: monitoring-sa
+  -> Namespace: antigravity
+  -> Policies: [ "monitoring-reader", "default" ]
+
+ROLE: admin
+  -> User/Group: admin
+  -> Policies: [ "admin-full" ]
+
+Allows strict separation of duties.
+See 'vault_auth_roles.json' for machine-readable config.

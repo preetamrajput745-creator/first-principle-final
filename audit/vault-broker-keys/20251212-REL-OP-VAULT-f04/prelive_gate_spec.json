@@ -1,0 +1,11 @@
+{
+  "requirement": "PROMOTION_TICKET",
+  "fields_required": [
+    "reason",
+    "promotion_id",
+    "timestamp_utc",
+    "owner_signature"
+  ],
+  "validation_logic": "verify_signature(owner_public_key, promotion_ticket)",
+  "enforcement": "BLOCKING"
+}

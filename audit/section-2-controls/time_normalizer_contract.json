@@ -1,0 +1,58 @@
+{
+    "endpoint": "/time_normalizer",
+    "method": "POST",
+    "inputs": [
+        {
+            "name": "source_timestamp",
+            "type": "string",
+            "description": "ISO8601 or epoch timestamp"
+        },
+        {
+            "name": "source_timezone",
+            "type": "string",
+            "description": "IANA Timezone ID (e.g. Asia/Kolkata)"
+        },
+        {
+            "name": "source_clock",
+            "type": "integer",
+            "description": "High-precision clock in ms"
+        },
+        {
+            "name": "source_id",
+            "type": "string",
+            "description": "Unique Source Identifier"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "canonical_utc_timestamp",
+            "type": "string",
+            "description": "Normalized ISO8601 UTC"
+        },
+        {
+            "name": "computed_drift_ms",
+            "type": "float",
+            "description": "Difference vs server clock"
+        },
+        {
+            "name": "normalization_method",
+            "type": "string",
+            "enum": [
+                "wall_clock",
+                "monotonic"
+            ]
+        },
+        {
+            "name": "confidence_score",
+            "type": "float",
+            "range": [
+                0.0,
+                1.0
+            ]
+        }
+    ],
+    "sla": {
+        "latency_p95": "20ms",
+        "accuracy": "1ms"
+    }
+}

@@ -1,0 +1,23 @@
+--- Synthetic Test Log Start: 2025-12-10 16:42:40.101015 ---
+[2025-12-10 16:42:40.101015] STARTING FULL ACCEPTANCE SUITE (ZERO TOLERANCE)
+[2025-12-10 16:42:40.101015] 
+--- TEST 1: Signal Flood ---
+[2025-12-10 16:42:40.403950]  [PASS] HighSignalRate Alert Condition Met: 40 > 30.0
+[2025-12-10 16:42:40.403950] 
+--- TEST 2: Score Collapse ---
+[2025-12-10 16:42:40.753437]  [PASS] ScoreCollapse Alert Condition Met: Avg 0.41 < 0.63
+[2025-12-10 16:42:40.753952] 
+--- TEST 3: Distribution Drift (KL Divergence) ---
+[2025-12-10 16:42:40.868898]    Baseline Mean: 0.50 | Recent Mean: 0.95
+[2025-12-10 16:42:40.868898]  [PASS] Distribution Drift Detected (Significant Mean Shift Proxy)
+[2025-12-10 16:42:40.869904] 
+--- TEST 4: Score Outlier Explosion ---
+[2025-12-10 16:42:40.995107]  [PASS] Outlier Explosion Detected: Ratio 0.13 > 0.10
+[2025-12-10 16:42:40.995107] 
+--- TEST 5: Mixed Load Stability ---
+[2025-12-10 16:42:41.107953]  [PASS] Mixed Load Inserted Successfully.
+[2025-12-10 16:42:41.107953] 
+--- Generating Audit Artifacts ---
+[2025-12-10 16:42:41.111968]  [ARTIFACT] CSV generated: D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\signal-flow-panel\raw_metrics_1h.csv
+[2025-12-10 16:42:41.112974]  [ARTIFACT] Summary generated: D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\signal-flow-panel\Summary.txt
+[2025-12-10 16:42:41.112974] FULL ACCEPTANCE SUITE COMPLETED SUCCESSFULLY.

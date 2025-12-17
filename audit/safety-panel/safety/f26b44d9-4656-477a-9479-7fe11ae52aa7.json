@@ -1,0 +1,16 @@
+{
+  "event_id": "f26b44d9-4656-477a-9479-7fe11ae52aa7",
+  "timestamp_utc": "2025-12-11T00:09:10.077768",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Gating API Bot",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Manual Admin Action",
+  "notes": "ID: 211abda5-9f08-427a-b4e1-517ff06983e2",
+  "signed_hash": "93ed6a61cd5fc5bc004be0d3014ed064f76427181217119e1b7020369c54ae56",
+  "evidence_link": "audit/safety/safety/f26b44d9-4656-477a-9479-7fe11ae52aa7.json"
+}

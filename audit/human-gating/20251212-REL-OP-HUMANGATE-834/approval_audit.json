@@ -1,0 +1,194 @@
+[
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-1",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-2",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-3",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-4",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-5",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-6",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-7",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.013093",
+    "trade_id": "TRADE-8",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-9",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-10",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (10 remaining). Manual approval required.",
+    "gate_remaining": 10
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-1",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 9",
+    "gate_remaining": 9
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-2",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 8",
+    "gate_remaining": 8
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-3",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 7",
+    "gate_remaining": 7
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-4",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 6",
+    "gate_remaining": 6
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-5",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 5",
+    "gate_remaining": 5
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-6",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 4",
+    "gate_remaining": 4
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-7",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 3",
+    "gate_remaining": 3
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-8",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 2",
+    "gate_remaining": 2
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-9",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 1",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "TRADE-10",
+    "event": "APPROVAL_GRANTED",
+    "result": "SUCCESS",
+    "reason": "Approved by owner. Gate remaining: 0",
+    "gate_remaining": 0
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "EXECUTION_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Gate active (1 remaining). Manual approval required.",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Invalid TOTP",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": "Reason required",
+    "gate_remaining": 1
+  },
+  {
+    "timestamp_utc": "2025-12-12T11:59:56.014642",
+    "trade_id": "BAD-TRADE-1",
+    "event": "APPROVAL_ATTEMPT",
+    "result": "DENIED",
+    "reason": " unauthorized role",
+    "gate_remaining": 1
+  }
+]

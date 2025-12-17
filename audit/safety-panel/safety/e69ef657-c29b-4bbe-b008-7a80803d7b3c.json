@@ -1,0 +1,16 @@
+{
+  "event_id": "e69ef657-c29b-4bbe-b008-7a80803d7b3c",
+  "timestamp_utc": "2025-12-11T00:09:26.085764",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "High Volatility Regime Detected (Regime Filter)",
+  "notes": "Global Kill Switch Activated. Count: 1",
+  "signed_hash": "4a40c0dabf2c4804881e6c43fda465fec94a1822cdb3ed9f42f163e721bcc280",
+  "evidence_link": "audit/safety/safety/e69ef657-c29b-4bbe-b008-7a80803d7b3c.json"
+}

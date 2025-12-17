@@ -1,0 +1,58 @@
+[
+  {
+    "description": "Positive Drift (+500ms)",
+    "request": {
+      "source_timestamp": "2025-12-12T05:42:27.129124",
+      "source_clock": 1765518146629.1243,
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Negative Drift (-700ms)",
+    "request": {
+      "source_timestamp": "2025-12-12T05:42:27.129124",
+      "source_clock": 1765518147829.1243,
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Heavy Skew (1500ms)",
+    "request": {
+      "source_timestamp": "2025-12-12T05:42:27.129124",
+      "source_clock": 1765518145629.1243,
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Timezone IST->UTC",
+    "request": {
+      "source_timestamp": "2025-12-11T10:00:00",
+      "source_timezone": "Asia/Kolkata",
+      "source_clock": 1765518147129.1243,
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Invalid Timezone",
+    "request": {
+      "source_timestamp": "now",
+      "source_timezone": "Mars/Utopia_Planitia",
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Null Clock",
+    "request": {
+      "source_timestamp": "2025-12-12T05:42:27.189254",
+      "source_clock": null,
+      "source_id": "ingest-pod-1"
+    }
+  },
+  {
+    "description": "Unauthorized Source",
+    "request": {
+      "source_timestamp": "now",
+      "source_id": "hacker-bot"
+    }
+  }
+]

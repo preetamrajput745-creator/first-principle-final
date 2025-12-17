@@ -1,0 +1,8 @@
+{
+  "issuer": "AntiGravityOwner",
+  "algorithm": "SHA1",
+  "digits": 6,
+  "period": 30,
+  "skew": 1,
+  "enforcement": "MANDATORY_FOR_LIVE_SECRETS"
+}

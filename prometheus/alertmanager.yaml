@@ -1,0 +1,30 @@
+
+global:
+  resolve_timeout: 5m
+
+route:
+  group_by: ['alertname']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'slack-notifications'
+  routes:
+    - match:
+        severity: critical
+      receiver: 'pagerduty-critical'
+    - match:
+        severity: warning
+      receiver: 'slack-notifications'
+
+receivers:
+  - name: 'slack-notifications'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX'
+        channel: '#monitoring'
+        send_resolved: true
+        
+  - name: 'pagerduty-critical'
+    pagerduty_configs:
+      - service_key: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+        description: '{{ template "pagerduty.default.description" . }}'
+        client: 'Prometheus'

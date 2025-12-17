@@ -1,0 +1,33 @@
+{
+  "title": "Circuit Breaker Panel",
+  "uid": "circuit_breaker_001",
+  "panels": [
+    {
+      "title": "Breaker Status (1=Tripped)",
+      "type": "state-timeline",
+      "targets": [
+        {
+          "expr": "circuit_breaker_status"
+        }
+      ]
+    },
+    {
+      "title": "Trip Count",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "increase(circuit_breaker_trips_total[24h])"
+        }
+      ]
+    },
+    {
+      "title": "Auto-Open Events",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "rate(circuit_breaker_auto_open_total[1h])"
+        }
+      ]
+    }
+  ]
+}

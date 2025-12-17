@@ -1,0 +1,28 @@
+[
+    {
+        "id": null,
+        "uuid": "section_2_qa_dashboard",
+        "title": "Sections 2 Controls / QA Sign-Off",
+        "timezone": "browser",
+        "panels": [
+            {
+                "title": "Controls Status",
+                "type": "stat",
+                "targets": [
+                    {
+                        "expr": "sum(controls_status_pass)"
+                    }
+                ]
+            },
+            {
+                "title": "Audit Failures",
+                "type": "logs",
+                "targets": [
+                    {
+                        "expr": "{job='audit', level='error'}"
+                    }
+                ]
+            }
+        ]
+    }
+]

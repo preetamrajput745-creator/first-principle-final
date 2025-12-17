@@ -1,0 +1,10 @@
+{
+    "type": "file",
+    "path": "/var/log/vault/audit.log",
+    "description": "File Audit Device",
+    "options": {
+        "file_path": "/var/log/vault/audit.log",
+        "log_raw": "false",
+        "hmac_accessor": "true"
+    }
+}

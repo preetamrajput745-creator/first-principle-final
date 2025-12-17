@@ -1,0 +1,56 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.0.1, pluggy-1.6.0
+rootdir: D:\PREETAM RAJPUT\first pincipal finnnal
+plugins: anyio-4.12.0, cov-7.0.0, mock-3.15.1, timeout-2.4.0
+collected 2 items
+
+tests\integration\test_integration_stub.py .F                            [100%]
+
+================================== FAILURES ===================================
+_______________ TestIntegrationFlow.test_risk_enforcement_flow ________________
+
+self = <test_integration_stub.TestIntegrationFlow testMethod=test_risk_enforcement_flow>
+
+    def test_risk_enforcement_flow(self):
+        """
+        Test that a signal passing through the Risk Engine (Circuit Breaker)
+        blocks execution if limits are hit.
+        """
+        # 1. Simulate High Frequency Signals (Ingest)
+        # Create > 10 signals in the last hour
+        with next(get_db()) as db:
+            for i in range(12):
+                sig = Signal(
+                    symbol="BTC-USD",
+                    score=0.8,
+                    timestamp=datetime.utcnow(),
+                    payload={"signal_type": "buy", "source": "integration_test"}
+                )
+                db.add(sig)
+            db.commit()
+    
+        # 2. Risk Check (Circuit Breaker)
+        # Should return False (safe=False)
+        is_safe = self.cb.check_signal_rate(auto_pause=False)
+    
+        if not is_safe:
+            print("Integration Test: Risk Breaker correctly tripped on volume.")
+    
+>       self.assertTrue(is_safe, "Circuit breaker should have tripped due to signal volume")
+E       AssertionError: False is not true : Circuit breaker should have tripped due to signal volume
+
+tests\integration\test_integration_stub.py:51: AssertionError
+---------------------------- Captured stdout call -----------------------------
+CIRCUIT BREAKER: Signal rate exceeded (121/10/hr)
+Integration Test: Risk Breaker correctly tripped on volume.
+============================== warnings summary ===============================
+workers\common\database.py:18
+tests/integration/test_integration_stub.py::TestIntegrationFlow::test_data_latency_check
+  D:\PREETAM RAJPUT\first pincipal finnnal\workers\common\database.py:18: MovedIn20Warning: The ``declarative_base()`` function is now available as sqlalchemy.orm.declarative_base(). (deprecated since: 2.0) (Background on SQLAlchemy 2.0 at: https://sqlalche.me/e/b8d9)
+    Base = declarative_base()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: D:\PREETAM RAJPUT\first pincipal finnnal\junit_integration.xml -
+=========================== short test summary info ===========================
+FAILED tests/integration/test_integration_stub.py::TestIntegrationFlow::test_risk_enforcement_flow
+=================== 1 failed, 1 passed, 2 warnings in 0.54s ===================

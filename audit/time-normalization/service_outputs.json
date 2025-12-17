@@ -1,0 +1,91 @@
+[
+  {
+    "description": "Positive Drift (+500ms)",
+    "response": {
+      "status": 200,
+      "data": {
+        "canonical_utc_timestamp": "2025-12-12T05:42:27.129124+00:00",
+        "source_clock_raw": 1765518146629.1243,
+        "computed_drift_ms": 500.0,
+        "normalization_method": "monotonic",
+        "confidence_score": 1.0,
+        "clock_status": "OK",
+        "request_id": "ed3b3344-cb39-4d15-94f1-58d4e6ba2ebb"
+      }
+    }
+  },
+  {
+    "description": "Negative Drift (-700ms)",
+    "response": {
+      "status": 200,
+      "data": {
+        "canonical_utc_timestamp": "2025-12-12T05:42:27.129124+00:00",
+        "source_clock_raw": 1765518147829.1243,
+        "computed_drift_ms": -700.0,
+        "normalization_method": "monotonic",
+        "confidence_score": 1.0,
+        "clock_status": "OK",
+        "request_id": "6116dd09-c6cd-4c0d-8ddf-4f0c8ed232e9"
+      }
+    }
+  },
+  {
+    "description": "Heavy Skew (1500ms)",
+    "response": {
+      "status": 200,
+      "data": {
+        "canonical_utc_timestamp": "2025-12-12T05:42:27.129124+00:00",
+        "source_clock_raw": 1765518145629.1243,
+        "computed_drift_ms": 1500.0,
+        "normalization_method": "monotonic",
+        "confidence_score": 0.5,
+        "clock_status": "UNSTABLE_CLOCK",
+        "request_id": "8ae8a127-8da2-496a-8264-744af9ed7ed5"
+      }
+    }
+  },
+  {
+    "description": "Timezone IST->UTC",
+    "response": {
+      "status": 200,
+      "data": {
+        "canonical_utc_timestamp": "2025-12-11T04:07:00+00:00",
+        "source_clock_raw": 1765518147129.1243,
+        "computed_drift_ms": 57.11,
+        "normalization_method": "monotonic",
+        "confidence_score": 1.0,
+        "clock_status": "OK",
+        "request_id": "1941cee4-c946-40de-a76d-1264ed2f3d7a"
+      }
+    }
+  },
+  {
+    "description": "Invalid Timezone",
+    "response": {
+      "status": 400,
+      "error": "Invalid Timezone: Mars/Utopia_Planitia"
+    }
+  },
+  {
+    "description": "Null Clock",
+    "response": {
+      "status": 200,
+      "data": {
+        "canonical_utc_timestamp": "2025-12-12T05:42:27.189254+00:00",
+        "source_clock_raw": null,
+        "computed_drift_ms": 0.0,
+        "normalization_method": "wall_clock",
+        "confidence_score": 0.5,
+        "clock_status": "OK",
+        "request_id": "43449c7b-b77c-4168-9966-d030f75d30f6"
+      }
+    }
+  },
+  {
+    "description": "Unauthorized Source",
+    "response": {
+      "status": 403,
+      "error": "Unauthorized Source"
+    }
+  }
+]

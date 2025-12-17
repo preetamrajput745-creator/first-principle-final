@@ -1,0 +1,76 @@
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 5.38146e+06
+python_gc_objects_collected_total{generation="1"} 585774.0
+python_gc_objects_collected_total{generation="2"} 965.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 6575.0
+python_gc_collections_total{generation="1"} 597.0
+python_gc_collections_total{generation="2"} 2.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="11",patchlevel="9",version="3.11.9"} 1.0
+# HELP signals_total Total number of signals generated
+# TYPE signals_total counter
+# HELP signal_score Distribution of signal scores
+# TYPE signal_score histogram
+# HELP heartbeat_timestamp Timestamp of last heartbeat
+# TYPE heartbeat_timestamp gauge
+heartbeat_timestamp{component="scoring_engine"} 1.7654118747555647e+09
+# HELP latency_ingest_bar Latency from Ingest to Bar Build (s)
+# TYPE latency_ingest_bar histogram
+latency_ingest_bar_bucket{le="0.01"} 0.0
+latency_ingest_bar_bucket{le="0.05"} 0.0
+latency_ingest_bar_bucket{le="0.1"} 0.0
+latency_ingest_bar_bucket{le="0.25"} 0.0
+latency_ingest_bar_bucket{le="0.5"} 0.0
+latency_ingest_bar_bucket{le="1.0"} 0.0
+latency_ingest_bar_bucket{le="2.5"} 0.0
+latency_ingest_bar_bucket{le="5.0"} 0.0
+latency_ingest_bar_bucket{le="10.0"} 0.0
+latency_ingest_bar_bucket{le="+Inf"} 0.0
+latency_ingest_bar_count 0.0
+latency_ingest_bar_sum 0.0
+# HELP latency_ingest_bar_created Latency from Ingest to Bar Build (s)
+# TYPE latency_ingest_bar_created gauge
+latency_ingest_bar_created 1.7654102555931559e+09
+# HELP latency_bar_feature Latency from Bar Build to Feature Snapshot (s)
+# TYPE latency_bar_feature histogram
+latency_bar_feature_bucket{le="0.01"} 0.0
+latency_bar_feature_bucket{le="0.05"} 0.0
+latency_bar_feature_bucket{le="0.1"} 0.0
+latency_bar_feature_bucket{le="0.25"} 0.0
+latency_bar_feature_bucket{le="0.5"} 0.0
+latency_bar_feature_bucket{le="1.0"} 0.0
+latency_bar_feature_bucket{le="2.5"} 0.0
+latency_bar_feature_bucket{le="5.0"} 0.0
+latency_bar_feature_bucket{le="10.0"} 0.0
+latency_bar_feature_bucket{le="+Inf"} 0.0
+latency_bar_feature_count 0.0
+latency_bar_feature_sum 0.0
+# HELP latency_bar_feature_created Latency from Bar Build to Feature Snapshot (s)
+# TYPE latency_bar_feature_created gauge
+latency_bar_feature_created 1.7654102555931559e+09
+# HELP latency_feature_signal Latency from Feature Snapshot to Signal (s)
+# TYPE latency_feature_signal histogram
+latency_feature_signal_bucket{le="0.01"} 0.0
+latency_feature_signal_bucket{le="0.05"} 0.0
+latency_feature_signal_bucket{le="0.1"} 0.0
+latency_feature_signal_bucket{le="0.25"} 0.0
+latency_feature_signal_bucket{le="0.5"} 0.0
+latency_feature_signal_bucket{le="1.0"} 0.0
+latency_feature_signal_bucket{le="2.5"} 0.0
+latency_feature_signal_bucket{le="5.0"} 0.0
+latency_feature_signal_bucket{le="10.0"} 0.0
+latency_feature_signal_bucket{le="+Inf"} 0.0
+latency_feature_signal_count 0.0
+latency_feature_signal_sum 0.0
+# HELP latency_feature_signal_created Latency from Feature Snapshot to Signal (s)
+# TYPE latency_feature_signal_created gauge
+latency_feature_signal_created 1.7654102555931559e+09

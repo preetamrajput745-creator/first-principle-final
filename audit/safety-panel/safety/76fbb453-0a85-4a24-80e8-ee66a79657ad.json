@@ -1,0 +1,16 @@
+{
+  "event_id": "76fbb453-0a85-4a24-80e8-ee66a79657ad",
+  "timestamp_utc": "2025-12-10T23:52:00.224888",
+  "component": "stress_test",
+  "event_type": "spam",
+  "target": null,
+  "trigger_rule": null,
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "load_runner",
+  "actor_ip": "127.0.0.1",
+  "reason": "msg_26",
+  "notes": null,
+  "signed_hash": "591e16bdc3c8f3c0a437d2ad69bd1cc1c63b1479fe0e4ddda35b3dc3385511e2",
+  "evidence_link": "audit/safety/safety/76fbb453-0a85-4a24-80e8-ee66a79657ad.json"
+}

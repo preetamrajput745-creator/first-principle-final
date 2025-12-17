@@ -1,0 +1,10 @@
+Actor,Path,TOTP,Gate,Expected,Actual,Result
+detection-pod,secrets/broker/live/api-key,None,None,403,403,PASS
+monitoring-pod,secrets/broker/live/api-key,None,None,403,403,PASS
+dev-pod,secrets/broker/live/api-key,VALID_TOTP,VALID_TICKET,403,403,PASS
+ci-runner,secrets/broker/live/api-key,None,None,403,403,PASS
+oncall-pod,secrets/broker/live/api-key,VALID_TOTP,None,403,403,PASS
+execution-engine,secrets/broker/live/api-key,None,None,403,403,PASS
+execution-engine,secrets/broker/live/api-key,VALID_TOTP,None,403,403,PASS
+execution-engine,secrets/broker/live/api-key,None,VALID_TICKET,403,403,PASS
+execution-engine,secrets/broker/live/api-key,VALID_TOTP,VALID_TICKET,200,200,PASS

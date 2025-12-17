@@ -1,0 +1,5 @@
+[CRITICAL] HeartbeatMissingCritical: Heartbeat missing for ingest_service (Age: 45.0s)
+[WARNING] SignalRateSpike: Rate 40 > 30
+[CRITICAL] SlippageDeltaCritical: Avg Delta > 50%
+[WARNING] MissingL2Snapshot: Ratio 0.05 > 1%
+[CRITICAL] UnauthorizedConfigChangeSecurity: Unauthorized count > 0

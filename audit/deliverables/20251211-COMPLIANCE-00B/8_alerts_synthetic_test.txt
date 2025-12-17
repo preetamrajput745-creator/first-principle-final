@@ -1,0 +1,25 @@
+--- EXECUTION LOG: tests/verify_alerts_config.py ---
+--- TIMESTAMP: 2025-12-11 09:52:52.104860 ---
+STDOUT:
+
+[TEST] Verifying Alert Definitions...
+   PASS: All 5 Mandatory Alerts Defined.
+
+[TEST] Generating Alert Evidence Pack...
+   PASS: Logs generated at D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\alerts\synthetic_trigger.log
+   PASS: Alert Payload generated at D:\PREETAM RAJPUT\first pincipal finnnal\tests\..\audit\alerts\alert_payload_sample.json
+   PASS: Summary generated.
+
+[TEST] Synthetic Trigger Logic Verification...
+   PASS: Heartbeat Logic Verified (45s age > 30s threshold)
+   PASS: Signal Rate Logic Verified (50 > 30)
+   PASS: Slippage Delta Logic Verified (0.6 > 0.5)
+   PASS: L2 Logic Verified (5% > 1%)
+   PASS: Security Alert Logic Verified.
+
+STDERR:
+...
+----------------------------------------------------------------------
+Ran 3 tests in 0.026s
+
+OK

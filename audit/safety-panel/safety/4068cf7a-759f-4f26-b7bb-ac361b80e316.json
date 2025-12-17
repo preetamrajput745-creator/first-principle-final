@@ -1,0 +1,16 @@
+{
+  "event_id": "4068cf7a-759f-4f26-b7bb-ac361b80e316",
+  "timestamp_utc": "2025-12-11T00:12:45.169968",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "CB Test 97894a76",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Signal rate exceeded (228/10/hr)",
+  "notes": "ID: e03c1b6f-ad3d-4592-ad27-32108c0ff88d",
+  "signed_hash": "87f5a006a9f8b1a454de2ccc9c6bd9e7dc7dbebc55838507af2e21c224ec87ef",
+  "evidence_link": "audit/safety/safety/4068cf7a-759f-4f26-b7bb-ac361b80e316.json"
+}

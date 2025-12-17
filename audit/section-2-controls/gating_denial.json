@@ -1,0 +1,7 @@
+{
+  "action": "promote_to_prod",
+  "actor": "developer_bob",
+  "approver": null,
+  "status": "DENIED",
+  "reason": "Missing Owner Approval"
+}

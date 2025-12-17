@@ -1,0 +1,15 @@
+{
+  "event_id": "278df380-0374-4c50-a595-49e7764fe8f7",
+  "timestamp_utc": "2025-12-10T23:34:53.956933",
+  "actor": "unauth_hacker",
+  "actor_ip": "6.6.6.6",
+  "resource_type": "config",
+  "resource_id": "795017cb-bd9e-41be-b7c2-65513d9fd74e",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk\": \"medium\", \"v\": 19}",
+  "new_value": "{\"hacked\": true}",
+  "change_context": "api",
+  "reason": "Evil Update",
+  "signed_hash": "a0645f359443c5522f5d789402dd397aa0cc56a6f561487fef2b69cf2cf7ed5a"
+}

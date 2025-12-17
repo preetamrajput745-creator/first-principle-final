@@ -1,0 +1,52 @@
+[
+  {
+    "id": "SIG-99686e6f-b91a-4c7a-bf1e-fe25271736ef",
+    "symbol": "NIFTY",
+    "side": "BUY",
+    "score": 85.0,
+    "confidence": 0.9,
+    "timestamp_utc": "2025-12-13T12:28:16.699951",
+    "feature_snapshot_id": "FEAT-a3be8693-5e6b-4d26-993e-d04c91064727",
+    "strategy_id": "STRAT-ALPHA-SHADOW"
+  },
+  {
+    "id": "SIG-6fa6567a-2a63-47e3-8526-c2713ff982ac",
+    "symbol": "BANKNIFTY",
+    "side": "SELL",
+    "score": 86.0,
+    "confidence": 0.9,
+    "timestamp_utc": "2025-12-13T12:28:16.699951",
+    "feature_snapshot_id": "FEAT-f686cc36-f296-45f3-8249-0c07ad9e654e",
+    "strategy_id": "STRAT-ALPHA-SHADOW"
+  },
+  {
+    "id": "SIG-de8c2dc6-6e25-4898-a0c9-a79dc84cd9c4",
+    "symbol": "RELIANCE",
+    "side": "BUY",
+    "score": 87.0,
+    "confidence": 0.9,
+    "timestamp_utc": "2025-12-13T12:28:16.699951",
+    "feature_snapshot_id": "FEAT-7f3de86a-5bd9-45e6-86fc-53f89dc0749b",
+    "strategy_id": "STRAT-ALPHA-SHADOW"
+  },
+  {
+    "id": "SIG-5dab5888-5f93-4347-88da-d1e1d500427e",
+    "symbol": "INFY",
+    "side": "SELL",
+    "score": 88.0,
+    "confidence": 0.9,
+    "timestamp_utc": "2025-12-13T12:28:16.699951",
+    "feature_snapshot_id": "FEAT-f1c61f74-b39c-4f18-87fa-1a6446f0a151",
+    "strategy_id": "STRAT-ALPHA-SHADOW"
+  },
+  {
+    "id": "SIG-f98af56e-5b59-4ac8-acc4-d6cd726a3a20",
+    "symbol": "HDFCBANK",
+    "side": "BUY",
+    "score": 89.0,
+    "confidence": 0.9,
+    "timestamp_utc": "2025-12-13T12:28:16.699951",
+    "feature_snapshot_id": "FEAT-dc34ec9e-b971-452c-b79f-bfe745f1b61d",
+    "strategy_id": "STRAT-ALPHA-SHADOW"
+  }
+]

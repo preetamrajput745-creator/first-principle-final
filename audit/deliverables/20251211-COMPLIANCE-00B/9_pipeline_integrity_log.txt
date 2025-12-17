@@ -1,0 +1,15 @@
+--- EXECUTION LOG: tests/test_pipeline_end_to_end.py ---
+--- TIMESTAMP: 2025-12-11 09:52:56.971362 ---
+STDOUT:
+[EventBus] Redis unavailable. Falling back to SQLite (Local Mode).
+Scoring Engine Prometheus Metrics running on port 8001
+Scored TEST_INT: 60 (Breakdown: {'wick': 30, 'vol': 20, 'poke': 10})
+SIGNAL TRIGGERED for TEST_INT!
+PASS: Integration Flow (Feature -> Score -> Signal) verified.
+
+STDERR:
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.013s
+
+OK

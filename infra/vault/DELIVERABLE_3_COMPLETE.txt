@@ -1,0 +1,31 @@
+
+DELIVERABLE #3: VAULT / SECRETS CONTROL
+STATUS: COMPLETE & VERIFIED
+
+CONTENTS:
+------------------------------------------------------------
+1. CONFIGURATION (infra/vault/config/):
+   - vault_mounts.json
+   - kv_engine_config.json
+   - secrets_path_map.yaml
+   - k8s_service_account_binding.yaml
+   - vault_auth_roles.json
+   - audit_device_config.json
+   - rotation_workflow.txt
+
+2. POLICIES (infra/vault/policies/):
+   - vault_policies.hcl
+   - vault_policy_assignments.txt
+
+3. EVIDENCE (infra/vault/evidence/):
+   - coverage of RBAC enforcement (Positive & Negative tests)
+   - audit logs of all access attempts
+   - secret rotation proof
+
+VERIFICATION SCRIPT: verify_vault_rbac.py (PASSED)
+------------------------------------------------------------
+Zero-Tolerance Spec Met:
+- Strict path-based RBAC
+- Explicit DENY rules
+- Audit logging enabled
+- Rotation workflow defined

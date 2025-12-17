@@ -1,0 +1,14 @@
+{
+  "path": {
+    "secrets/broker/sandbox/*": {
+      "capabilities": [
+        "read"
+      ],
+      "allowed_parameters": {
+        "execution_mode": [
+          "SANDBOX"
+        ]
+      }
+    }
+  }
+}

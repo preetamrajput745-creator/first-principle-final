@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp_utc": "2025-12-15T05:24:58.120217",
+    "service_name": "execution-engine",
+    "vault_path": "secrets/broker/sandbox/alpaca/api_key",
+    "execution_mode": "SHADOW",
+    "access_result": "DENY",
+    "reason": "Mode Mismatch: SHADOW != SANDBOX",
+    "source_ip": "10.10.0.5"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:58.120217",
+    "service_name": "execution-engine",
+    "vault_path": "secrets/broker/sandbox/alpaca/api_key",
+    "execution_mode": "PAPER",
+    "access_result": "DENY",
+    "reason": "Mode Mismatch: PAPER != SANDBOX",
+    "source_ip": "10.10.0.5"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:58.120217",
+    "service_name": "execution-engine",
+    "vault_path": "secrets/broker/live/alpaca/api_key",
+    "execution_mode": "SANDBOX",
+    "access_result": "DENY",
+    "reason": "Live path protected",
+    "source_ip": "10.10.0.5"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:58.120217",
+    "service_name": "execution-engine",
+    "vault_path": "secrets/broker/sandbox/*",
+    "execution_mode": "SANDBOX",
+    "access_result": "DENY",
+    "reason": "Wildcard access forbidden",
+    "source_ip": "10.10.0.5"
+  }
+]

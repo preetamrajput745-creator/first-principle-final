@@ -1,0 +1,33 @@
+
+# ==========================================
+# ADMIN AUDIT RETENTION POLICY
+# ==========================================
+
+default_retention_days: 365
+storage_class: STANDARD
+archive_storage_class: GLACIER
+
+role_overrides:
+  audit-admin:
+    can_delete: false
+    can_export: true
+    can_extend_retention: true
+
+path_rules:
+  - path: "antigravity-audit/admin-log/*"
+    retention: 365d
+    transition:
+      after: 90d
+      to: GLACIER
+    legal_hold: false
+
+  - path: "antigravity-audit/admin-log/exports/*"
+    retention: 30d
+    transition: null
+
+  - path: "antigravity-audit/critical/*"
+    retention: 3650d # 10 Years
+    object_lock_mode: COMPLIANCE
+
+compliance_standard: "SOC2_Type2"
+audit_verification_schedule: "0 * * * *" # Hourly

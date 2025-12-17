@@ -1,0 +1,15 @@
+{
+  "event_id": "967424d0-8e47-47b8-8148-7fa4cd133445",
+  "timestamp_utc": "2025-12-10T23:43:48.421494",
+  "actor": "ce53e313-6d8d-4516-9730-4a92560985e7",
+  "actor_ip": "10.0.0.666",
+  "resource_type": "config",
+  "resource_id": "299674c4-d73c-4e05-9e3c-a0441cfe9016",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"leverage\": 10, \"risk_mode\": \"aggressive\"}",
+  "new_value": "{\"hacked\": true}",
+  "change_context": "api",
+  "reason": "Emergency override",
+  "signed_hash": "06fe4a182b828757315456c78b05b4e30093028830c229a6fb0399f524b6dbec"
+}

@@ -1,0 +1,16 @@
+{
+  "event_id": "5fe66de4-c4c0-4d0c-9e3d-5a3a0c695fd0",
+  "timestamp_utc": "2025-12-11T00:09:25.864330",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "Regime Tester",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "High Volatility Regime Detected (Regime Filter)",
+  "notes": "ID: bea7f7d3-9be8-40c5-9e96-a7d3320c87a0",
+  "signed_hash": "a429f388d7dde2e84e7e3d65faae9faa156ca56528c3f09ea14c3d4a8878f489",
+  "evidence_link": "audit/safety/safety/5fe66de4-c4c0-4d0c-9e3d-5a3a0c695fd0.json"
+}

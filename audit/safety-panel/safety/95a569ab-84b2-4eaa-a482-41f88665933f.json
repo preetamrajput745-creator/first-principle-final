@@ -1,0 +1,16 @@
+{
+  "event_id": "95a569ab-84b2-4eaa-a482-41f88665933f",
+  "timestamp_utc": "2025-12-11T11:35:44.428852",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "UI Audit Test Bot",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Signal rate exceeded (0/0/hr)",
+  "notes": "ID: 75acec64-4c8e-4b5d-9017-1d49469af18a",
+  "signed_hash": "e494e6fae9ecfe71424bc358ac427970b4e54b2feb2050ce4c27fbdf118d8d94",
+  "evidence_link": "audit/safety/safety/95a569ab-84b2-4eaa-a482-41f88665933f.json"
+}

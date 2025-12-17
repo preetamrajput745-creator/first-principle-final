@@ -1,0 +1,34 @@
+
+route:
+  group_by: ['alertname', 'severity']
+  group_wait: 10s
+  group_interval: 1m
+  repeat_interval: 4h
+  receiver: 'slack-general'
+  
+  routes:
+    # Critical Owner Routes
+    - match:
+        severity: critical
+        owner_relevant: "true"
+      receiver: 'pagerduty-owner'
+      continue: true
+      
+    # Escalation Path
+    - match:
+        severity: critical
+      receiver: 'pagerduty-escalation'
+      group_wait: 5m # Wait 5m for owner to ack before escalating
+
+receivers:
+  - name: 'pagerduty-owner'
+    pagerduty_configs:
+      - service_key: 'OWNER_PAGER_KEY_XYZ'
+        description: 'CRITICAL: Owner Attention Required - {{ .CommonAnnotations.summary }}'
+        client: 'Alertmanager'
+        client_url: '{{ .ExternalURL }}'
+        
+  - name: 'pagerduty-escalation'
+    pagerduty_configs:
+      - service_key: 'VP_ENG_PAGER_KEY_ABC'
+        description: 'ESCALATION: Owner Unresponsive - {{ .CommonAnnotations.summary }}'

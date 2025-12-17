@@ -1,0 +1,198 @@
+groups:
+- name: Managed_Alerts
+  rules:
+  
+  # --- PnL & Slippage Alerts (Mistake #9) ---
+  - alert: SlippageDeltaWarning
+    expr: avg_over_time(trade_slippage_pct[1h]) > on(instrument) group_left (profile_slippage) (profile_slippage * 1.5)
+    for: 1m
+    labels:
+      severity: warning
+
+  - alert: SlippageCriticalBreach
+    expr: increase(slippage_critical_breach_total[5m]) > 0
+    labels:
+      severity: critical
+
+  - alert: RealizedPnLDrawdown
+    expr: realized_pnl_total < max_over_time(realized_pnl_total[24h]) * 0.8
+    for: 5m
+    labels:
+      severity: critical
+
+  - alert: SimRealDivergence
+    expr: abs(simulated_pnl_total - realized_pnl_total) / clamp_min(abs(simulated_pnl_total), 1) > 0.25
+    for: 10m
+    labels:
+      severity: warning
+      
+  # --- Signal Flow Alerts (New Task) ---
+  
+  # A) Signals/hour > baseline * 3 (Warning)
+  - alert: SignalFloodWarning
+    expr: sum(increase(signals_total[1h])) by (symbol) > 30
+    for: 5m
+    labels:
+      severity: warning
+      channel: slack
+    annotations:
+      summary: "Signal Flood on {{ $labels.symbol }}"
+      description: "Rate > 3x Baseline (30/hr)."
+
+  # B) Sudden Score Collapse (Warning)
+  # Avg Score < 0.35 (Baseline 0.5 - 30%)
+  - alert: ScoreCollapseWarning
+    expr: (sum(rate(signal_score_sum[1h])) by (symbol) / sum(rate(signal_score_count[1h])) by (symbol)) < 0.35
+    for: 5m
+    labels:
+      severity: warning
+      channel: slack
+    annotations:
+      summary: "Score Collapse on {{ $labels.symbol }}"
+      description: "Avg Score dropped below 0.35 (Baseline - 30%)."
+
+  # D) Outlier Explosion
+  # > 10% of signals < 0.2
+  - alert: ScoreOutlierExplosion
+    expr: (sum(rate(signal_score_bucket{le="0.2"}[1h])) by (symbol) / sum(rate(signal_score_count[1h])) by (symbol)) > 0.10
+    for: 5m
+    labels:
+      severity: warning
+      channel: slack
+    annotations:
+      summary: "Score Outlier Explosion on {{ $labels.symbol }}"
+      description: ">10% of signals have Low Score (<0.2)."
+
+  # Data Quality: L2 Snapshot Missing > 1%
+  - alert: L2SnapshotMissing
+    expr: (1 - (sum(rate(l2_snapshot_present[5m])) / sum(rate(signals_total[5m])))) > 0.01
+    for: 5m
+    labels:
+      severity: warning
+
+  # Data Quality: Checksum Mismatch > 0
+  - alert: DataIntegrityMismatch
+    expr: data_integrity_mismatches_total > 0
+    for: 1m
+    labels:
+      severity: critical
+
+  # Latency: Ingest -> Bar > 100ms
+  - alert: LatencyIngestBarHigh
+    expr: histogram_quantile(0.95, sum(rate(latency_ingest_bar_bucket[5m])) by (le)) > 0.1
+    for: 3m
+    labels:
+      severity: warning
+
+  # Latency: Bar -> Feature > 150ms
+  - alert: LatencyBarFeatureHigh
+    expr: histogram_quantile(0.95, sum(rate(latency_bar_feature_bucket[5m])) by (le)) > 0.15
+    for: 3m
+    labels:
+      severity: warning
+
+  # Latency: Feature -> Signal > 100ms
+  - alert: LatencyFeatureSignalHigh
+    expr: histogram_quantile(0.95, sum(rate(latency_feature_signal_bucket[5m])) by (le)) > 0.1
+    for: 2m
+    labels:
+      severity: critical
+
+  # Latency: End-to-End > 500ms
+  - alert: LatencyEndToEndHigh
+    expr: (histogram_quantile(0.95, sum(rate(latency_ingest_bar_bucket[5m])) by (le)) + histogram_quantile(0.95, sum(rate(latency_bar_feature_bucket[5m])) by (le)) + histogram_quantile(0.95, sum(rate(latency_feature_signal_bucket[5m])) by (le))) > 0.5
+    for: 1m
+    labels:
+      severity: critical
+
+  # --- Safety Panel Alerts (Mandatory) ---
+
+  # Safety: Circuit Breaker Open
+  - alert: CircuitBreakerOpen
+    expr: circuit_breaker_status == 1
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "CRITICAL: Circuit Breaker OPEN for {{ $labels.component }}"
+
+  # Safety: Multiple Auto-Pauses > 5 in 10m
+  - alert: multiple_auto_pauses
+    expr: sum(increase(safety_events_total{event_type="auto_pause"}[10m])) > 5
+    for: 0m
+    labels:
+      severity: high
+    annotations:
+      summary: "High Rate of Auto-Pauses Detected"
+
+  # Safety: Unauthorized Resume
+  - alert: unauthorized_resume_attempt
+    expr: safety_events_total{event_type="resume_request", approved="false"} > 0
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Security: Unauthorized Resume Attempt"
+
+  # Safety: Data Integrity Failure (Hash Mismatch)
+  - alert: safety_hash_mismatch
+    expr: safety_integrity_check == 0
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "FATAL: Safety Log Hash vs DB Mismatch"
+
+  # --- Mandatory Alerts Specification (Refined) ---
+
+  # 1. Heartbeat Missing (Critical)
+  # Condition: Heartbeat older than 30s
+  - alert: HeartbeatMissingCritical
+    expr: time() - max(heartbeat_timestamp{component!="ignore"}) by (component) > 30
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "CRITICAL: Heartbeat missing for {{ $labels.component }}"
+
+  # 2. Signal Rate Spike (Warning)
+  # Condition: > 30 signals in 1h (Baseline 10 * 3)
+  - alert: SignalRateSpike
+    expr: sum(increase(signals_total[1h])) by (symbol) > 30
+    for: 0m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Signal Rate Spike > 3x Baseline ({{ $labels.symbol }})"
+
+  # 3. Slippage Delta (Critical)
+  # Condition: Slippage > 50% (Avg over 5m ~ 10 trades)
+  # Using signal_slippage metric (assuming it captures delta %)
+  - alert: SlippageDeltaCritical
+    expr: avg_over_time(signal_slippage[5m]) > 0.5
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "CRITICAL: High Slippage Delta (>50%)"
+
+  # 4. Missing L2 Snapshot (Warning)
+  # Condition: Missing Ratio > 1%
+  # Using synthesized metric or logic
+  - alert: MissingL2Snapshot
+    expr: (1 - (sum(rate(l2_snapshot_present[5m])) / sum(rate(signals_total[5m])))) > 0.01
+    for: 1m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Data Quality: L2 Snapshot Missing > 1%"
+
+  # 5. Unauthorized Config Change (Critical)
+  # Condition: Unauthorized change metric > 0
+  - alert: UnauthorizedConfigChangeSecurity
+    expr: audit_change_unauthorized > 0
+    for: 0m
+    labels:
+      severity: critical
+    annotations:
+      summary: "SECURITY: Unauthorized Config Change Detected"

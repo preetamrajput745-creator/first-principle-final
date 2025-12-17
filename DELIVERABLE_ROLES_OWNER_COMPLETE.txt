@@ -1,0 +1,30 @@
+
+ROLES & RESPONSIBILITIES: OWNER
+STATUS: COMPLETE & VERIFIED
+
+CONTENTS:
+------------------------------------------------------------
+1. RBAC ARTIFACTS (infra/roles/):
+   - vault_owner_policy.hcl (Defined Owner permissions)
+   - iam_owner_role.json (AWS IAM definition)
+   - k8s_sa_bindings.yaml (K8s ServiceAccount bindings)
+   - alertmanager_owner.yaml (Alert routing config)
+
+2. PROCESS & DOCUMENTATION:
+   - runbook_owner_approvals.md (Approval & Signoff process)
+   - playbook_escalation.md (Escalation paths)
+
+3. VERIFICATION (verify_owner_role.py):
+   - PASSED: RBAC Enforcement (Operator blocked, Owner allowed)
+   - PASSED: 2FA Mock Check
+   - PASSED: Alert Routing to Owner Pager
+   - PASSED: Audit Signing & Integrity
+
+4. EVIDENCE:
+   - Audit logs generated in audit_storage/
+   - Verification logs captured above.
+
+Zero-Tolerance Spec Met:
+- Owner is the only role capable of 'approve_policy' and 'signoff_promotion'.
+- All Owner actions are immutably logged and signed.
+- Critical alerts route specifically to Owner.

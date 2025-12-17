@@ -1,0 +1,16 @@
+{
+  "event_id": "c5abbe7d-d2da-4097-bdd5-6ad9852600a7",
+  "timestamp_utc": "2025-12-11T09:52:46.245355",
+  "component": "automation",
+  "event_type": "auto_pause",
+  "target": "SafetyTestBot",
+  "trigger_rule": "risk_breach",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Automation SafetyTestBot PAUSED due to risk breach.",
+  "notes": "ID: d6594e0f-a0d0-4b8e-98af-88d50e40fc41",
+  "signed_hash": "6294e5634d3f8fa801386bc86071f68ecf67b174fd22f6bd64da0b4450eb71d3",
+  "evidence_link": "audit/safety/safety/c5abbe7d-d2da-4097-bdd5-6ad9852600a7.json"
+}

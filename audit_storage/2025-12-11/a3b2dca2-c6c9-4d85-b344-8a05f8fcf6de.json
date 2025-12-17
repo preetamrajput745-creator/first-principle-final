@@ -1,0 +1,21 @@
+{
+  "event_id": "a3b2dca2-c6c9-4d85-b344-8a05f8fcf6de",
+  "timestamp_utc": "2025-12-11T12:54:02.220229",
+  "actor": "admin_alice",
+  "actor_id": null,
+  "actor_role": "admin",
+  "actor_ip": null,
+  "actor_device": "unknown_device",
+  "ui_page": "/admin/secrets",
+  "resource_type": "config",
+  "resource_id": "f19c78d0-01d6-4875-99f8-215b797ffc8f",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk\": \"medium\"}",
+  "new_value": "{\"api_key\": \"SHA256:e1db4ea1de51d89ed52b1aa45f4dace5152effc9d7813e762ff7a0b90069bb98\", \"public_id\": \"ok\"}",
+  "change_context": "api",
+  "justification": "Rotating keys",
+  "notes": null,
+  "status": "committed",
+  "signed_hash": "838edfc052cf9f19808093d7c220d7659761a78f94bf8ffdb832fc9b4c08bfe7"
+}

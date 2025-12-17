@@ -1,0 +1,1 @@
+path "secret/broker-keys" { capabilities = ["deny"] }

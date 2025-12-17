@@ -1,0 +1,62 @@
+[
+  {
+    "signal_id": "SIG-99686e6f-b91a-4c7a-bf1e-fe25271736ef",
+    "symbol": "NIFTY",
+    "side": "BUY",
+    "quantity": 10,
+    "order_type": "MARKET",
+    "expected_price": 1000.0,
+    "risk_context": {
+      "max_risk": 0.01
+    },
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "signal_id": "SIG-6fa6567a-2a63-47e3-8526-c2713ff982ac",
+    "symbol": "BANKNIFTY",
+    "side": "SELL",
+    "quantity": 20,
+    "order_type": "MARKET",
+    "expected_price": 1050.5,
+    "risk_context": {
+      "max_risk": 0.01
+    },
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "signal_id": "SIG-de8c2dc6-6e25-4898-a0c9-a79dc84cd9c4",
+    "symbol": "RELIANCE",
+    "side": "BUY",
+    "quantity": 30,
+    "order_type": "MARKET",
+    "expected_price": 1101.0,
+    "risk_context": {
+      "max_risk": 0.01
+    },
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "signal_id": "SIG-5dab5888-5f93-4347-88da-d1e1d500427e",
+    "symbol": "INFY",
+    "side": "SELL",
+    "quantity": 40,
+    "order_type": "MARKET",
+    "expected_price": 1151.5,
+    "risk_context": {
+      "max_risk": 0.01
+    },
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "signal_id": "SIG-f98af56e-5b59-4ac8-acc4-d6cd726a3a20",
+    "symbol": "HDFCBANK",
+    "side": "BUY",
+    "quantity": 50,
+    "order_type": "MARKET",
+    "expected_price": 1202.0,
+    "risk_context": {
+      "max_risk": 0.01
+    },
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  }
+]

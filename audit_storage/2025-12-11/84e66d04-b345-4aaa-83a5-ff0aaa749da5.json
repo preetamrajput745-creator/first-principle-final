@@ -1,0 +1,21 @@
+{
+  "event_id": "84e66d04-b345-4aaa-83a5-ff0aaa749da5",
+  "timestamp_utc": "2025-12-11T12:54:02.538721",
+  "actor": "approver_alice",
+  "actor_id": null,
+  "actor_role": "approver",
+  "actor_ip": null,
+  "actor_device": "unknown_device",
+  "ui_page": null,
+  "resource_type": "config",
+  "resource_id": "f19c78d0-01d6-4875-99f8-215b797ffc8f",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"api_key\": \"SHA256:e1db4ea1de51d89ed52b1aa45f4dace5152effc9d7813e762ff7a0b90069bb98\", \"public_id\": \"ok\"}",
+  "new_value": "{\"risk\": \"high\"}",
+  "change_context": "api",
+  "justification": "Approved High Risk Change (Ref: Pending)",
+  "notes": "Approved request 83a3fcfc-a350-4060-83d0-e227f3dc70a2",
+  "status": "committed",
+  "signed_hash": "28153060594942dc0ca3db0017f2d2de07a9cebe8edd1b5b8c30c116463625ba"
+}

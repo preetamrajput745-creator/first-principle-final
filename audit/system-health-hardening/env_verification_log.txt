@@ -1,0 +1,9 @@
+[2025-12-10T23:34:34.934946] STARTING TASK 1 & 2: ENVIRONMENT & INSTALLATION CHECKS
+[2025-12-10T23:34:34.960344] OS Platform: Windows-10-10.0.26200-SP0
+[2025-12-10T23:34:34.960344] System Time (UTC): 2025-12-10 23:34:34.960344
+[2025-12-10T23:34:34.960344] Python Version: 3.11.9
+[2025-12-10T23:34:34.972671] Pip packages saved to D:\PREETAM RAJPUT\first pincipal finnnal\audit\system-health-hardening\pip_requirements.txt
+[2025-12-10T23:34:35.597795] Node Version: v25.2.1
+[2025-12-10T23:34:35.636379] Git Version: git version 2.52.0.windows.1
+[2025-12-10T23:34:35.648590] WARN: Docker not found (Skipping Docker checks)
+[2025-12-10T23:34:35.648590] ENVIRONMENT CHECKS COMPLETED.

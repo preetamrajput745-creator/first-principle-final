@@ -1,0 +1,61 @@
+[2025-12-12T05:43:21.772958] [PIPELINE] [START] === START PIPELINE: Full Success ===
+[2025-12-12T05:43:21.772958] [UNIT] [INFO] Starting Unit Test Suite...
+[2025-12-12T05:43:21.772958] [UNIT] [INFO] Test test_models_consistency PASSED
+[2025-12-12T05:43:21.772958] [UNIT] [INFO] Test test_config_validation PASSED
+[2025-12-12T05:43:21.772958] [UNIT] [INFO] Test test_time_normalizer_logic PASSED
+[2025-12-12T05:43:21.772958] [UNIT] [INFO] Test test_circuit_breaker_logic PASSED
+[2025-12-12T05:43:21.773501] [UNIT] [SUCCESS] Unit Tests PASSED. Coverage: 87.5%
+[2025-12-12T05:43:21.773501] [INTEGRATION] [INFO] Starting Integration Test Suite...
+[2025-12-12T05:43:21.773501] [INTEGRATION] [INFO] Validating ingest... OK (32.89ms)
+[2025-12-12T05:43:21.773501] [INTEGRATION] [INFO] Validating bar_builder... OK (46.02ms)
+[2025-12-12T05:43:21.773501] [INTEGRATION] [INFO] Validating feature_store... OK (39.49ms)
+[2025-12-12T05:43:21.773501] [INTEGRATION] [INFO] Validating signal_engine... OK (26.19ms)
+[2025-12-12T05:43:21.773501] [INTEGRATION] [SUCCESS] Integration Tests PASSED.
+[2025-12-12T05:43:21.773501] [DEPLOY] [INFO] Deploying artifact to Staging...
+[2025-12-12T05:43:21.773501] [SMOKE] [INFO] Starting Post-Deploy Smoke Tests...
+[2025-12-12T05:43:21.773501] [SMOKE] [INFO] Endpoint /healthz returned 200 OK
+[2025-12-12T05:43:21.773501] [SMOKE] [INFO] Endpoint /api/v1/status returned 200 OK
+[2025-12-12T05:43:21.773501] [SMOKE] [INFO] Endpoint /metrics returned 200 OK
+[2025-12-12T05:43:21.773501] [SMOKE] [SUCCESS] Smoke Tests PASSED. Deployment Verified.
+[2025-12-12T05:43:21.773501] [PIPELINE] [SUCCESS] === PIPELINE SUCCESSFUL ===
+[2025-12-12T05:43:21.773501] [PIPELINE] [START] === START PIPELINE: Simulate Unit Failure ===
+[2025-12-12T05:43:21.773501] [UNIT] [INFO] Starting Unit Test Suite...
+[2025-12-12T05:43:21.773501] [UNIT] [ERROR] Test test_models_consistency FAILED
+[2025-12-12T05:43:21.773501] [UNIT] [INFO] Test test_config_validation PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_time_normalizer_logic PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_circuit_breaker_logic PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [FATAL] Unit Tests FAILED. Pipeline Blocked.
+[2025-12-12T05:43:21.774509] [PIPELINE] [STOP] Pipeline STOPPED at Unit Test Stage.
+[2025-12-12T05:43:21.774509] [PIPELINE] [START] === START PIPELINE: Simulate Integration Failure ===
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Starting Unit Test Suite...
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_models_consistency PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_config_validation PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_time_normalizer_logic PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [INFO] Test test_circuit_breaker_logic PASSED
+[2025-12-12T05:43:21.774509] [UNIT] [SUCCESS] Unit Tests PASSED. Coverage: 87.5%
+[2025-12-12T05:43:21.774509] [INTEGRATION] [INFO] Starting Integration Test Suite...
+[2025-12-12T05:43:21.774509] [INTEGRATION] [INFO] Validating ingest... OK (10.87ms)
+[2025-12-12T05:43:21.774509] [INTEGRATION] [INFO] Validating bar_builder... OK (14.90ms)
+[2025-12-12T05:43:21.774509] [INTEGRATION] [ERROR] Service feature_store Timeout (>2000ms)
+[2025-12-12T05:43:21.775507] [INTEGRATION] [FATAL] Integration Tests FAILED. Pipeline Blocked.
+[2025-12-12T05:43:21.775507] [PIPELINE] [STOP] Pipeline STOPPED at Integration Stage.
+[2025-12-12T05:43:21.775507] [PIPELINE] [START] === START PIPELINE: Simulate Smoke Failure ===
+[2025-12-12T05:43:21.775507] [UNIT] [INFO] Starting Unit Test Suite...
+[2025-12-12T05:43:21.775507] [UNIT] [INFO] Test test_models_consistency PASSED
+[2025-12-12T05:43:21.775507] [UNIT] [INFO] Test test_config_validation PASSED
+[2025-12-12T05:43:21.775507] [UNIT] [INFO] Test test_time_normalizer_logic PASSED
+[2025-12-12T05:43:21.775507] [UNIT] [INFO] Test test_circuit_breaker_logic PASSED
+[2025-12-12T05:43:21.775507] [UNIT] [SUCCESS] Unit Tests PASSED. Coverage: 87.5%
+[2025-12-12T05:43:21.775507] [INTEGRATION] [INFO] Starting Integration Test Suite...
+[2025-12-12T05:43:21.775507] [INTEGRATION] [INFO] Validating ingest... OK (33.86ms)
+[2025-12-12T05:43:21.775507] [INTEGRATION] [INFO] Validating bar_builder... OK (36.06ms)
+[2025-12-12T05:43:21.775507] [INTEGRATION] [INFO] Validating feature_store... OK (22.00ms)
+[2025-12-12T05:43:21.775507] [INTEGRATION] [INFO] Validating signal_engine... OK (25.59ms)
+[2025-12-12T05:43:21.775507] [INTEGRATION] [SUCCESS] Integration Tests PASSED.
+[2025-12-12T05:43:21.775507] [DEPLOY] [INFO] Deploying artifact to Staging...
+[2025-12-12T05:43:21.775507] [SMOKE] [INFO] Starting Post-Deploy Smoke Tests...
+[2025-12-12T05:43:21.775507] [SMOKE] [INFO] Endpoint /healthz returned 200 OK
+[2025-12-12T05:43:21.775507] [SMOKE] [ERROR] Endpoint /api/v1/status returned 503 Service Unavailable
+[2025-12-12T05:43:21.775507] [SMOKE] [INFO] Endpoint /metrics returned 200 OK
+[2025-12-12T05:43:21.775507] [SMOKE] [FATAL] Smoke Tests FAILED. Deployment Rolled Back.
+[2025-12-12T05:43:21.775507] [PIPELINE] [STOP] Pipeline FAILED at Smoke Test Stage. Rollback Initiated.

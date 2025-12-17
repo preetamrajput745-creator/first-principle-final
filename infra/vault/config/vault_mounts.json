@@ -1,0 +1,26 @@
+{
+    "mounts": {
+        "antigravity/": {
+            "type": "kv-v2",
+            "description": "Antigravity Secrets Engine",
+            "config": {
+                "version": "2"
+            },
+            "options": {
+                "version": "2"
+            }
+        },
+        "transit/": {
+            "type": "transit",
+            "description": "Encryption & Signing Service",
+            "config": {},
+            "options": {}
+        },
+        "identity/": {
+            "type": "identity",
+            "description": "Identity Management",
+            "config": {},
+            "options": {}
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "event_id": "a10928b7-7c46-46a4-9737-f02a80d0ba09",
+  "timestamp_utc": "2025-12-11T12:43:26.856871",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Signal rate exceeded (52/0/hr)",
+  "notes": "Global Kill Switch Activated. Count: 0",
+  "signed_hash": "1283bed26ebbf40711bcc597c308acfbe974f5fde22801a48721dd6297ba583f",
+  "evidence_link": "audit/safety/safety/a10928b7-7c46-46a4-9737-f02a80d0ba09.json"
+}

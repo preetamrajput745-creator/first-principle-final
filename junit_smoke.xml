@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.321" timestamp="2025-12-11T15:56:04.503909+05:30" hostname="DESKTOP-AO79MD1"><testcase classname="tests.smoke.test_smoke.TestSmoke" name="test_database_connection" time="0.001"><failure message="AssertionError: Simulated smoke failure">self = &lt;test_smoke.TestSmoke testMethod=test_database_connection&gt;
+
+    def test_database_connection(self):
+        # Allow simulation of failure
+        if os.environ.get("SIMULATE_SMOKE_FAILURE") == "true":
+&gt;           self.fail("Simulated smoke failure")
+E           AssertionError: Simulated smoke failure
+
+tests\smoke\test_smoke.py:10: AssertionError</failure></testcase></testsuite></testsuites>

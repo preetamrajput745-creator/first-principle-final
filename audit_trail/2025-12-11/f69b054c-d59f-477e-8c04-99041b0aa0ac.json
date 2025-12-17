@@ -1,0 +1,15 @@
+{
+  "event_id": "f69b054c-d59f-477e-8c04-99041b0aa0ac",
+  "timestamp_utc": "2025-12-11T09:52:40.162154",
+  "actor": "983dad80-c281-4eef-8310-37968c633d67",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "75acec64-4c8e-4b5d-9017-1d49469af18a",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk_level\": \"low\", \"weights\": {\"vol\": 20}}",
+  "new_value": "{\"risk_level\": \"high\", \"weights\": {\"vol\": 50}}",
+  "change_context": "api",
+  "reason": "Admin UI: Adjusting weights for volatility",
+  "signed_hash": "2c3128e51cef845809591e80cd13a6e253f5817f001fba3121df248cdf3b2668"
+}

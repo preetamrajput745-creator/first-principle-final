@@ -1,0 +1,16 @@
+{
+  "event_id": "e7fa0b91-5be3-43d5-b2ea-a34f83109422",
+  "timestamp_utc": "2025-12-11T00:09:09.836074",
+  "component": "circuit_breaker",
+  "event_type": "auto_pause",
+  "target": "CB Test c78dc029",
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Manual Admin Action",
+  "notes": "ID: bdfb04dc-635d-43b3-956c-20883184f5af",
+  "signed_hash": "f380bfcf1f5b56065f04d53c6a6097a3d630fb7d3880d38cb425a4871282ee0f",
+  "evidence_link": "audit/safety/safety/e7fa0b91-5be3-43d5-b2ea-a34f83109422.json"
+}

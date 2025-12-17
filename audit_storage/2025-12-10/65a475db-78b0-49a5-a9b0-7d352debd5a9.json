@@ -1,0 +1,15 @@
+{
+  "event_id": "65a475db-78b0-49a5-a9b0-7d352debd5a9",
+  "timestamp_utc": "2025-12-10T23:34:55.556658",
+  "actor": "burst_script",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "795017cb-bd9e-41be-b7c2-65513d9fd74e",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"burst\": 2}",
+  "new_value": "{\"burst\": 3}",
+  "change_context": "api",
+  "reason": "Burst Update",
+  "signed_hash": "0729d3bcc0207fd74db676b79957f707bf767c1bad2e12adcc203462c12b5323"
+}

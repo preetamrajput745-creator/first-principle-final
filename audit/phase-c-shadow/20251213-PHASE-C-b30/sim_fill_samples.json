@@ -1,0 +1,47 @@
+[
+  {
+    "id": "FILL-6a74c231",
+    "signal_id": "SIG-99686e6f-b91a-4c7a-bf1e-fe25271736ef",
+    "order_hash": "bb19c22093931d73a12abf77664be5ce",
+    "fill_price": 1003.6,
+    "fill_quantity": 10,
+    "slippage_value": 3.6,
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "FILL-8e34561c",
+    "signal_id": "SIG-6fa6567a-2a63-47e3-8526-c2713ff982ac",
+    "order_hash": "fb8b823b7fc27f3c5b23548a429f5813",
+    "fill_price": 1047.5586,
+    "fill_quantity": 20,
+    "slippage_value": 2.9414,
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "FILL-23baca3a",
+    "signal_id": "SIG-de8c2dc6-6e25-4898-a0c9-a79dc84cd9c4",
+    "order_hash": "533f71a5da111f66cb26ae1a1602ea3a",
+    "fill_price": 1102.5414,
+    "fill_quantity": 30,
+    "slippage_value": 1.5414,
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "FILL-7cd5dc84",
+    "signal_id": "SIG-5dab5888-5f93-4347-88da-d1e1d500427e",
+    "order_hash": "2760fe726ef62fe28cddddf03e09d6e7",
+    "fill_price": 1149.5424,
+    "fill_quantity": 40,
+    "slippage_value": 1.9576,
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  },
+  {
+    "id": "FILL-d9fa9330",
+    "signal_id": "SIG-f98af56e-5b59-4ac8-acc4-d6cd726a3a20",
+    "order_hash": "3efe2c589de188f3b8829fd0028e9cd8",
+    "fill_price": 1204.7646,
+    "fill_quantity": 50,
+    "slippage_value": 2.7646,
+    "timestamp_utc": "2025-12-13T12:28:16.699951"
+  }
+]

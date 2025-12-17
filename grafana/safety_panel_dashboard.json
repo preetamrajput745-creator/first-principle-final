@@ -1,0 +1,104 @@
+{
+    "title": "Safety Panel (Zero-Tolerance)",
+    "uid": "safety_main",
+    "panels": [
+        {
+            "title": "Circuit Breaker Status",
+            "type": "stat",
+            "targets": [
+                {
+                    "expr": "circuit_breaker_status{component='execution'}",
+                    "legendFormat": "Execution"
+                },
+                {
+                    "expr": "circuit_breaker_status{component='ingest'}",
+                    "legendFormat": "Ingest"
+                },
+                {
+                    "expr": "circuit_breaker_status{component='risk'}",
+                    "legendFormat": "Risk"
+                },
+                {
+                    "expr": "circuit_breaker_status{component='automation'}",
+                    "legendFormat": "Automation"
+                }
+            ],
+            "gridPos": {
+                "h": 4,
+                "w": 24,
+                "x": 0,
+                "y": 0
+            }
+        },
+        {
+            "title": "Recent Auto-Pauses",
+            "type": "table",
+            "datasource": "Postgres",
+            "targets": [
+                {
+                    "format": "table",
+                    "rawSql": "SELECT timestamp_utc, component, target, reason, evidence_link FROM safety_events WHERE event_type = 'auto_pause' ORDER BY timestamp_utc DESC LIMIT 20"
+                }
+            ],
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 0,
+                "y": 4
+            }
+        },
+        {
+            "title": "Manual Overrides",
+            "type": "table",
+            "datasource": "Postgres",
+            "targets": [
+                {
+                    "format": "table",
+                    "rawSql": "SELECT timestamp_utc, actor, reason, notes FROM safety_events WHERE event_type = 'manual_pause' OR event_type = 'manual_resume' ORDER BY timestamp_utc DESC LIMIT 20"
+                }
+            ],
+            "gridPos": {
+                "h": 8,
+                "w": 12,
+                "x": 12,
+                "y": 4
+            }
+        },
+        {
+            "title": "Safety KPIs",
+            "type": "stat",
+            "targets": [
+                {
+                    "expr": "sum(increase(safety_events_total{event_type='auto_pause'}[1h]))",
+                    "legendFormat": "Auto-Pauses / Hr"
+                },
+                {
+                    "expr": "sum(safety_events_total{event_type='breaker_open'})",
+                    "legendFormat": "Breaker Open Count"
+                }
+            ],
+            "gridPos": {
+                "h": 4,
+                "w": 24,
+                "x": 0,
+                "y": 12
+            }
+        },
+        {
+            "title": "Safety Timeline",
+            "type": "timeseries",
+            "targets": [
+                {
+                    "expr": "safety_events_total",
+                    "legendFormat": "{{event_type}}"
+                }
+            ],
+            "gridPos": {
+                "h": 8,
+                "w": 24,
+                "x": 0,
+                "y": 16
+            }
+        }
+    ]
+}

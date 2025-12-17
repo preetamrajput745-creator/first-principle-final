@@ -1,0 +1,15 @@
+{
+  "event_id": "930adc57-2b4b-4e5d-812c-f4a89a9ff92d",
+  "timestamp_utc": "2025-12-11T00:12:15.316573",
+  "actor": "cacc19b8-3c9f-49d1-acb1-b845e0c48c82",
+  "actor_ip": null,
+  "resource_type": "config",
+  "resource_id": "be1a4b3c-56b8-44a5-85ef-dc8ecd6a4894",
+  "config_key": "config",
+  "change_type": "update",
+  "old_value": "{\"risk_level\": \"low\"}",
+  "new_value": "{\"risk_level\": \"high\", \"leverage\": 2}",
+  "change_context": "api",
+  "reason": "Increasing risk for high volatility session",
+  "signed_hash": "5cbae40ceaa1d7f27432e04eedd31e2567df1646dccaa43d5b2b6bc5996a2a0f"
+}

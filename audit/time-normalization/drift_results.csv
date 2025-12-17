@@ -1,0 +1,4 @@
+Timestamp,SourceID,InputOffset,ComputedDrift,Status,Pass
+2025-12-12T05:42:27.129124,ingest-pod-1,+500ms,500.0,OK,PASS
+2025-12-12T05:42:27.129124,ingest-pod-1,-700ms,-700.0,OK,PASS
+2025-12-12T05:42:27.129124,ingest-pod-1,-1500ms,1500.0,UNSTABLE_CLOCK,PASS

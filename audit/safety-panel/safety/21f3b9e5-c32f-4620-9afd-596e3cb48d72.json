@@ -1,0 +1,16 @@
+{
+  "event_id": "21f3b9e5-c32f-4620-9afd-596e3cb48d72",
+  "timestamp_utc": "2025-12-11T00:12:11.122617",
+  "component": "circuit_breaker",
+  "event_type": "breaker_open",
+  "target": null,
+  "trigger_rule": "global_kill_switch",
+  "trigger_value": null,
+  "threshold_value": null,
+  "actor": "system",
+  "actor_ip": "127.0.0.1",
+  "reason": "Circuit Breaker: 10 Consecutive High Slippage Trades (>50%)",
+  "notes": "Global Kill Switch Activated. Count: 1",
+  "signed_hash": "e6de51485bb8e0decaaf47192dcc8993aa6f54474498890055e0eee4be2de36b",
+  "evidence_link": "audit/safety/safety/21f3b9e5-c32f-4620-9afd-596e3cb48d72.json"
+}

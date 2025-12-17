@@ -1,0 +1,24 @@
+swagger: '2.0'
+info:
+  title: Time Normalization Service
+  version: 1.0.0
+paths:
+  /normalize:
+    post:
+      summary: Convert Source Time to Canonical UTC
+      parameters:
+        - in: body
+          name: payload
+          schema:
+            type: object
+            properties:
+              source_id: {type: string}
+              raw_timestamp: {type: integer}
+      responses:
+        200:
+          schema:
+            type: object
+            properties:
+              timestamp_utc: {type: string, format: date-time}
+              source_clock_drift_ms: {type: number}
+              server_time_utc: {type: string, format: date-time}
