@@ -1,0 +1,14 @@
+[
+  {
+    "signal_id": "sig_score_feat_bar_0",
+    "status": "EXECUTION_DISABLED",
+    "mode": "SHADOW",
+    "reason": "Global Execution Lock Active"
+  },
+  {
+    "signal_id": "sig_score_feat_bar_8",
+    "status": "EXECUTION_DISABLED",
+    "mode": "SHADOW",
+    "reason": "Global Execution Lock Active"
+  }
+]

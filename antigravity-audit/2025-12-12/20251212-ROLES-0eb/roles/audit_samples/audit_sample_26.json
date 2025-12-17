@@ -1,0 +1,12 @@
+{
+  "event_id": "9adc269d-d584-4cb0-bcae-04c2faca6f9a",
+  "actor": "EmergencyAdmin",
+  "actor_id": "u-admin",
+  "actor_ip": "10.0.40.114",
+  "action": "ACKNOWLEDGE_ALERT",
+  "target_id": "target-9435",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:7d6770b30e34456e9f05f211799665e0",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "1cabb99c223239552de11e71dfbceb816d56ce404a62008fd77ffdb0c8637510"
+}

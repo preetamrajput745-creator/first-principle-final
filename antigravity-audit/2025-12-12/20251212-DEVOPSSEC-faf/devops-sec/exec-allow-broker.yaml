@@ -1,0 +1,12 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: exec-allow-broker
+spec:
+  podSelector:
+    matchLabels:
+      app: execution-engine
+  egress:
+  - to:
+    - ipBlock:
+        cidr: 203.0.113.5/32 # Broker IP

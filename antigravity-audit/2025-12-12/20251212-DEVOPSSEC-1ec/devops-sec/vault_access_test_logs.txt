@@ -1,0 +1,4 @@
+[2025-12-12 05:37:00.477361] TEST: Detection Engine accessing /antigravity/trading/broker_key
+[2025-12-12 05:37:00.477361] RESULT: 403 Forbidden (PASSED)
+[2025-12-12 05:37:00.477361] TEST: Execution Engine accessing /antigravity/trading/broker_key
+[2025-12-12 05:37:00.477361] RESULT: 200 OK (PASSED)

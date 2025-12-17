@@ -1,0 +1,1 @@
+SEQUENCE_CHECK: OK (No gaps > 1s detected) - Run 2

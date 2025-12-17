@@ -1,7 +1,0 @@
-
-    Endpoint Health:
-    - /health: 200 OK
-    - /metrics: 200 OK
-    - DB Connection: ESTABLISHED
-    - Secrets Mount: VERIFIED
-    

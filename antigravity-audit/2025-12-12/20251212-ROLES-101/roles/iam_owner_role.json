@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:*",
+        "kms:Sign",
+        "kms:Verify"
+      ],
+      "Resource": [
+        "arn:aws:s3:::antigravity-audit/*",
+        "arn:aws:kms:*:*:key/owner-sign-key"
+      ]
+    },
+    {
+      "Effect": "Allow",
+      "Action": [
+        "pagerduty:Resolve",
+        "pagerduty:Acknowledge"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

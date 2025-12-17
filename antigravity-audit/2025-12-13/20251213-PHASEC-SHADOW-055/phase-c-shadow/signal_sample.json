@@ -1,0 +1,35 @@
+[
+  {
+    "signal_id": "sig_score_feat_bar_1",
+    "timestamp_utc": "2025-12-13T11:27:30.377280Z",
+    "symbol": "BTC-USD",
+    "side": "BUY",
+    "score": 98.78708011998448,
+    "risk_context": {
+      "max_pos": 2.0,
+      "current_risk": 0.002
+    }
+  },
+  {
+    "signal_id": "sig_score_feat_bar_11",
+    "timestamp_utc": "2025-12-13T11:37:30.377280Z",
+    "symbol": "BTC-USD",
+    "side": "SELL",
+    "score": 78.66612270195074,
+    "risk_context": {
+      "max_pos": 2.0,
+      "current_risk": 0.002
+    }
+  },
+  {
+    "signal_id": "sig_score_feat_bar_18",
+    "timestamp_utc": "2025-12-13T11:44:30.377280Z",
+    "symbol": "BTC-USD",
+    "side": "SELL",
+    "score": 92.68864675937553,
+    "risk_context": {
+      "max_pos": 2.0,
+      "current_risk": 0.002
+    }
+  }
+]

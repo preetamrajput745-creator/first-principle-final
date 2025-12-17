@@ -1,0 +1,16 @@
+[
+  {
+    "alert_name": "INGEST_STALE_CRITICAL",
+    "severity": "CRITICAL",
+    "condition": "freshness > 5s",
+    "value": 7.031334571566313,
+    "timestamp": "2025-12-14T00:10:24.253216"
+  },
+  {
+    "alert_name": "CLOCK_DRIFT_CRITICAL",
+    "severity": "CRITICAL",
+    "condition": "drift > 100ms",
+    "value": 126.40713060457753,
+    "timestamp": "2025-12-14T00:10:24.253216"
+  }
+]

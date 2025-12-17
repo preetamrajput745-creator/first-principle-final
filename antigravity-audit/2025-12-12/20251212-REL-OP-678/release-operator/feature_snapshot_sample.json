@@ -1,0 +1,12 @@
+{
+  "symbol": "BTC-USD",
+  "features": {
+    "rsi_14": 60.2,
+    "mac_d": 115.3,
+    "volatility_atr": 0.03
+  },
+  "latency_stats": {
+    "p50_ms": 4.8,
+    "p95_ms": 11.5
+  }
+}

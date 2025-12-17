@@ -1,0 +1,16 @@
+[
+  {
+    "alert_name": "P95_LATENCY_HIGH",
+    "severity": "WARNING",
+    "condition": "p95 > 300ms",
+    "value": 364.5052650702688,
+    "timestamp": "2025-12-14T00:12:29.456059"
+  },
+  {
+    "alert_name": "P95_LATENCY_CRITICAL",
+    "severity": "CRITICAL",
+    "condition": "p95 > 500ms",
+    "value": 595.5515632535435,
+    "timestamp": "2025-12-14T00:12:29.476150"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "iteration": 1,
+    "weights_before": {
+      "WEIGHT_WICK": 30,
+      "WEIGHT_VOL": 20,
+      "WEIGHT_POKE": 10,
+      "TRIGGER_SCORE": 70
+    },
+    "weights_after": {
+      "WEIGHT_WICK": 34,
+      "WEIGHT_VOL": 18,
+      "WEIGHT_POKE": 11,
+      "TRIGGER_SCORE": 70
+    },
+    "reason": "Quality 0.00% < 70.0%"
+  },
+  {
+    "iteration": 2,
+    "weights_before": {
+      "WEIGHT_WICK": 34,
+      "WEIGHT_VOL": 18,
+      "WEIGHT_POKE": 11,
+      "TRIGGER_SCORE": 70
+    },
+    "weights_after": {
+      "WEIGHT_WICK": 39,
+      "WEIGHT_VOL": 16,
+      "WEIGHT_POKE": 12,
+      "TRIGGER_SCORE": 70
+    },
+    "reason": "Quality 0.00% < 70.0%"
+  },
+  {
+    "iteration": 3,
+    "weights_before": {
+      "WEIGHT_WICK": 39,
+      "WEIGHT_VOL": 16,
+      "WEIGHT_POKE": 12,
+      "TRIGGER_SCORE": 70
+    },
+    "weights_after": {
+      "WEIGHT_WICK": 44,
+      "WEIGHT_VOL": 14,
+      "WEIGHT_POKE": 13,
+      "TRIGGER_SCORE": 70
+    },
+    "reason": "Quality 0.00% < 70.0%"
+  }
+]

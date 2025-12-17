@@ -1,0 +1,8 @@
+--- RBAC TEST 1: Operator attempts Approval ---
+Request: POST /v1/policies/pol-1/approve (Token: operator-jwt)
+Response: 403 Forbidden
+PASS: Operator Blocked
+--- RBAC TEST 2: Owner attempts Approval ---
+Request: POST /v1/policies/pol-1/approve (Token: owner-jwt, 2FA: valid)
+Response: 200 OK {status: 'approved', audit_id: '...'}
+PASS: Owner Allowed

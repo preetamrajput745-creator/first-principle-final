@@ -1,0 +1,42 @@
+[
+  {
+    "timestamp_utc": "2025-12-15T05:24:15.905048",
+    "signal_id": "SIG-SANDBOX-100",
+    "action": "APPROVED",
+    "reason": "Standard test trade",
+    "2fa_verified": true,
+    "actor": "admin_user"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:15.905048",
+    "signal_id": "SIG-SANDBOX-101",
+    "action": "APPROVED",
+    "reason": "Standard test trade",
+    "2fa_verified": true,
+    "actor": "admin_user"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:15.905048",
+    "signal_id": "SIG-SANDBOX-102",
+    "action": "APPROVED",
+    "reason": "Standard test trade",
+    "2fa_verified": true,
+    "actor": "admin_user"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:15.905048",
+    "signal_id": "SIG-SANDBOX-103",
+    "action": "APPROVED",
+    "reason": "Standard test trade",
+    "2fa_verified": true,
+    "actor": "admin_user"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:15.905048",
+    "signal_id": "SIG-SANDBOX-104",
+    "action": "APPROVED",
+    "reason": "Standard test trade",
+    "2fa_verified": true,
+    "actor": "admin_user"
+  }
+]

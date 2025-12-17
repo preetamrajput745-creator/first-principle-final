@@ -1,0 +1,9 @@
+
+class FailFastGuard:
+    def run_or_fail(self, testname, fn):
+        if self.stop_execution: return
+        res = fn()
+        if res.status == 'FAIL':
+            self.stop_execution = True
+            log('STOP_IMMEDIATELY')
+            save_evidence()

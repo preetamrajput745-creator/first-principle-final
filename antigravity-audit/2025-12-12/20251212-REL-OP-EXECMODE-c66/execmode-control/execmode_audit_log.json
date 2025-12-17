@@ -1,0 +1,47 @@
+[
+  {
+    "timestamp": "2025-12-12T11:58:47.389937Z",
+    "actor": "owner",
+    "requested_mode": "LIVE",
+    "reason": "Authorized Live Promotion Ticket-123",
+    "result": "SUCCESS",
+    "details": "Mode changed PAPER->LIVE",
+    "id": "02b1e01985d54d7c82a6e8b2cd8efb9e"
+  },
+  {
+    "timestamp": "2025-12-12T11:58:47.390943Z",
+    "actor": "dev",
+    "requested_mode": "LIVE",
+    "reason": "Testing",
+    "result": "DENIED",
+    "details": "Role != Owner",
+    "id": "af4755a80963489f97991e4807c4d686"
+  },
+  {
+    "timestamp": "2025-12-12T11:58:47.390943Z",
+    "actor": "owner",
+    "requested_mode": "LIVE",
+    "reason": "Forgot Token",
+    "result": "DENIED",
+    "details": "Invalid TOTP",
+    "id": "c2a14eb9358f4e22a656acc6f2ae5d49"
+  },
+  {
+    "timestamp": "2025-12-12T11:58:47.390943Z",
+    "actor": "owner",
+    "requested_mode": "LIVE",
+    "reason": "API Script",
+    "result": "DENIED",
+    "details": "Origin Invalid",
+    "id": "af2ad10ad2de43b6a21f4e9b9e353600"
+  },
+  {
+    "timestamp": "2025-12-12T11:58:47.390943Z",
+    "actor": "owner",
+    "requested_mode": "LIVE",
+    "reason": "",
+    "result": "DENIED",
+    "details": "Missing Audit Reason",
+    "id": "4c2ca99a02674a7d850f466fbbead727"
+  }
+]

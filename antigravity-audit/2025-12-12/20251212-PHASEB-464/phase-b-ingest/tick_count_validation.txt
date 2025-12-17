@@ -1,0 +1,3 @@
+Ingested: 1000
+Persisted: 1000
+Loss: 0.0%

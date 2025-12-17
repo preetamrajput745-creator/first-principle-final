@@ -1,0 +1,12 @@
+[
+  {
+    "alert": "LatencyHigh",
+    "val": 150,
+    "target": "Slack"
+  },
+  {
+    "alert": "L2Missing",
+    "val": 1,
+    "target": "Email"
+  }
+]

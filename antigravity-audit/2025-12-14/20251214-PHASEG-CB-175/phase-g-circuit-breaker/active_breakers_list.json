@@ -1,0 +1,12 @@
+[
+  {
+    "breaker_id": "CB_GLOBAL_SLIPPAGE",
+    "scope": "GLOBAL",
+    "state": "OPEN",
+    "reason": "SLIPPAGE_EXCEEDED",
+    "metric": "slippage_avg",
+    "current": 1.5,
+    "threshold": 0.5,
+    "ts": "2025-12-14T00:13:29.265594"
+  }
+]

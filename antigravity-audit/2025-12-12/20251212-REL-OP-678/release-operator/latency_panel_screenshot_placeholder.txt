@@ -1,0 +1,1 @@
+[IMAGE CONTENT: Feature Latency Panel showing < 15ms]

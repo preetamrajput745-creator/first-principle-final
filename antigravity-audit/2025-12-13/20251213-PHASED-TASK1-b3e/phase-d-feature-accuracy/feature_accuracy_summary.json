@@ -1,0 +1,12 @@
+{
+  "bars_checked": 20,
+  "features_validated": [
+    "ATR14",
+    "upper_wick",
+    "lower_wick",
+    "SMA20",
+    "resistance_poke"
+  ],
+  "mismatches": 0,
+  "status": "PASS"
+}

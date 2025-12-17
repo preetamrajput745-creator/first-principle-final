@@ -1,0 +1,26 @@
+[
+  {
+    "timestamp_utc": "2025-12-15T05:20:40.959406",
+    "service_name": "execution_service",
+    "vault_path": "secrets/broker/sandbox/alpaca",
+    "execution_mode": "SHADOW",
+    "access_result": "DENY",
+    "source_ip": "10.0.0.100"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:20:40.959406",
+    "service_name": "execution_service",
+    "vault_path": "secrets/broker/live/alpaca",
+    "execution_mode": "SANDBOX",
+    "access_result": "DENY",
+    "source_ip": "10.0.0.100"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:20:40.959406",
+    "service_name": "execution_service",
+    "vault_path": "secrets/broker/*",
+    "execution_mode": "SANDBOX",
+    "access_result": "DENY",
+    "source_ip": "10.0.0.100"
+  }
+]

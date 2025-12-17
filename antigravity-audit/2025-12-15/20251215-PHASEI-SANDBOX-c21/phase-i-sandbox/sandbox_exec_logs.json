@@ -1,0 +1,42 @@
+[
+  {
+    "exec_log_id": "EXEC-SIG-SANDBOX-100",
+    "signal_id": "SIG-SANDBOX-100",
+    "execution_mode": "SANDBOX",
+    "execution_status": "FILLED",
+    "timestamp": "2025-12-15T05:24:15.905048",
+    "fill_ref": "fill_dc0ecc70"
+  },
+  {
+    "exec_log_id": "EXEC-SIG-SANDBOX-101",
+    "signal_id": "SIG-SANDBOX-101",
+    "execution_mode": "SANDBOX",
+    "execution_status": "FILLED",
+    "timestamp": "2025-12-15T05:24:15.905048",
+    "fill_ref": "fill_ef43767e"
+  },
+  {
+    "exec_log_id": "EXEC-SIG-SANDBOX-102",
+    "signal_id": "SIG-SANDBOX-102",
+    "execution_mode": "SANDBOX",
+    "execution_status": "FILLED",
+    "timestamp": "2025-12-15T05:24:15.905048",
+    "fill_ref": "fill_629009df"
+  },
+  {
+    "exec_log_id": "EXEC-SIG-SANDBOX-103",
+    "signal_id": "SIG-SANDBOX-103",
+    "execution_mode": "SANDBOX",
+    "execution_status": "FILLED",
+    "timestamp": "2025-12-15T05:24:15.905048",
+    "fill_ref": "fill_8cab5ab0"
+  },
+  {
+    "exec_log_id": "EXEC-SIG-SANDBOX-104",
+    "signal_id": "SIG-SANDBOX-104",
+    "execution_mode": "SANDBOX",
+    "execution_status": "FILLED",
+    "timestamp": "2025-12-15T05:24:15.905048",
+    "fill_ref": "fill_7319a780"
+  }
+]

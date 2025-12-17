@@ -1,0 +1,12 @@
+{
+  "global_mode": "PAPER",
+  "subsystems": {
+    "ingestion": "LIVE",
+    "bar_builder": "LIVE",
+    "feature_engine": "LIVE",
+    "detection_engine": "LIVE",
+    "execution_engine": "PAPER"
+  },
+  "real_order_placement_enabled": false,
+  "last_updated": "2025-12-12T12:01:00.715573Z"
+}

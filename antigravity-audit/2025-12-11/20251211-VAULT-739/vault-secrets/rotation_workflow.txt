@@ -1,0 +1,39 @@
+READ OLD: {
+  "request_id": "418a8b74-fc8c-72d4-4190-944d3a271732",
+  "lease_id": "",
+  "lease_duration": 0,
+  "renewable": false,
+  "data": {
+    "data": {
+      "broker_api": "exec-key-1"
+    },
+    "metadata": {
+      "created_time": "2025-12-11T12:35:16.0346866Z",
+      "custom_metadata": null,
+      "deletion_time": "",
+      "destroyed": false,
+      "version": 1
+    }
+  },
+  "warnings": null
+}
+
+READ NEW: {
+  "request_id": "90a52c2d-32f2-04b1-f1a2-c7b03da92714",
+  "lease_id": "",
+  "lease_duration": 0,
+  "renewable": false,
+  "data": {
+    "data": {
+      "broker_api": "exec-key-rot-v2"
+    },
+    "metadata": {
+      "created_time": "2025-12-11T12:35:21.7775265Z",
+      "custom_metadata": null,
+      "deletion_time": "",
+      "destroyed": false,
+      "version": 2
+    }
+  },
+  "warnings": null
+}

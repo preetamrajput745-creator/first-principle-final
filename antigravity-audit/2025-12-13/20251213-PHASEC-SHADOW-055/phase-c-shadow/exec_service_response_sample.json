@@ -1,0 +1,20 @@
+[
+  {
+    "signal_id": "sig_score_feat_bar_1",
+    "status": "EXECUTION_DISABLED",
+    "mode": "SHADOW",
+    "reason": "Global Execution Lock Active - Phase C"
+  },
+  {
+    "signal_id": "sig_score_feat_bar_11",
+    "status": "EXECUTION_DISABLED",
+    "mode": "SHADOW",
+    "reason": "Global Execution Lock Active - Phase C"
+  },
+  {
+    "signal_id": "sig_score_feat_bar_18",
+    "status": "EXECUTION_DISABLED",
+    "mode": "SHADOW",
+    "reason": "Global Execution Lock Active - Phase C"
+  }
+]

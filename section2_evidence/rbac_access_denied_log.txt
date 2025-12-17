@@ -1,0 +1,1 @@
+VAULT READ secret/broker_keys BY role=detection -> 403 Forbidden

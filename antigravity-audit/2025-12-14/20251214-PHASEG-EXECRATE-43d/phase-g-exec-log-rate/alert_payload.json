@@ -1,0 +1,15 @@
+[
+  {
+    "alert_name": "EXEC_LOG_DROPOUT",
+    "severity": "CRITICAL",
+    "condition": "exec_logs_per_minute == 0 AND signals > 0",
+    "timestamp": "2025-12-14T00:17:42.028392"
+  },
+  {
+    "alert_name": "EXEC_MODE_VIOLATION",
+    "severity": "CRITICAL",
+    "condition": "execution_mode != SHADOW",
+    "details": "LIVE mode execution attempted",
+    "timestamp": "2025-12-14T00:17:42.028392"
+  }
+]

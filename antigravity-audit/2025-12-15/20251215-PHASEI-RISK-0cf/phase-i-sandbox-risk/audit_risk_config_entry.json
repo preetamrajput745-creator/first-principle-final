@@ -1,0 +1,25 @@
+[
+  {
+    "timestamp_utc": "2025-12-15T05:24:45.529000",
+    "actor_id": "admin_user",
+    "actor_role": "RELEASE_OPERATOR",
+    "action_type": "RISK_CONFIG_SET",
+    "setting": "CANARY_SYMBOLS",
+    "value": [
+      "NIFTY",
+      "BANKNIFTY"
+    ],
+    "environment": "SANDBOX",
+    "source_ip": "10.0.0.5"
+  },
+  {
+    "timestamp_utc": "2025-12-15T05:24:45.529000",
+    "actor_id": "admin_user",
+    "actor_role": "RELEASE_OPERATOR",
+    "action_type": "RISK_CONFIG_SET",
+    "setting": "MAX_RISK_PER_TRADE",
+    "value": 0.0001,
+    "environment": "SANDBOX",
+    "source_ip": "10.0.0.5"
+  }
+]

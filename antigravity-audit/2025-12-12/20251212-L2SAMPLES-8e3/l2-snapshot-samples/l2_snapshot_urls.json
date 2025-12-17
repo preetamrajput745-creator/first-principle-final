@@ -1,0 +1,32 @@
+[
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_0.json",
+    "s3_uri": "s3://antigravity-raw-ticks/market_data/l2/2025-12-12/snap_idx_0.json",
+    "signed_url": "https://antigravity-raw-ticks.s3.amazonaws.com/market_data/l2/2025-12-12/snap_idx_0.json?signature=mock123",
+    "size_bytes": 1128
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_99.json",
+    "s3_uri": "s3://antigravity-raw-ticks/market_data/l2/2025-12-12/snap_idx_99.json",
+    "signed_url": "https://antigravity-raw-ticks.s3.amazonaws.com/market_data/l2/2025-12-12/snap_idx_99.json?signature=mock123",
+    "size_bytes": 1323
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_50.json",
+    "s3_uri": "s3://antigravity-raw-ticks/market_data/l2/2025-12-12/snap_idx_50.json",
+    "signed_url": "https://antigravity-raw-ticks.s3.amazonaws.com/market_data/l2/2025-12-12/snap_idx_50.json?signature=mock123",
+    "size_bytes": 1370
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_27.json",
+    "s3_uri": "s3://antigravity-raw-ticks/market_data/l2/2025-12-12/snap_idx_27.json",
+    "signed_url": "https://antigravity-raw-ticks.s3.amazonaws.com/market_data/l2/2025-12-12/snap_idx_27.json?signature=mock123",
+    "size_bytes": 1192
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_68.json",
+    "s3_uri": "s3://antigravity-raw-ticks/market_data/l2/2025-12-12/snap_idx_68.json",
+    "signed_url": "https://antigravity-raw-ticks.s3.amazonaws.com/market_data/l2/2025-12-12/snap_idx_68.json?signature=mock123",
+    "size_bytes": 1249
+  }
+]

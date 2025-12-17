@@ -1,0 +1,12 @@
+[
+  {
+    "alert_name": "SlippageCritical",
+    "severity": "critical",
+    "value": 0.55,
+    "timestamp": "2025-12-12T05:38:22.227963Z",
+    "channels": [
+      "PagerDuty",
+      "Slack"
+    ]
+  }
+]

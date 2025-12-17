@@ -1,0 +1,17 @@
+{
+  "event": "circuit_breaker_trigger",
+  "task_id": "20251212-ONCALL-335",
+  "timestamp_utc": "2025-12-12T05:38:22.230588Z",
+  "root_cause": "Synthetic Slippage Injection (Test A)",
+  "actions_taken": [
+    "Auto-Pause Triggered",
+    "Metrics Stabilized",
+    "Safe Resume Executed"
+  ],
+  "resume_allowed": true,
+  "metrics_snapshot": {
+    "slippage_delta": 0.05,
+    "latency_p95": 40,
+    "l2_missing_pct": 0.0
+  }
+}

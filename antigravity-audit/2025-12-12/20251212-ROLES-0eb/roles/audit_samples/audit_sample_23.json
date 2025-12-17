@@ -1,0 +1,12 @@
+{
+  "event_id": "49f94535-a0cb-4f33-bfed-a362dcda8405",
+  "actor": "Alice",
+  "actor_id": "u-alice",
+  "actor_ip": "10.0.20.172",
+  "action": "ACKNOWLEDGE_ALERT",
+  "target_id": "target-1723",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:efc1496b4b474c049a877b0d9679f147",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "62695c43486700693a9acbdf488e648100920f7eddbcc56d71672d94cfc094cb"
+}

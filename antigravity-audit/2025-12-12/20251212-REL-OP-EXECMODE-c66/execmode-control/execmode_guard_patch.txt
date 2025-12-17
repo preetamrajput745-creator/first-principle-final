@@ -1,0 +1,9 @@
+
+# execmode_guard_patch.py
+def get_execution_mode():
+    # BLOCK ENV VARS
+    if os.getenv("EXECUTION_MODE"):
+        raise SecurityError("Execution mode is immutable outside Admin UI")
+    
+    # FETCH FROM SECURE DB ONLY
+    return db.query(SystemConfig).first().execution_mode

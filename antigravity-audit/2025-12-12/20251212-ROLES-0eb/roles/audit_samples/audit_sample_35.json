@@ -1,0 +1,12 @@
+{
+  "event_id": "74d14491-5023-45df-94eb-897b1a124cac",
+  "actor": "EmergencyAdmin",
+  "actor_id": "u-admin",
+  "actor_ip": "10.0.8.199",
+  "action": "SIGNOFF_PROMOTION",
+  "target_id": "target-4172",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:2598a857f55c470d9d034c9c2b4e5b2c",
+  "timestamp_utc": "2025-12-12T05:35:07.165954Z",
+  "signed_hash": "d93193f7edb0b91f85f18919e71eb8436fefe2f1ac27484bcf56386d48452429"
+}

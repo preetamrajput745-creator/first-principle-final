@@ -1,0 +1,6 @@
+{
+  "hop_name": "E2E",
+  "p95_latency_ms": 390,
+  "threshold": 300,
+  "duration": "120s"
+}

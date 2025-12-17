@@ -1,0 +1,126 @@
+{
+  "antigravity/data/": {
+    "uuid": "6492e1c3-784b-4e70-e4d2-1febcaae6523",
+    "type": "kv",
+    "description": "",
+    "accessor": "kv_199159d1",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false
+    },
+    "options": {
+      "version": "2"
+    },
+    "local": false,
+    "seal_wrap": false,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v0.16.1+builtin",
+    "running_sha256": "",
+    "deprecation_status": "supported"
+  },
+  "cubbyhole/": {
+    "uuid": "24218ba0-908c-8a85-ca13-a037e603b609",
+    "type": "cubbyhole",
+    "description": "per-token private secret storage",
+    "accessor": "cubbyhole_d8daa84a",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false
+    },
+    "options": null,
+    "local": true,
+    "seal_wrap": false,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v1.15.0+builtin.vault",
+    "running_sha256": "",
+    "deprecation_status": ""
+  },
+  "identity/": {
+    "uuid": "123b1af0-c782-a055-bffe-f30466172461",
+    "type": "identity",
+    "description": "identity store",
+    "accessor": "identity_9f57da91",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false,
+      "passthrough_request_headers": [
+        "Authorization"
+      ]
+    },
+    "options": null,
+    "local": false,
+    "seal_wrap": false,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v1.15.0+builtin.vault",
+    "running_sha256": "",
+    "deprecation_status": ""
+  },
+  "secret/": {
+    "uuid": "3b57ebc7-de54-24a3-99e3-71705ef9c24f",
+    "type": "kv",
+    "description": "key/value secret storage",
+    "accessor": "kv_4ca3dc27",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false
+    },
+    "options": {
+      "version": "2"
+    },
+    "local": false,
+    "seal_wrap": false,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v0.16.1+builtin",
+    "running_sha256": "",
+    "deprecation_status": "supported"
+  },
+  "sys/": {
+    "uuid": "36efdae7-9fbe-e2d4-7de4-d4129570e5a0",
+    "type": "system",
+    "description": "system endpoints used for control, policy and debugging",
+    "accessor": "system_c6a89513",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false,
+      "passthrough_request_headers": [
+        "Accept"
+      ]
+    },
+    "options": null,
+    "local": false,
+    "seal_wrap": true,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v1.15.0+builtin.vault",
+    "running_sha256": "",
+    "deprecation_status": ""
+  },
+  "transit/": {
+    "uuid": "0f542344-789d-6ce8-ce55-4102b7ad103e",
+    "type": "transit",
+    "description": "",
+    "accessor": "transit_f332e33d",
+    "config": {
+      "default_lease_ttl": 0,
+      "max_lease_ttl": 0,
+      "force_no_cache": false
+    },
+    "options": null,
+    "local": false,
+    "seal_wrap": false,
+    "external_entropy_access": false,
+    "plugin_version": "",
+    "running_plugin_version": "v1.15.0+builtin.vault",
+    "running_sha256": "",
+    "deprecation_status": "supported"
+  }
+}

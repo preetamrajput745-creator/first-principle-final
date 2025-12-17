@@ -1,0 +1,12 @@
+{
+  "event_id": "8ee816af-c14f-4629-ab97-8d1428040e57",
+  "actor": "EmergencyAdmin",
+  "actor_id": "u-admin",
+  "actor_ip": "10.0.25.131",
+  "action": "REJECT_POLICY",
+  "target_id": "target-2639",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:65a8d68a270b464c9774c09b71ae4073",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "1e248c9d3f8cc00b71d705188e3a201119713273845acbe02ecc6f07b059ee6b"
+}

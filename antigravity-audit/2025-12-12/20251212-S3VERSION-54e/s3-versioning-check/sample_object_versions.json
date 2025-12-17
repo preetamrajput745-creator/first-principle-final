@@ -1,0 +1,22 @@
+{
+  "Versions": [
+    {
+      "Key": "2025/12/12/tick_001.json",
+      "VersionId": "d1914f4b4cb04d789b80084b6433b12d",
+      "IsLatest": true,
+      "LastModified": "2025-12-12T12:47:44.693465Z"
+    },
+    {
+      "Key": "2025/12/12/tick_001.json",
+      "VersionId": "90d6537e2ee843e79040b2302afc55dd",
+      "IsLatest": false,
+      "LastModified": "2025-12-12T12:47:44.693465Z"
+    },
+    {
+      "Key": "2025/12/12/tick_002.json",
+      "VersionId": "fa71e32f6e254f85a5ca581573d60961",
+      "IsLatest": true,
+      "LastModified": "2025-12-12T12:47:44.693465Z"
+    }
+  ]
+}

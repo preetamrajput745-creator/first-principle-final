@@ -1,0 +1,82 @@
+[
+  {
+    "score_id": "score_feat_bar_0",
+    "feature_id": "feat_bar_0",
+    "timestamp_utc": "2025-12-13T11:17:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 86.03875528843538,
+    "trigger": true
+  },
+  {
+    "score_id": "score_feat_bar_1",
+    "feature_id": "feat_bar_1",
+    "timestamp_utc": "2025-12-13T11:18:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 42.742636458162394,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_2",
+    "feature_id": "feat_bar_2",
+    "timestamp_utc": "2025-12-13T11:19:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 10.421353999355997,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_3",
+    "feature_id": "feat_bar_3",
+    "timestamp_utc": "2025-12-13T11:20:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 64.67153139191679,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_4",
+    "feature_id": "feat_bar_4",
+    "timestamp_utc": "2025-12-13T11:21:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 20.80101923085872,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_5",
+    "feature_id": "feat_bar_5",
+    "timestamp_utc": "2025-12-13T11:22:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 70.1081973345293,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_6",
+    "feature_id": "feat_bar_6",
+    "timestamp_utc": "2025-12-13T11:23:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 8.977254572320192,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_7",
+    "feature_id": "feat_bar_7",
+    "timestamp_utc": "2025-12-13T11:24:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 1.9886794122744411,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_8",
+    "feature_id": "feat_bar_8",
+    "timestamp_utc": "2025-12-13T11:25:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 82.05740021018741,
+    "trigger": true
+  },
+  {
+    "score_id": "score_feat_bar_9",
+    "feature_id": "feat_bar_9",
+    "timestamp_utc": "2025-12-13T11:26:07.092175Z",
+    "strategy": "MOMENTUM_V1",
+    "score_value": 74.75605693895943,
+    "trigger": false
+  }
+]

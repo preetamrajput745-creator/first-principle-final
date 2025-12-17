@@ -1,0 +1,4 @@
+TEST: Detection Engine accessing /antigravity/trading/broker_key
+RESULT: 403 Forbidden (PASSED)
+TEST: Execution Engine accessing /antigravity/trading/broker_key
+RESULT: 200 OK (PASSED)

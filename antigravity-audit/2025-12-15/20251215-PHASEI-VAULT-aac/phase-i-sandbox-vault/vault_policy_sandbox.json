@@ -1,0 +1,11 @@
+{
+  "sandbox_access": {
+    "paths": [
+      "secrets/broker/sandbox/*"
+    ],
+    "allowed_modes": [
+      "SANDBOX"
+    ],
+    "service": "execution_service"
+  }
+}

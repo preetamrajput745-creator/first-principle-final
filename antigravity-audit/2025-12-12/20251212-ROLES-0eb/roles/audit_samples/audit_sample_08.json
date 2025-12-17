@@ -1,0 +1,12 @@
+{
+  "event_id": "8cca0f94-5b82-4db5-975b-857499c9754f",
+  "actor": "Alice",
+  "actor_id": "u-alice",
+  "actor_ip": "10.0.7.182",
+  "action": "SIGNOFF_PROMOTION",
+  "target_id": "target-9218",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:b719572c5427454a945493f26c781e0f",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "520804521da5f76d0250af03ccef4c4a9ba25d3b8158638b094edc7fd15ec4db"
+}

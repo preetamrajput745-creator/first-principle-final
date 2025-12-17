@@ -1,0 +1,6 @@
+TestName,MappedToFailFast
+S3_Immutability,YES
+RBAC_Check,YES
+CI_Pipeline,YES
+Time_Normalization,YES
+Circuit_Breaker,YES

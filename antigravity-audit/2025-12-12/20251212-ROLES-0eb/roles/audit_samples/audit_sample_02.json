@@ -1,0 +1,13 @@
+{
+  "event_id": "5d3a6f3d-5a99-4cbe-85e8-1bea0bb06848",
+  "actor": "Alice",
+  "actor_id": "u-alice",
+  "actor_url": "10.0.50.23",
+  "action": "SIGNOFF_PROMOTION",
+  "target_id": "release-v1.5.0",
+  "justification": "All green checks passed.",
+  "2fa_hash": "sha256:1a2b3c4d...",
+  "evidence_link": "s3://evidence/release_manifest.json",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "7b196d035bb79f4b61813704b58a8abe82490e6403370cb89eb40ea9558ba1d6"
+}

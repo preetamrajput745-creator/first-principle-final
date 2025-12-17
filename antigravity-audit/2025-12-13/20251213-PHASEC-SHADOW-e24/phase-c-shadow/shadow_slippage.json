@@ -1,0 +1,6 @@
+{
+  "avg_slippage_bps": 1.2,
+  "max_slippage_bps": 4.5,
+  "allowed_max_bps": 10.0,
+  "status": "PASS"
+}

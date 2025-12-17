@@ -1,0 +1,8 @@
+{
+  "time_window": "last_1_hour_utc",
+  "exec_log_count": 50,
+  "sim_fill_count": 50,
+  "missing_sim_fills": 0,
+  "orphan_sim_fills": 0,
+  "status": "PASS"
+}

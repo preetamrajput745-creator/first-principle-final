@@ -1,0 +1,4 @@
+fill_id,signal_id,symbol,side,qty,FillPrice,Timestamp
+fill_sig_score_feat_bar_1,sig_score_feat_bar_1,BTC-USD,BUY,0.2,90552,2025-12-13T12:26:30.380943Z
+fill_sig_score_feat_bar_11,sig_score_feat_bar_11,BTC-USD,SELL,0.2,90548,2025-12-13T12:26:30.380943Z
+fill_sig_score_feat_bar_18,sig_score_feat_bar_18,BTC-USD,SELL,0.2,90548,2025-12-13T12:26:30.380943Z

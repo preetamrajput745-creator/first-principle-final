@@ -1,0 +1,222 @@
+[
+  {
+    "bar_id": "bar_0",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:26:30.377280Z",
+    "open": 90500,
+    "high": 90600,
+    "low": 90400,
+    "close": 90550,
+    "volume": 2.5
+  },
+  {
+    "bar_id": "bar_1",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:27:30.377280Z",
+    "open": 90501,
+    "high": 90601,
+    "low": 90401,
+    "close": 90551,
+    "volume": 2.6
+  },
+  {
+    "bar_id": "bar_2",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:28:30.377280Z",
+    "open": 90502,
+    "high": 90602,
+    "low": 90402,
+    "close": 90552,
+    "volume": 2.7
+  },
+  {
+    "bar_id": "bar_3",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:29:30.377280Z",
+    "open": 90503,
+    "high": 90603,
+    "low": 90403,
+    "close": 90553,
+    "volume": 2.8
+  },
+  {
+    "bar_id": "bar_4",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:30:30.377280Z",
+    "open": 90504,
+    "high": 90604,
+    "low": 90404,
+    "close": 90554,
+    "volume": 2.9
+  },
+  {
+    "bar_id": "bar_5",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:31:30.377280Z",
+    "open": 90505,
+    "high": 90605,
+    "low": 90405,
+    "close": 90555,
+    "volume": 3.0
+  },
+  {
+    "bar_id": "bar_6",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:32:30.377280Z",
+    "open": 90506,
+    "high": 90606,
+    "low": 90406,
+    "close": 90556,
+    "volume": 3.1
+  },
+  {
+    "bar_id": "bar_7",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:33:30.377280Z",
+    "open": 90507,
+    "high": 90607,
+    "low": 90407,
+    "close": 90557,
+    "volume": 3.2
+  },
+  {
+    "bar_id": "bar_8",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:34:30.377280Z",
+    "open": 90508,
+    "high": 90608,
+    "low": 90408,
+    "close": 90558,
+    "volume": 3.3
+  },
+  {
+    "bar_id": "bar_9",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:35:30.377280Z",
+    "open": 90509,
+    "high": 90609,
+    "low": 90409,
+    "close": 90559,
+    "volume": 3.4
+  },
+  {
+    "bar_id": "bar_10",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:36:30.377280Z",
+    "open": 90510,
+    "high": 90610,
+    "low": 90410,
+    "close": 90560,
+    "volume": 3.5
+  },
+  {
+    "bar_id": "bar_11",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:37:30.377280Z",
+    "open": 90511,
+    "high": 90611,
+    "low": 90411,
+    "close": 90561,
+    "volume": 3.6
+  },
+  {
+    "bar_id": "bar_12",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:38:30.377280Z",
+    "open": 90512,
+    "high": 90612,
+    "low": 90412,
+    "close": 90562,
+    "volume": 3.7
+  },
+  {
+    "bar_id": "bar_13",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:39:30.377280Z",
+    "open": 90513,
+    "high": 90613,
+    "low": 90413,
+    "close": 90563,
+    "volume": 3.8
+  },
+  {
+    "bar_id": "bar_14",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:40:30.377280Z",
+    "open": 90514,
+    "high": 90614,
+    "low": 90414,
+    "close": 90564,
+    "volume": 3.9000000000000004
+  },
+  {
+    "bar_id": "bar_15",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:41:30.377280Z",
+    "open": 90515,
+    "high": 90615,
+    "low": 90415,
+    "close": 90565,
+    "volume": 4.0
+  },
+  {
+    "bar_id": "bar_16",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:42:30.377280Z",
+    "open": 90516,
+    "high": 90616,
+    "low": 90416,
+    "close": 90566,
+    "volume": 4.1
+  },
+  {
+    "bar_id": "bar_17",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:43:30.377280Z",
+    "open": 90517,
+    "high": 90617,
+    "low": 90417,
+    "close": 90567,
+    "volume": 4.2
+  },
+  {
+    "bar_id": "bar_18",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:44:30.377280Z",
+    "open": 90518,
+    "high": 90618,
+    "low": 90418,
+    "close": 90568,
+    "volume": 4.3
+  },
+  {
+    "bar_id": "bar_19",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:45:30.377280Z",
+    "open": 90519,
+    "high": 90619,
+    "low": 90419,
+    "close": 90569,
+    "volume": 4.4
+  }
+]

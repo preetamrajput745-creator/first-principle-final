@@ -1,0 +1,5 @@
+{
+  "missing_ratio": "1.10%",
+  "affected_signal_count": 11,
+  "time_window": "5m"
+}

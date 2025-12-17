@@ -1,0 +1,28 @@
+{
+  "paths": {
+    "/v1/policies/{id}/approve": {
+      "post": {
+        "summary": "Approve a policy change",
+        "security": [
+          {
+            "BearerAuth": [],
+            "TwoFactor": []
+          }
+        ],
+        "description": "Requires Owner role."
+      }
+    },
+    "/v1/promotions/{id}/signoff": {
+      "post": {
+        "summary": "Sign-off a live promotion",
+        "security": [
+          {
+            "BearerAuth": [],
+            "TwoFactor": []
+          }
+        ],
+        "description": "Requires Owner role + Evidence Checklist."
+      }
+    }
+  }
+}

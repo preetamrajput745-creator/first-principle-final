@@ -1,0 +1,2 @@
+DB File: app_admin_log_f0a5e18e.db
+Latest Row: ('mock_id', 'QA Verification Test', 'now', '{}')

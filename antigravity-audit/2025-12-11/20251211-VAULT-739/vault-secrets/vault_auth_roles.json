@@ -1,0 +1,26 @@
+[
+  {
+    "role": "ingestion-sa",
+    "policy": "ingestion-reader",
+    "sa_name": "ingestion-sa",
+    "sa_namespace": "default"
+  },
+  {
+    "role": "detection-sa",
+    "policy": "detection-reader",
+    "sa_name": "detection-sa",
+    "sa_namespace": "default"
+  },
+  {
+    "role": "execution-sa",
+    "policy": "execution-writer",
+    "sa_name": "execution-sa",
+    "sa_namespace": "default"
+  },
+  {
+    "role": "monitoring-sa",
+    "policy": "monitoring-reader",
+    "sa_name": "monitoring-sa",
+    "sa_namespace": "default"
+  }
+]

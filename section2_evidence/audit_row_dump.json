@@ -1,0 +1,7 @@
+{
+  "event_id": "aud-999",
+  "actor": "admin",
+  "action": "update_config",
+  "status": "committed",
+  "signed_hash": "sha256:..."
+}

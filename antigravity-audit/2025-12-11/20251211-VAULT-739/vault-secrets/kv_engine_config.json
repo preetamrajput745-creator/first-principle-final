@@ -1,0 +1,8 @@
+{
+  "path": "antigravity/data",
+  "type": "kv-v2",
+  "options": {
+    "version": 2
+  },
+  "description": "Antigravity Secrets Store"
+}

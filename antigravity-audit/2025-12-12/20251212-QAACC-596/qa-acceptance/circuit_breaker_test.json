@@ -1,0 +1,7 @@
+{
+  "component": "circuit_breaker",
+  "state": "CLOSED",
+  "test_trigger": "Simulated Volatility",
+  "response": "OPEN",
+  "system_action": "PAUSE_TRADING"
+}

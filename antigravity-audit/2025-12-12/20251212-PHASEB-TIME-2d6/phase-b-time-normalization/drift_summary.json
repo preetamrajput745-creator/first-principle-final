@@ -1,0 +1,8 @@
+{
+  "total_packets": 1000,
+  "avg_drift_ms": 42.6397841796875,
+  "p95_drift_ms": 76.641357421875,
+  "max_drift_ms": 79.9892578125,
+  "threshold_ms": 100,
+  "status": "PASS"
+}

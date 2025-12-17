@@ -1,0 +1,13 @@
+Key             Value
+---             -----
+Seal Type       shamir
+Initialized     true
+Sealed          false
+Total Shares    1
+Threshold       1
+Version         1.15.0
+Build Date      2023-09-22T16:53:10Z
+Storage Type    inmem
+Cluster Name    vault-cluster-456589c6
+Cluster ID      616b2e0f-e91d-0696-4d93-c013fcd7f924
+HA Enabled      false

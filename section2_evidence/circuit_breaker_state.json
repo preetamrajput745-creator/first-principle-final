@@ -1,0 +1,4 @@
+{
+  "status": "PAUSED",
+  "reason": "Slippage > 50%"
+}

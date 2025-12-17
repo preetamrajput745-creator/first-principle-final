@@ -1,0 +1,10 @@
+{
+  "workers": [
+    "ingest",
+    "bar_builder",
+    "feature_engine",
+    "scoring_engine"
+  ],
+  "status": "STABLE",
+  "max_gap_ms": 100
+}

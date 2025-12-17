@@ -1,0 +1,12 @@
+{
+  "multiplier": 10,
+  "duration_sec": 30,
+  "pattern": "constant_burst",
+  "symbols": [
+    "SYM_0",
+    "SYM_1",
+    "SYM_2",
+    "SYM_3",
+    "SYM_4"
+  ]
+}

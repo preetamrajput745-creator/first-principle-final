@@ -1,0 +1,27 @@
+[
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_0.json",
+    "idx": 0,
+    "ts": 1765540263.5409644
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_99.json",
+    "idx": 99,
+    "ts": 1765543827.5409644
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_50.json",
+    "idx": 50,
+    "ts": 1765542063.5409644
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_27.json",
+    "idx": 27,
+    "ts": 1765541235.5409644
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_68.json",
+    "idx": 68,
+    "ts": 1765542711.5409644
+  }
+]

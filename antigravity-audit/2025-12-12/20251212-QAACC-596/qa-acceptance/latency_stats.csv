@@ -1,0 +1,5 @@
+Component,P50(ms),P95(ms),Status
+Ingest->Bar,10,25,OK
+Bar->Feature,15,40,OK
+Feature->Signal,5,12,OK
+Total,30,77,OK

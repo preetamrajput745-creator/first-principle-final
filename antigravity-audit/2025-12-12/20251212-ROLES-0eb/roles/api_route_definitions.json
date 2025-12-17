@@ -1,0 +1,4 @@
+{
+  "/v1/policies/approve": "POST (Owner Only)",
+  "/v1/promotions/signoff": "POST (Owner Only)"
+}

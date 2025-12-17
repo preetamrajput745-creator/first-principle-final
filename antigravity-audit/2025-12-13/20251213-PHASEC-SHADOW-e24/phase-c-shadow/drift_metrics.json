@@ -1,0 +1,5 @@
+{
+  "max_drift_ms": 55.4,
+  "threshold": 100,
+  "status": "PASS"
+}

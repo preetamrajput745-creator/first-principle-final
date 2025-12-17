@@ -1,0 +1,20 @@
+{
+  "bindings": [
+    {
+      "role_name": "exec-role",
+      "service_account": "execution-sa",
+      "namespace": "antigravity",
+      "policies": [
+        "exec_engine_policy"
+      ]
+    },
+    {
+      "role_name": "detect-role",
+      "service_account": "detection-sa",
+      "namespace": "antigravity",
+      "policies": [
+        "detection_engine_policy"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "alert_name": "CIRCUIT_BREAKER_OPEN",
+    "severity": "CRITICAL",
+    "message": "Global CB Tripped due to Slippage",
+    "timestamp": "2025-12-14T00:13:29.265594"
+  }
+]

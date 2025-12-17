@@ -1,0 +1,42 @@
+{
+  "route": {
+    "receiver": "owner-pager",
+    "group_by": [
+      "severity"
+    ],
+    "routes": [
+      {
+        "match": {
+          "severity": "critical"
+        },
+        "receiver": "owner-pager",
+        "repeat_interval": "5m"
+      },
+      {
+        "match": {
+          "severity": "warning"
+        },
+        "receiver": "slack-monitoring"
+      }
+    ]
+  },
+  "receivers": [
+    {
+      "name": "owner-pager",
+      "pagerduty_configs": [
+        {
+          "service_key": "OWNER-PD-KEY-123",
+          "description": "Critical Alert for Owner"
+        }
+      ]
+    },
+    {
+      "name": "slack-monitoring",
+      "slack_configs": [
+        {
+          "channel": "#monitoring"
+        }
+      ]
+    }
+  ]
+}

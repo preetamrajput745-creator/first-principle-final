@@ -1,0 +1,8 @@
+{
+  "service_key": "OWNER-PD-KEY-123",
+  "event_type": "trigger",
+  "description": "CRITICAL: System Down",
+  "details": {
+    "error": "All shards offline"
+  }
+}

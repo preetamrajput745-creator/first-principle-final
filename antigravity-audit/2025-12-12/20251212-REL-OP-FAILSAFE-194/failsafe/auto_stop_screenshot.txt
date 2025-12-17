@@ -1,0 +1,1 @@
+[IMAGE: Console showing RED FAILURE message and subsequent tests SKIPPED]

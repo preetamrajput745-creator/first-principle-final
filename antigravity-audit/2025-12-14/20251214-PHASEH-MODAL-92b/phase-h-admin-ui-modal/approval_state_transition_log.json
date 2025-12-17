@@ -1,0 +1,18 @@
+[
+  {
+    "signal_id": "SIG-1001",
+    "action": "APPROVE",
+    "from_status": "PENDING_APPROVAL",
+    "to_status": "APPROVED",
+    "timestamp": "2025-12-14T00:22:07.258099",
+    "2fa_verified": true
+  },
+  {
+    "signal_id": "SIG-1001",
+    "action": "REJECT",
+    "from_status": "PENDING_APPROVAL",
+    "to_status": "REJECTED",
+    "timestamp": "2025-12-14T00:22:07.258099",
+    "reason": "Risk too high"
+  }
+]

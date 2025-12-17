@@ -1,0 +1,6 @@
+{
+  "execution_mode": "PAPER",
+  "broker_connection": "DISCONNECTED",
+  "orders_sent": 0,
+  "risk_engine_status": "MONITOR_ONLY"
+}

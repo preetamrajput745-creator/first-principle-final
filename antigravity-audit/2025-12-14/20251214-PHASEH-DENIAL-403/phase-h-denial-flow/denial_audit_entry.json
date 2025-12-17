@@ -1,0 +1,15 @@
+{
+  "timestamp_utc": "2025-12-14T00:23:13.384628",
+  "signal_id": "SIG-DENY-001",
+  "exec_log_id": "exec_SIG-DENY-001",
+  "action_type": "DENIED",
+  "actor_id": "admin_user",
+  "actor_role": "RELEASE_OPERATOR",
+  "source_ip": "127.0.0.1",
+  "denial_reason": "Market volatility excessive - Safe limits exceeded",
+  "2fa_used": true,
+  "2fa_result": "SUCCESS",
+  "previous_status": "PENDING_APPROVAL",
+  "new_status": "DENIED",
+  "execution_mode": "SHADOW"
+}

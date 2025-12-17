@@ -1,0 +1,22 @@
+[
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_0.json",
+    "status": "PASS"
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_99.json",
+    "status": "PASS"
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_50.json",
+    "status": "PASS"
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_27.json",
+    "status": "PASS"
+  },
+  {
+    "key": "market_data/l2/2025-12-12/snap_idx_68.json",
+    "status": "PASS"
+  }
+]

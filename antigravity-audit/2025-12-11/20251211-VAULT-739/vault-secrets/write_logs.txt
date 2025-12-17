@@ -1,0 +1,10 @@
+WRITE antigravity/data/ingestion/api_keys: 
+WRITE antigravity/data/ingestion/db_creds: 
+WRITE antigravity/data/detection/model_keys: 
+WRITE antigravity/data/detection/feature_config: 
+WRITE antigravity/data/execution/broker_keys: 
+WRITE antigravity/data/execution/order_submission_keys: 
+WRITE antigravity/data/monitoring/slack_webhooks: 
+WRITE antigravity/data/monitoring/pagerduty_tokens: 
+WRITE antigravity/data/system/signing_keys: 
+WRITE antigravity/data/system/time_normalizer: 

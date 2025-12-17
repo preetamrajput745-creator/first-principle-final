@@ -1,0 +1,16 @@
+[
+  {
+    "alert_name": "SNAPSHOT_MISS_CRITICAL",
+    "severity": "CRITICAL",
+    "condition": "missing_snapshots > 0",
+    "value": 11,
+    "timestamp": "2025-12-14T00:11:22.834252"
+  },
+  {
+    "alert_name": "COVERAGE_DEGRADED",
+    "severity": "WARNING",
+    "condition": "coverage < 100%",
+    "value": 83.0,
+    "timestamp": "2025-12-14T00:11:22.834252"
+  }
+]

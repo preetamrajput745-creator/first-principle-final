@@ -1,0 +1,16 @@
+
+stages:
+  - test
+  - security_scan
+  - build
+  - sign
+  - deploy
+
+security_scan:
+  script:
+    - trivy fs .
+    - detect-secrets-hook --baseline .secrets.baseline
+
+sign_artifact:
+  script:
+    - ./artifact_signing.sh build/output.jar

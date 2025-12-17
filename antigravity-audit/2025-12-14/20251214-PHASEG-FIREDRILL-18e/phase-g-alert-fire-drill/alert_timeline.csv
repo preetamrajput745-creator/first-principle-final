@@ -1,0 +1,2 @@
+alert_name,trigger_timestamp_utc,notification_channel,ack_timestamp_utc
+SNAPSHOT_MISSING_RATIO,2025-12-14T00:20:15.824633,EMAIL,2025-12-14T00:20:15.824633

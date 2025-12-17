@@ -1,0 +1,4 @@
+CHECK: Time alignment OK
+CHECK: No stale snapshots found
+CHECK: No duplicates found
+STATUS: PASS

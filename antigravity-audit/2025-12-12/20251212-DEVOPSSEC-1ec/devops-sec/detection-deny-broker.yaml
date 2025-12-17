@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: detection-deny-broker
+  namespace: antigravity
+spec:
+  podSelector:
+    matchLabels:
+      app: detection-engine
+  policyTypes:
+  - Egress
+  egress:
+  - to:
+    - ipBlock: # Allow internal K8s DNS
+        cidr: 10.0.0.0/8 
+    - ipBlock: # Deny Broker Public IPs explicitly or strict allow-list
+        cidr: 0.0.0.0/0
+        except:
+        - 203.0.113.5 # Broker IP (Blocked by omission in explicit allow list technically, but here we show concept)

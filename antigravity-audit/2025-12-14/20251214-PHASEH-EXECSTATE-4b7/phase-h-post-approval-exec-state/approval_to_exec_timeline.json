@@ -1,0 +1,22 @@
+[
+  {
+    "event": "SIGNAL_CREATED",
+    "status": "PENDING_APPROVAL",
+    "ts": "T-10s"
+  },
+  {
+    "event": "APPROVAL_REQUEST",
+    "status": "PENDING_APPROVAL",
+    "ts": "T-5s"
+  },
+  {
+    "event": "2FA_VERIFIED",
+    "status": "PENDING_APPROVAL",
+    "ts": "T-1s"
+  },
+  {
+    "event": "STATE_TRANSITION",
+    "status": "AWAITING_EXEC",
+    "ts": "T+0s"
+  }
+]

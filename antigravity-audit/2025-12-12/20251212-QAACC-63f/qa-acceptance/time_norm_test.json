@@ -1,0 +1,20 @@
+[
+  {
+    "input": "2025-12-12T10:00:00Z",
+    "normalized_utc": "2025-12-12T10:00:00.000Z",
+    "drift_ms": 7,
+    "status": "synchronized"
+  },
+  {
+    "input": "2025-12-12T05:00:00-05:00",
+    "normalized_utc": "2025-12-12T10:00:00.000Z",
+    "drift_ms": 35,
+    "status": "synchronized"
+  },
+  {
+    "input": "1734000000000",
+    "normalized_utc": "2025-12-12T10:00:00.000Z",
+    "drift_ms": 13,
+    "status": "synchronized"
+  }
+]

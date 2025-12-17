@@ -1,0 +1,4 @@
+{
+  "alertname": "CircuitBreakerOpen",
+  "severity": "critical"
+}

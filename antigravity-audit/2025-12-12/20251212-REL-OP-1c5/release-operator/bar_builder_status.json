@@ -1,0 +1,7 @@
+{
+  "status": "active",
+  "interval_1s": "healthy",
+  "interval_5s": "healthy",
+  "interval_1m": "healthy",
+  "drift_ms": 12.0
+}

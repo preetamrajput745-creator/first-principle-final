@@ -1,0 +1,6 @@
+
+RESTART CHECK:
+Pre-Restart Mode: LIVE
+Post-Restart Mode: LIVE
+Env Var Override Attempt: BLOCKED (See Patch)
+Result: PASS

@@ -1,0 +1,68 @@
+[
+  {
+    "signal_id": "sig_adf44f",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_05388d",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "FEATURE_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_fb1e1c",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_160f78",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "FEATURE_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_a55752",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_18c72d",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "FEATURE_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_d88d87",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_e5c495",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "FEATURE_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_45a695",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_49f366",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "FEATURE_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  },
+  {
+    "signal_id": "sig_01a69d",
+    "timestamp_utc": "2025-12-14T00:11:22.834252",
+    "missing_type": "L2_SNAPSHOT",
+    "strategy_id": "MOMENTUM_V1"
+  }
+]

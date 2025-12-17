@@ -1,0 +1,4 @@
+Dev User: 403 Forbidden: Only Owner allowed
+No TOTP: 403 Forbidden: Invalid TOTP
+API Script: 403 Forbidden: Admin UI Only
+Empty Reason: 400 Bad Request: Reason Required

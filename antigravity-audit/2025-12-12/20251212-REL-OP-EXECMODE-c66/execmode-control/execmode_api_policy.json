@@ -1,0 +1,10 @@
+{
+  "endpoint": "POST /v1/system/execution-mode",
+  "checks": [
+    "caller_role == 'owner'",
+    "valid_totp == true",
+    "audit_reason.length > 0",
+    "request_origin == 'admin-ui'"
+  ],
+  "fail_action": "403 + Audit Log + Alert Security"
+}

@@ -1,0 +1,9 @@
+{
+  "circuit_breaker_state": "RUNNING",
+  "active_checks": [
+    "max_slippage",
+    "max_drawdown",
+    "signal_rate"
+  ],
+  "last_check_status": "PASS"
+}

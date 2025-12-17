@@ -1,0 +1,112 @@
+[
+  {
+    "bar_id": "bar_0",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:17:07.092175Z",
+    "open": 90000,
+    "high": 90100,
+    "low": 89900,
+    "close": 90050,
+    "volume": 1.5
+  },
+  {
+    "bar_id": "bar_1",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:18:07.092175Z",
+    "open": 90001,
+    "high": 90101,
+    "low": 89901,
+    "close": 90051,
+    "volume": 1.6
+  },
+  {
+    "bar_id": "bar_2",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:19:07.092175Z",
+    "open": 90002,
+    "high": 90102,
+    "low": 89902,
+    "close": 90052,
+    "volume": 1.7
+  },
+  {
+    "bar_id": "bar_3",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:20:07.092175Z",
+    "open": 90003,
+    "high": 90103,
+    "low": 89903,
+    "close": 90053,
+    "volume": 1.8
+  },
+  {
+    "bar_id": "bar_4",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:21:07.092175Z",
+    "open": 90004,
+    "high": 90104,
+    "low": 89904,
+    "close": 90054,
+    "volume": 1.9
+  },
+  {
+    "bar_id": "bar_5",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:22:07.092175Z",
+    "open": 90005,
+    "high": 90105,
+    "low": 89905,
+    "close": 90055,
+    "volume": 2.0
+  },
+  {
+    "bar_id": "bar_6",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:23:07.092175Z",
+    "open": 90006,
+    "high": 90106,
+    "low": 89906,
+    "close": 90056,
+    "volume": 2.1
+  },
+  {
+    "bar_id": "bar_7",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:24:07.092175Z",
+    "open": 90007,
+    "high": 90107,
+    "low": 89907,
+    "close": 90057,
+    "volume": 2.2
+  },
+  {
+    "bar_id": "bar_8",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:25:07.092175Z",
+    "open": 90008,
+    "high": 90108,
+    "low": 89908,
+    "close": 90058,
+    "volume": 2.3
+  },
+  {
+    "bar_id": "bar_9",
+    "symbol": "BTC-USD",
+    "interval": "1m",
+    "timestamp_utc": "2025-12-13T11:26:07.092175Z",
+    "open": 90009,
+    "high": 90109,
+    "low": 89909,
+    "close": 90059,
+    "volume": 2.4
+  }
+]

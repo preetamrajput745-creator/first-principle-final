@@ -1,0 +1,14 @@
+{
+  "event_id": "ff3c3f80-2479-4c5e-a29d-be1ac30d1501",
+  "actor": "Alice",
+  "actor_role": "owner",
+  "actor_id": "u1",
+  "actor_ip": "10.0.0.5",
+  "action": "SIGNOFF_PROMOTION",
+  "target_id": "item-463",
+  "timestamp_utc": "2025-12-12T05:26:07.366005Z",
+  "signed_hash": "sha256-mock-1f285a6d2d414b00",
+  "evidence_link": "s3://antigravity-audit/.../ff3c3f80-2479-4c5e-a29d-be1ac30d1501",
+  "justification": "Routine operation",
+  "2fa_hash": "valid_token_mock"
+}

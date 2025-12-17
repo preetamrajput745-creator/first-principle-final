@@ -1,0 +1,14 @@
+{
+  "event_id": "9a8df8c6-8008-4ef4-8454-d46ff28f3794",
+  "actor": "Alice",
+  "actor_role": "owner",
+  "actor_id": "u1",
+  "actor_ip": "10.0.0.5",
+  "action": "SIGNOFF_PROMOTION",
+  "target_id": "promo-500",
+  "timestamp_utc": "2025-12-12T05:25:50.885751Z",
+  "signed_hash": "9ebe3c04d5b855132564bc6980e9fbc88abfcabee1f415f302f263d96035dfb3",
+  "evidence_link": "s3://antigravity-audit/.../9a8df8c6-8008-4ef4-8454-d46ff28f3794",
+  "justification": "N/A",
+  "2fa_hash": "valid"
+}

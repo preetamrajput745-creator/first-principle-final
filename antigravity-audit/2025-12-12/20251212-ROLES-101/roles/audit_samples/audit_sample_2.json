@@ -1,0 +1,14 @@
+{
+  "event_id": "609a183a-bcf9-4a51-9942-9ec6bb5ed8fb",
+  "actor": "Alice",
+  "actor_role": "owner",
+  "actor_id": "u1",
+  "actor_ip": "10.0.0.5",
+  "action": "APPROVE_POLICY",
+  "target_id": "pol-101",
+  "timestamp_utc": "2025-12-12T05:25:50.885751Z",
+  "signed_hash": "7dfd664f30840ff6edcd84c9a06810cd625a26fc61d355357fccbe35d7fd8a0a",
+  "evidence_link": "s3://antigravity-audit/.../609a183a-bcf9-4a51-9942-9ec6bb5ed8fb",
+  "justification": "LGTM",
+  "2fa_hash": "valid_hash"
+}

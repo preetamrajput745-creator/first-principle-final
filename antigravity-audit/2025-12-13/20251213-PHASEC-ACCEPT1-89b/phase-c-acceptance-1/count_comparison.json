@@ -1,0 +1,7 @@
+{
+  "time_window": "last_1_hour_utc",
+  "signal_count": 50,
+  "exec_log_count": 50,
+  "execution_mode": "SHADOW",
+  "status": "PASS"
+}

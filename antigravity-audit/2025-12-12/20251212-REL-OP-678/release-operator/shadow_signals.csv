@@ -1,0 +1,3 @@
+ID,Strategy,Symbol,Side,Confidence,ShadowExecuted
+3d98cf18-90cd-4593-93a8-e6c1b04f1bdc,MomentumV1,BTC-USD,SELL,0.88,TRUE
+61e5a2ce-81e6-4683-9fd7-b80f47cb02f8,MeanRevV2,ETH-USD,BUY,0.75,TRUE

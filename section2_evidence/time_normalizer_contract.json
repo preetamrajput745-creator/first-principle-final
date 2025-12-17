@@ -1,0 +1,6 @@
+{
+  "service": "time_normalizer",
+  "input": "timestamp_ms, source_id",
+  "output": "utc_iso, drift_ms",
+  "requirement": "All ingestions must use this"
+}

@@ -1,0 +1,3 @@
+Analyzed 3600 records.
+Consistency: PASS
+No negative or invalid drifts found.

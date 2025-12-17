@@ -1,0 +1,12 @@
+[2025-12-12T12:03:39.070496] Service: ingest_service | Status: ONLINE | Config Hash matches: True
+   > Mode: SHADOW
+   > Canary: ['NIFTY', 'BANKNIFTY']
+[2025-12-12T12:03:39.070496] Service: signal_engine | Status: ONLINE | Config Hash matches: True
+   > Mode: SHADOW
+   > Canary: ['NIFTY', 'BANKNIFTY']
+[2025-12-12T12:03:39.070496] Service: execution_engine | Status: ONLINE | Config Hash matches: True
+   > Mode: SHADOW
+   > Canary: ['NIFTY', 'BANKNIFTY']
+[2025-12-12T12:03:39.070496] Service: risk_engine | Status: ONLINE | Config Hash matches: True
+   > Mode: SHADOW
+   > Canary: ['NIFTY', 'BANKNIFTY']

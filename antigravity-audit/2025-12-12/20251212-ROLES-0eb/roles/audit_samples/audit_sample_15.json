@@ -1,0 +1,12 @@
+{
+  "event_id": "4edf48e1-1588-4ed1-bd35-232f9fe5f17a",
+  "actor": "EmergencyAdmin",
+  "actor_id": "u-admin",
+  "actor_ip": "10.0.6.253",
+  "action": "APPROVE_POLICY",
+  "target_id": "target-2077",
+  "justification": "Routine operation",
+  "2fa_hash": "sha256:7d0f6988bde84e1e979a24d94ce88d43",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "42ed5370c1629a073fccfa1102d967111ec18a7f0383ab8d6eee2d76b0c17839"
+}

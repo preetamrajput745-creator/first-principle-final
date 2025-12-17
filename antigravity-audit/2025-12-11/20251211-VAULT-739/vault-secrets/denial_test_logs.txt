@@ -1,0 +1,9 @@
+
+--- TEST A: Detection -> Execution Access ---
+RESULT: DENIED (Expected). Stderr: Error making API request.
+
+URL: GET http://127.0.0.1:8200/v1/sys/internal/ui/mounts/antigravity/data/execution/broker_keys
+Code: 403. Errors:
+
+* preflight capability check returned 403, please ensure client's policies grant access to path "antigravity/data/execution/broker_keys/"
+

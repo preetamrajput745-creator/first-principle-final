@@ -1,0 +1,4 @@
+{
+  "alertname": "HighLatency",
+  "val": "150ms"
+}

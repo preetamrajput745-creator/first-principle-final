@@ -1,0 +1,5 @@
+{
+  "bucket_name": "antigravity-raw-ticks",
+  "region": "ap-south-1",
+  "config_source": "system_env"
+}

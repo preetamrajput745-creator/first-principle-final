@@ -1,0 +1,19 @@
+{
+  "event_id": "5e32789a-3dfa-4fb8-9706-eb26898ecd2e",
+  "actor": "Alice",
+  "actor_id": "u-alice",
+  "actor_ip": "10.0.50.23",
+  "action": "APPROVE_POLICY",
+  "target_id": "policy-risk-v2",
+  "before": {
+    "stop_loss": 0.05
+  },
+  "after": {
+    "stop_loss": 0.08
+  },
+  "justification": "Market regime change approved by Risk Comm.",
+  "2fa_hash": "sha256:9f86d081884c7d659a2...",
+  "evidence_link": "s3://evidence/checklist_v2.pdf",
+  "timestamp_utc": "2025-12-12T05:35:07.164948Z",
+  "signed_hash": "d7af5e909d2aecea2185de1d1d3139dc4022c4d437eff4676be8843b1b6dc57d"
+}

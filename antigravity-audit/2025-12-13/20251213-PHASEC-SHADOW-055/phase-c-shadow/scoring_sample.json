@@ -1,0 +1,162 @@
+[
+  {
+    "score_id": "score_feat_bar_0",
+    "feature_id": "feat_bar_0",
+    "timestamp_utc": "2025-12-13T11:26:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 74.76173666615227,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_1",
+    "feature_id": "feat_bar_1",
+    "timestamp_utc": "2025-12-13T11:27:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 98.78708011998448,
+    "trigger": true
+  },
+  {
+    "score_id": "score_feat_bar_2",
+    "feature_id": "feat_bar_2",
+    "timestamp_utc": "2025-12-13T11:28:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 26.192100029282916,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_3",
+    "feature_id": "feat_bar_3",
+    "timestamp_utc": "2025-12-13T11:29:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 0.8397153216405884,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_4",
+    "feature_id": "feat_bar_4",
+    "timestamp_utc": "2025-12-13T11:30:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 20.641936740943446,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_5",
+    "feature_id": "feat_bar_5",
+    "timestamp_utc": "2025-12-13T11:31:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 21.306938612671043,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_6",
+    "feature_id": "feat_bar_6",
+    "timestamp_utc": "2025-12-13T11:32:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 47.02711403570425,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_7",
+    "feature_id": "feat_bar_7",
+    "timestamp_utc": "2025-12-13T11:33:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 45.46397719205655,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_8",
+    "feature_id": "feat_bar_8",
+    "timestamp_utc": "2025-12-13T11:34:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 10.787649002536327,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_9",
+    "feature_id": "feat_bar_9",
+    "timestamp_utc": "2025-12-13T11:35:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 0.713926249525576,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_10",
+    "feature_id": "feat_bar_10",
+    "timestamp_utc": "2025-12-13T11:36:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 34.13648991803399,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_11",
+    "feature_id": "feat_bar_11",
+    "timestamp_utc": "2025-12-13T11:37:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 78.66612270195074,
+    "trigger": true
+  },
+  {
+    "score_id": "score_feat_bar_12",
+    "feature_id": "feat_bar_12",
+    "timestamp_utc": "2025-12-13T11:38:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 39.40781277227296,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_13",
+    "feature_id": "feat_bar_13",
+    "timestamp_utc": "2025-12-13T11:39:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 68.55316050518825,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_14",
+    "feature_id": "feat_bar_14",
+    "timestamp_utc": "2025-12-13T11:40:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 45.13710968192718,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_15",
+    "feature_id": "feat_bar_15",
+    "timestamp_utc": "2025-12-13T11:41:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 0.8020166964211484,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_16",
+    "feature_id": "feat_bar_16",
+    "timestamp_utc": "2025-12-13T11:42:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 19.445284919739148,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_17",
+    "feature_id": "feat_bar_17",
+    "timestamp_utc": "2025-12-13T11:43:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 18.75572838720374,
+    "trigger": false
+  },
+  {
+    "score_id": "score_feat_bar_18",
+    "feature_id": "feat_bar_18",
+    "timestamp_utc": "2025-12-13T11:44:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 92.68864675937553,
+    "trigger": true
+  },
+  {
+    "score_id": "score_feat_bar_19",
+    "feature_id": "feat_bar_19",
+    "timestamp_utc": "2025-12-13T11:45:30.377280Z",
+    "strategy": "MOMENTUM_V2",
+    "score_value": 60.318329727173094,
+    "trigger": false
+  }
+]

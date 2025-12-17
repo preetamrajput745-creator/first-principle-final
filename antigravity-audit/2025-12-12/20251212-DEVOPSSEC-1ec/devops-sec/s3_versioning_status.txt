@@ -1,0 +1,4 @@
+Bucket: antigravity-raw-data
+Versioning: ENABLED
+PublicAccessBlock: TRUE
+Encryption: AES256

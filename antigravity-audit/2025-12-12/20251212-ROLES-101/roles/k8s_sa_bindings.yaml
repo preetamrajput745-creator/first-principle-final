@@ -1,0 +1,19 @@
+
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: owner-sa
+  namespace: antigravity
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: owner-binding
+subjects:
+- kind: ServiceAccount
+  name: owner-sa
+  namespace: antigravity
+roleRef:
+  kind: ClusterRole
+  name: cluster-admin # Owners generally have high privilege, or scope down to antigravity-admin
+  apiGroup: rbac.authorization.k8s.io
